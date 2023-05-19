@@ -28,17 +28,18 @@ void InfoCommande::clear() {
 
 void InfoCommande::setInfo(int prix_bois, int prix_nourriture, int prix_or,const sf::String &info) {
     std::stringstream ss;
+    std::stringstream temp;
     if (prix_bois>0 ) {
-            ss << "bois : " << prix_bois <<"   " ;
+            temp << "bois " << prix_bois <<"   " ;
     }
     if (prix_nourriture>0 ) {
-        ss << "nourriture : " << prix_nourriture<< "   ";
+        temp << "nourriture " << prix_nourriture<< "   ";
     }
     if (prix_or>0) {
-        ss << "or : " << prix_or<< "   ";
+        temp << "or " << prix_or<< "   ";
     }
-    if (!(ss.str()=="")) {
-        ss<<"\n";
+    if (!(temp.str()=="")) {
+        ss<<"couts :  "<<temp.str()<<"\n";
     }
     std::string info_copie = info;
     ss<<info_copie;

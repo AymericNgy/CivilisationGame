@@ -70,7 +70,7 @@ CreerElement<T>::CreerElement(CasePosition position,Joueur_ptr joueurProprietair
     this->prix_or=or_pour_achat;
 
     // initilaiser info
-    info=elementJoueur.getName()+"\n"+elementJoueur.getInfo();
+    info="Creer "+elementJoueur.getName()+"\n"+elementJoueur.getInfo();
 
 
 }

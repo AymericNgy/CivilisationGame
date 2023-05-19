@@ -146,7 +146,7 @@ void Dashboard::updateInfoElement() {
             std::string nourritureString = std::to_string(nourriture);
             std::string orString = std::to_string(_or);
 
-            nombreDegat->setString("\nCreation de ressources :\n"+boisString+" bois/tour\n"+nourritureString+" nourriture/tour\n"+orString+" or/tour"); 
+            creationRessource->setString("\nCreation de ressources :\n"+boisString+" bois/tour\n"+nourritureString+" nourriture/tour\n"+orString+" or/tour"); 
         }
 
         
@@ -216,15 +216,15 @@ void Dashboard::initInfo() {
 
     // init distanceAttaque
     current_y+=lineSpacing;
-    distanceAttaque = new TextForUI(COUCHE+1,false,"\n\n"); 
+    distanceAttaque = new TextForUI(COUCHE+1,false,""); 
     distanceAttaque->setPosition(sf::Vector2f(current_x,current_y));
     distanceAttaque->setFillColor(sf::Color::Black);
     distanceAttaque->setCharacterSize(CHARACTER_SIZE_INFO_ELEMENT);
     lineSpacing = distanceAttaque->getFont()->getLineSpacing(distanceAttaque->getCharacterSize()); 
-     
+
     // init creationRessource
-    current_y+=lineSpacing;
-    creationRessource = new TextForUI(COUCHE+1,false,"\n\n\n"); 
+    //current_y+=lineSpacing;
+    creationRessource = new TextForUI(COUCHE+1,false,""); 
     creationRessource->setPosition(sf::Vector2f(current_x,current_y));
     creationRessource->setFillColor(sf::Color::Black);
     creationRessource->setCharacterSize(CHARACTER_SIZE_INFO_ELEMENT);

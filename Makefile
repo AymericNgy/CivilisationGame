@@ -32,7 +32,7 @@ debug:
 
 
 clean:
-	rm -rf obj/* 
+	rm -rf obj/* && rm ./jeu
 
 
 jeu: $(OBJ_FILES)

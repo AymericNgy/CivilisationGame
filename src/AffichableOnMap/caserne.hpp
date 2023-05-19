@@ -8,8 +8,8 @@
 
 class Caserne : public Batiment{
     private :
-        static const int NOMBRE_ACTION_MAX_ORIGINE;
-        static const int NOMBE_PV_MAX_ORIGINE;
+        static const int NOMBRE_ACTION_MAX_ORIGINE=2;
+        static const int NOMBE_PV_MAX_ORIGINE=150;
 
         static int nombreActionBonus;
         static int nombrePvBonus;
@@ -18,9 +18,11 @@ class Caserne : public Batiment{
         static const std::string INFO;
         static const std::string NAME;
 
-        static const int COUT_ACHAT_BOIS;
-        static const int COUT_ACHAT_NOURRITURE;
-        static const int COUT_ACHAT_OR;
+        static const int COUT_ACHAT_BOIS=150;
+        static const int COUT_ACHAT_NOURRITURE=0;
+        static const int COUT_ACHAT_OR=0;
+        
+
 
     protected :
 

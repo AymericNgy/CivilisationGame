@@ -7,6 +7,7 @@
 class ElementJoueur;
 
 // A implementer sur un ElementJoueur si il peut attaquer
+// Ajouter commande ChoixAttaquer a la liste renvoye par ElementJoueur::getActionpossible()
 class InterfaceAttaquer {
     public :
         // /!\ redefinir dans classe enfant avec bonus si voulu

@@ -89,10 +89,10 @@ void Jeu::commencer() {
 
     Caserne *caserne = new Caserne(NouveauJoueurs[1]);
     caserne->init(true);
-    caserne->moveToPosition(CasePosition(15,10));
+    caserne->moveToPosition(CasePosition(16,11));
 
     Caserne *caserne2 = new Caserne(this->getJoueurActif());
-    caserne2->moveToPosition(CasePosition(10,10));
+    caserne2->moveToPosition(CasePosition(11,11));
     caserne2->init(true);
 
 

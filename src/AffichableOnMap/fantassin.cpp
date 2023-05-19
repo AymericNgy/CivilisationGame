@@ -17,9 +17,7 @@ float Fantassin::mombreCaseDeplacementBonus=0;
 int Fantassin::nombreDegatBonus=0;
 float Fantassin::distanceAttaqueBonus=0;
 
-const int Fantassin::COUT_ACHAT_BOIS=0;
-const int Fantassin::COUT_ACHAT_NOURRITURE=25;
-const int Fantassin::COUT_ACHAT_OR=5;
+
 
 
 Fantassin::Fantassin(Joueur_ptr joueurProprietaire) : Unite(TEXTURE_FILE_NAME,INFO,NAME,ICONE_TEXTURE_FILE_NAME,joueurProprietaire) {
@@ -29,8 +27,8 @@ Fantassin::Fantassin(Joueur_ptr joueurProprietaire) : Unite(TEXTURE_FILE_NAME,IN
 
 ListPtrCommandeSquare_ptr Fantassin::getActionPossible(){
     ListPtrCommandeSquare_ptr commandes = std::make_shared<std::list<CommandeSquare *>>();
-    commandes->push_back(new ChoixSeDeplacer(this));
-    commandes->push_back(new ChoixAttaquer(this));
+    commandes->push_back(new ChoixSeDeplacer(this)); // car herite de InterfaceSePlacer
+    commandes->push_back(new ChoixAttaquer(this)); // car herite de InterfaceAttaquer
     return commandes;
 
 }

@@ -9,15 +9,12 @@ const std::string Caserne::NAME ="Caserne";
 const std::string Caserne::ICONE_TEXTURE_FILE_NAME = "caserne_icone.png";
 
 
-const int Caserne::NOMBRE_ACTION_MAX_ORIGINE = 2;
-const int Caserne::NOMBE_PV_MAX_ORIGINE = 1; //[!] A CHANGER
+
 
 int Caserne::nombreActionBonus = 0;
 int Caserne::nombrePvBonus = 0;
 
-const int Caserne::COUT_ACHAT_BOIS=150;
-const int Caserne::COUT_ACHAT_NOURRITURE=0;
-const int Caserne::COUT_ACHAT_OR=0;
+
 
 
 Caserne::Caserne(Joueur_ptr joueurProprietaire) : Batiment(TEXTURE_FILE_NAME,INFO,NAME,ICONE_TEXTURE_FILE_NAME,joueurProprietaire) {

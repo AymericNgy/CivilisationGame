@@ -124,6 +124,8 @@ class Joueur : public std::enable_shared_from_this<Joueur>{
 
         CasePosition getCaseDepart() {return caseDepart;}
 
+        void increaseRessource(int bois, int nourriture, int or_);
+
 
 
         // appele au debut du tour d'un joueur

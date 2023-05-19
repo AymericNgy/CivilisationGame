@@ -28,9 +28,11 @@ class Fantassin : public Unite , public InterfaceAttaquer{
         static const std::string INFO;
         static const std::string NAME;
 
-        static const int COUT_ACHAT_BOIS;
-        static const int COUT_ACHAT_NOURRITURE;
-        static const int COUT_ACHAT_OR;
+        static const int COUT_ACHAT_BOIS=0;
+        static const int COUT_ACHAT_NOURRITURE=25;
+        static const int COUT_ACHAT_OR=5;
+
+
 
     protected :
 
@@ -38,9 +40,16 @@ class Fantassin : public Unite , public InterfaceAttaquer{
 
 
     public :
-        void ressourcePourAchat(int &bois, int &nourriture, int &_or);
+        // --- CONSTANTES ----
 
         static const std::string ICONE_TEXTURE_FILE_NAME;
+
+        // --- FONCTIONS ---
+
+
+        void ressourcePourAchat(int &bois, int &nourriture, int &_or);
+
+
 
         Fantassin(Joueur_ptr joueurProprietaire);
 

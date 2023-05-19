@@ -6,6 +6,7 @@
 #include "Commande/acheter_case.hpp"
 #include "Commande/choix_construire.hpp"
 #include "hud.hpp"
+#include "AffichableOnMap/hotel_de_ville.hpp"
 
 
 Joueur::Joueur(std::string nom, sf::Color couleur,CasePosition caseDepart) : caseDepart(caseDepart), nom(nom), couleur(couleur){
@@ -27,6 +28,11 @@ Joueur::Joueur(std::string nom, sf::Color couleur,CasePosition caseDepart) : cas
 
 void Joueur::setForPartie() {
     Jeu::getInstance().getPlateau().setCaseProprietaire(caseDepart,shared_from_this());
+    // construction des hotels de ville 
+    HotelDeVille *hdv = new HotelDeVille(shared_from_this());
+    hdv->moveToPosition(caseDepart);
+    hdv->init(true);
+
 }
 
 void Joueur::loadSelectedCase() {
@@ -180,3 +186,10 @@ void Joueur::nouveauTour() {
     }   
 }
 
+
+
+void Joueur::increaseRessource(int bois, int nourriture, int or_) {
+    this->_bois += bois;
+    this->_nourriture += nourriture;
+    this->_or += or_;
+}

@@ -78,6 +78,7 @@ class Dashboard : public AffichableOnPanel {
         TextForUI *nombre_case_deplacement;
         TextForUI *nombreDegat;
         TextForUI *distanceAttaque;
+        TextForUI *creationRessource;
         
         TextForUI *info_normal; 
 

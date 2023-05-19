@@ -4,11 +4,13 @@
 #include "../utile.hpp"
 #include "../AffichableOnMap/interface_se_deplacer.hpp"
 #include "../AffichableOnMap/interface_attaquer.hpp"
+#include "../AffichableOnMap/interface_cree_ressource.hpp"
 #include "../AffichableOnMap/fantassin.hpp"
 #include "../jeu.hpp"
 #include <sstream>
 #include <iomanip>
 #include "../joueur.hpp"
+
 
 
 const std::string Dashboard::TEXTURE_NAME = "dash_board_complete_2.png";
@@ -29,6 +31,7 @@ Dashboard::~Dashboard() {
     delete nombre_case_deplacement;
     delete nombreDegat;
     delete distanceAttaque;
+    delete creationRessource;
 
 }
 
@@ -99,6 +102,7 @@ void Dashboard::updateInfoElement() {
     nombre_case_deplacement->setString("");
     nombreDegat->setString("");
     distanceAttaque->setString("");
+    creationRessource->setString("");
 
     if (elementJoueurPourInfo!=nullptr) { // teste si un element est present dans le dashboard pour etre affiche
         nom_element_info->setString(elementJoueurPourInfo->getName()+" de [DEBUG] "+elementJoueurPourInfo->getJoueurProprietaire()->getName());
@@ -128,6 +132,23 @@ void Dashboard::updateInfoElement() {
             distanceAttaque->setString("Distance d'attaque : "+ distanceAttaqueString.str() +" cases");
 
         }
+        // teste si elementJoueurPourInfo peut creer des ressources affiche infos de creation de ressources si oui
+        InterfaceCreeRessource *elementCreantRessource;
+        elementCreantRessource = dynamic_cast<InterfaceCreeRessource*>(elementJoueurPourInfo);
+        if (elementCreantRessource) {
+            int bois=0;
+            int nourriture=0;
+            int _or=0;
+            elementCreantRessource->ressourceParTour(bois,nourriture,_or);
+
+
+            std::string boisString = std::to_string(bois);
+            std::string nourritureString = std::to_string(nourriture);
+            std::string orString = std::to_string(_or);
+
+            nombreDegat->setString("\nCreation de ressources :\n"+boisString+" bois/tour\n"+nourritureString+" nourriture/tour\n"+orString+" or/tour"); 
+        }
+
         
     }
 
@@ -195,12 +216,19 @@ void Dashboard::initInfo() {
 
     // init distanceAttaque
     current_y+=lineSpacing;
-    distanceAttaque = new TextForUI(COUCHE+1,false,""); 
+    distanceAttaque = new TextForUI(COUCHE+1,false,"\n\n"); 
     distanceAttaque->setPosition(sf::Vector2f(current_x,current_y));
     distanceAttaque->setFillColor(sf::Color::Black);
     distanceAttaque->setCharacterSize(CHARACTER_SIZE_INFO_ELEMENT);
-    lineSpacing = distanceAttaque->getFont()->getLineSpacing(distanceAttaque->getCharacterSize());  
-
+    lineSpacing = distanceAttaque->getFont()->getLineSpacing(distanceAttaque->getCharacterSize()); 
+     
+    // init creationRessource
+    current_y+=lineSpacing;
+    creationRessource = new TextForUI(COUCHE+1,false,"\n\n\n"); 
+    creationRessource->setPosition(sf::Vector2f(current_x,current_y));
+    creationRessource->setFillColor(sf::Color::Black);
+    creationRessource->setCharacterSize(CHARACTER_SIZE_INFO_ELEMENT);
+    lineSpacing = distanceAttaque->getFont()->getLineSpacing(distanceAttaque->getCharacterSize());      
 
 
 

@@ -1,7 +1,12 @@
 #include "caserne.hpp"
 #include "../Commande/creer_element.hpp"
 #include "fantassin.hpp"
+#include "mage.hpp"
 #include "cavalier.hpp"
+#include "archer.hpp"
+#include "engin_de_siege.hpp"
+#include "unite_d_elite.hpp"
+
 
 const std::string Caserne::TEXTURE_FILE_NAME = "caserne_mini.png";
 const std::string Caserne::INFO = "permet de former de l'infanterie";
@@ -27,6 +32,14 @@ ListPtrCommandeSquare_ptr Caserne::getActionPossible(){
     ListPtrCommandeSquare_ptr commandes = std::make_shared<std::list<CommandeSquare *>>();
     commandes->push_back(new CreerElement<Fantassin>(this->getCasePosition(),this->joueurProprietaire,this));
     commandes->push_back(new CreerElement<Cavalier>(this->getCasePosition(),this->joueurProprietaire,this));
+    commandes->push_back(new CreerElement<Mage>(this->getCasePosition(),this->joueurProprietaire,this));
+    commandes->push_back(new CreerElement<Archer>(this->getCasePosition(),this->joueurProprietaire,this));
+    commandes->push_back(new CreerElement<EnginDeSiege>(this->getCasePosition(),this->joueurProprietaire,this));
+    commandes->push_back(new CreerElement<unite_d_elite>(this->getCasePosition(),this->joueurProprietaire,this));
+
+
+
+
     return commandes;
 }
 

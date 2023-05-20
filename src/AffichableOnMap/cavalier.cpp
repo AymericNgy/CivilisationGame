@@ -3,7 +3,7 @@
 #include "../Commande/choix_attaquer.hpp"
 
 const std::string Cavalier::TEXTURE_FILE_NAME = "cavalier_icone.png";
-const std::string Cavalier::INFO = "vitesse de déplacement très élevée";
+const std::string Cavalier::INFO = "vitesse de deplacement très elevee";
 const std::string Cavalier::NAME ="Cavalier";
 
 const std::string Cavalier::ICONE_TEXTURE_FILE_NAME = "cavalier_icone.png";

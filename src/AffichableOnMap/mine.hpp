@@ -11,31 +11,39 @@ class Mine : public Batiment , public InterfaceCreeRessource {
 
         static const int NOMBE_PV_MAX_ORIGINE=100;
 
-        static const int BOIS_PAR_TOUR_ORIGINE = 0;
-        static const int NOURRITURE_PAR_TOUR_ORIGINE = 0;       
-        static const int OR_PAR_TOUR_ORIGINE = 20;
 
         static int nombreActionBonus;
         static int nombrePvBonus;
+ 
+        static int productionOr;
 
-        static int boisParTourBonus;
-        static int nourritureParTourBonus;       
-        static int orParTourBonus;
+        static bool extractionDePuitsDebloque;
+        static bool robotMineurDebloque;
 
         static const std::string TEXTURE_FILE_NAME;
         static const std::string INFO;
         static const std::string NAME;
 
-        
 
-        // /!\ ne peut pas etre achete
+
+
+
         static const int COUT_ACHAT_BOIS=100;
         static const int COUT_ACHAT_NOURRITURE=0;
         static const int COUT_ACHAT_OR=0;
 
 
 public :
+        // --- CONSTANTES ---
+
         static const std::string ICONE_TEXTURE_FILE_NAME;
+
+        static const int PRODUCTION_OR_ORIGINE = 20;
+        static const int PRODUCTION_OR_EXCTRACTION_DE_PUITS = 40; 
+        static const int PRODUCTION_OR_ROBOT_MINEUR = 80;
+
+
+        // --- METHODES ---
 
         Mine(Joueur_ptr joueurProprietaire);
 
@@ -52,6 +60,17 @@ public :
 
         // permet d'implementer InterfaceCreeRessource
         void ressourceParTour(int &bois, int &nourriture, int &_or);
+
+        // modifie la production de la mine
+        static void _commandeExtractionDePuits();
+
+        // modifie la production de la mine 
+        static void _commandeRobotMineur();
+
+        bool getExtractionDePuitsDebloque() {return extractionDePuitsDebloque;}
+
+        bool getRobotMineurDebloque() {return robotMineurDebloque;}
+
 
 
 

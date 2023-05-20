@@ -152,7 +152,7 @@ void Dashboard::updateInfoElement() {
                 boisString="";
             }
             if (nourriture) {
-                nourritureString=" nourriture/tour\n";
+                nourritureString=nourritureString+" nourriture/tour\n";
             } else {
                 nourritureString="";
             } 

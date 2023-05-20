@@ -12,6 +12,7 @@
 #include "hud.hpp"
 #include "info_commande.hpp"
 #include "AffichableOnMap/marque.hpp"
+#include "AffichableOnMap/mine.hpp"
 
 using namespace std;
 
@@ -85,27 +86,6 @@ void Jeu::commencer() {
 
 
     // [!] TESTE
-
-
-    Caserne *caserne = new Caserne(NouveauJoueurs[1]);
-    caserne->init(true);
-    caserne->moveToPosition(CasePosition(16,11));
-
-    Caserne *caserne2 = new Caserne(this->getJoueurActif());
-    caserne2->moveToPosition(CasePosition(11,11));
-    caserne2->init(true);
-
-
-
-    Fantassin *fantassin = new Fantassin(this->getJoueurActif());
-    fantassin->moveToPosition(CasePosition(14,10));
-    fantassin->init(true);
-
-
-
-    
-
-    
 
     
 

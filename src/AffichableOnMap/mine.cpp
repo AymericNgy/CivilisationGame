@@ -1,18 +1,26 @@
-#include "mine.hpp"
+#include "../AffichableOnMap/mine.hpp"
+#include "../utile.hpp"
+#include "../Commande/extraction_de_puits.hpp"
+#include "../Commande/robot_mineur.hpp"
+
 
 
 int Mine::nombreActionBonus=0;
 int Mine::nombrePvBonus=0;
 
-int Mine::boisParTourBonus=0;
-int Mine::nourritureParTourBonus=0;       
-int Mine::orParTourBonus=0;
+bool Mine::extractionDePuitsDebloque=false;
+bool Mine::robotMineurDebloque=false;
+  
+
+
+int Mine::productionOr=Mine::PRODUCTION_OR_ORIGINE;
 
 const std::string Mine::TEXTURE_FILE_NAME="gold_mine.png";
 const std::string Mine::INFO="genere de l'or a chaque tour";
 const std::string Mine::NAME="Mine";
 
 const std::string Mine::ICONE_TEXTURE_FILE_NAME="mine_or_icone.png";
+
 
 Mine::Mine(Joueur_ptr joueurProprietaire) : Batiment(TEXTURE_FILE_NAME,INFO,NAME,ICONE_TEXTURE_FILE_NAME,joueurProprietaire) {
 
@@ -21,6 +29,12 @@ Mine::Mine(Joueur_ptr joueurProprietaire) : Batiment(TEXTURE_FILE_NAME,INFO,NAME
 
 ListPtrCommandeSquare_ptr Mine::getActionPossible(){
     ListPtrCommandeSquare_ptr commandes = std::make_shared<std::list<CommandeSquare *>>();
+    if (extractionDePuitsDebloque==false) {
+        commandes->push_back(new ExtractionDePuits(this));
+    }
+    if (extractionDePuitsDebloque==true && robotMineurDebloque==false) {
+        commandes->push_back(new RobotMineur(this));
+    }
     return commandes;
 }
 
@@ -38,7 +52,17 @@ void Mine::nouveauTour() {
 
 
 void Mine::ressourceParTour(int &bois, int &nourriture, int &_or) {
-    bois = BOIS_PAR_TOUR_ORIGINE+boisParTourBonus;
-    nourriture = NOURRITURE_PAR_TOUR_ORIGINE+nourritureParTourBonus;
-    _or = OR_PAR_TOUR_ORIGINE+orParTourBonus;
+    bois = 0;
+    nourriture = 0;
+    _or = productionOr;
+}
+
+void Mine::_commandeExtractionDePuits() {
+    productionOr=PRODUCTION_OR_EXCTRACTION_DE_PUITS;
+    extractionDePuitsDebloque=true;
+}
+
+void Mine::_commandeRobotMineur() {
+    productionOr=PRODUCTION_OR_ROBOT_MINEUR;
+    robotMineurDebloque=true;
 }

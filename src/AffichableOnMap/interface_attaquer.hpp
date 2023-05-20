@@ -9,7 +9,14 @@ class ElementJoueur;
 // A implementer sur un ElementJoueur si il peut attaquer
 // Ajouter commande ChoixAttaquer a la liste renvoye par ElementJoueur::getActionpossible()
 class InterfaceAttaquer {
+    
+
+
     public :
+        // renvoie le coeffecient multiplicatif d'attaque de l'attaquant sur le recevant
+        // renvoie 1 s'il n'y en a pas
+        static float coeffAttaque(InterfaceAttaquer *attaquant, ElementJoueur *recevant);
+    
         // /!\ redefinir dans classe enfant avec bonus si voulu
         virtual float getNombreDegat() const =0;    
 

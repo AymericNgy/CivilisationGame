@@ -15,7 +15,7 @@ class Fantassin : public Unite , public InterfaceAttaquer{
         static const int NOMBRE_ACTION_MAX_ORIGINE=3;
         static const int NOMBE_PV_MAX_ORIGINE=30;
         static constexpr float NOMBRE_CASE_DEPLACEMENT_ORIGINE=3;
-        static const int NOMBRE_DEGAT_ORIGINE=10;
+        static const int NOMBRE_DEGAT_ORIGINE=9;
         static constexpr float DISTANCE_ATTAQUE_ORIGINE=2.5;
 
         static int nombreActionBonus;

@@ -5,6 +5,8 @@
 #include "../hud.hpp"
 #include "../Commande/attaquer.hpp"
 #include "../UserInterface/UserInterface.hpp"
+#include "fantassin.hpp"
+#include "cavalier.hpp"
 
 
 #include "../utile.hpp"
@@ -19,15 +21,29 @@ ElementJoueur *InterfaceAttaquer::thisElementJoueur() {
 }
 
 
+float InterfaceAttaquer::coeffAttaque(InterfaceAttaquer *attaquant, ElementJoueur *recevant) {
+
+    // attaquant = Fantassin et recevant = Cavalier => x2
+    if (dynamic_cast<Fantassin*>(attaquant) && dynamic_cast<Cavalier*>(recevant)) {
+        return 2;
+    }
+    return 1;
+}
+
+
 
 void InterfaceAttaquer::_commandeAttaquer() {
     CasePosition selectedCasePosition =  UserInterface::getInstance().getSelectedCase();
     Joueur_ptr joueurActif = Jeu::getInstance().getJoueurActif();
     ElementJoueur *ennemiPourAttaque = Jeu::getInstance().getPlateau().ennemiSurCase(joueurActif,selectedCasePosition);
     if (ennemiPourAttaque && thisElementJoueur()->decreaseNombreAction()) {
-        // [!] rajouter coeff multiplicatif
-        ennemiPourAttaque->decreasePv(this->getNombreDegat());
+
+        // attaque avec coefficient
+        float coeffAttaque = InterfaceAttaquer::coeffAttaque(this,ennemiPourAttaque);
+        ennemiPourAttaque->decreasePv(this->getNombreDegat()*coeffAttaque);
+
         Jeu::getInstance().getJoueurActif()->changeEtatSelectedCase(Joueur::NORMAL);
+
         UserInterface::getInstance().clearCircle();
 
         Jeu::getInstance().getHud().pushInfoElement(thisElementJoueur());

@@ -146,7 +146,21 @@ void Dashboard::updateInfoElement() {
             std::string nourritureString = std::to_string(nourriture);
             std::string orString = std::to_string(_or);
 
-            creationRessource->setString("\nCreation de ressources :\n"+boisString+" bois/tour\n"+nourritureString+" nourriture/tour\n"+orString+" or/tour"); 
+            if (bois) {
+                boisString=boisString+" bois/tour\n";
+            } else {
+                boisString="";
+            }
+            if (nourriture) {
+                nourritureString=" nourriture/tour\n";
+            } else {
+                nourritureString="";
+            } 
+            if (_or) {
+                orString =orString +" or/tour";
+            }
+
+            creationRessource->setString("\nCreation de ressources :\n"+boisString+nourritureString+orString); 
         }
 
         

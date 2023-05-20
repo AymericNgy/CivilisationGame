@@ -12,6 +12,8 @@
 #include "Commande/acheter_case.hpp"
 #include "joueur.hpp"
 #include "Commande/creer_element.hpp"
+#include "AffichableOnMap/mine.hpp"
+
 
 // ---Case---
 
@@ -81,6 +83,7 @@ void Case::_commandeConstuire()
 
     ListPtrCommandeSquare_ptr commandes = std::make_shared<std::list<CommandeSquare *>>();
     commandes->push_back(new CreerElement<Caserne>(getPosition(),Jeu::getInstance().getJoueurActif(),nullptr));
+    commandes->push_back(new CreerElement<Mine>(getPosition(),Jeu::getInstance().getJoueurActif(),nullptr));
     Jeu::getInstance().getHud().pushCommandes(commandes,"choississez un batiment a construire");
 }
 

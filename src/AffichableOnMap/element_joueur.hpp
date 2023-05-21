@@ -125,8 +125,7 @@ class ElementJoueur : public AffichableOnMap{
         bool decreasePv(int pv);
 
         // renvoie si l'attaque peut tuer this
-        // [!] A REMETRE
-        // bool peutMourir(int pv) {return (this->pv-pv) <=0;}
+        bool peutMourir(int pv) {return (this->pv-pv) <=0;}
 
 
 

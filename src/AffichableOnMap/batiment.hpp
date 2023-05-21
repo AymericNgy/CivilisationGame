@@ -17,8 +17,8 @@ class Batiment : public ElementJoueur{
     public :
         Batiment(std::string textureFileName, std::string info,std::string name,std::string icon_texture_file_name,Joueur_ptr joueurProprietaire);
 
-        // [!] A REMETRE
-        // std::string soundNameOfDestruction() override {return SOUND_NAME_DESTRUCTION;}
+
+        std::string soundNameOfDestruction() override {return SOUND_NAME_DESTRUCTION;}
 
 };
 

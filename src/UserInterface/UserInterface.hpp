@@ -151,6 +151,8 @@ class UserInterface{
 
 		CasePosition selectedCase;
 
+
+
 		// marques :
 
 		// marque qui est au dessus de la case pointe par la souris
@@ -165,7 +167,12 @@ class UserInterface{
 
 		bool isMousePressed; //permet de faire en sorte qu'il faut reclicker pour faire une deuxieme action
 
+		bool isCaseSelect; //permet de faire en sorte qu'il faut reclicker pour selectionner a nouveau une case
+
 		InfoCommande *infoCommande;
+
+		// permet a UserInterface::playSound() d'y charger une musique et de la jouer
+		sf::Sound sound;
 
 
 		// ---FONCTIONS---
@@ -269,6 +276,9 @@ class UserInterface{
 		Texture_ptr getTexture(std::string file_name) const;
 		Font_ptr getFont(std::string file_name) const;
 		SoundBuffer_ptr getSoundBuffer(std::string file_name) const;
+
+		// si file_name = "" ne joue acun son 
+		void playSound(std::string file_name);
 
 
 		void addDrawable(DrawableForUI* drawable);

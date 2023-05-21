@@ -47,6 +47,12 @@ void InterfaceAttaquer::_commandeAttaquer() {
 
         // attaque avec coefficient
         float coeffAttaque = InterfaceAttaquer::coeffAttaque(this,ennemiPourAttaque);
+
+        // [!] A REMETRE
+        // if (ennemiPourAttaque->peutMourir(this->getNombreDegat()*coeffAttaque)) {
+        //     UserInterface::getInstance().playSound(ennemiPourAttaque->soundNameOfDestruction());
+        // }
+
         ennemiPourAttaque->decreasePv(this->getNombreDegat()*coeffAttaque);
 
         Jeu::getInstance().getJoueurActif()->changeEtatSelectedCase(Joueur::NORMAL);

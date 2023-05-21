@@ -24,6 +24,8 @@ class Mine : public Batiment , public InterfaceCreeRessource {
         static const std::string INFO;
         static const std::string NAME;
 
+        static const std::string SOUND_NAME_OF_SELECTION;
+
 
 
 
@@ -71,7 +73,7 @@ public :
 
         bool getRobotMineurDebloque() {return robotMineurDebloque;}
 
-
+        std::string soundNameOfSelection() override;
 
 
 

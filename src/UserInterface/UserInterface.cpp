@@ -39,6 +39,7 @@ UserInterface::UserInterface()   {
     marqueSelect = nullptr;
 
     isMousePressed = false;
+    isCaseSelect = false;
 
     infoCommande = nullptr;
 
@@ -562,7 +563,15 @@ void UserInterface::deselectCase() {
 
 void UserInterface::checkSelectCase() {
     if (sf::Mouse::isButtonPressed(sf::Mouse::Left)) {
-        selectCase();
+
+        if (!isCaseSelect) {
+            isCaseSelect = true;
+            selectCase();
+        }
+        isCaseSelect = true;
+    }
+    else {
+        isCaseSelect=false;
     }
     if (sf::Mouse::isButtonPressed(sf::Mouse::Right)) {
         deselectCase();
@@ -623,4 +632,12 @@ void UserInterface::goTo(CasePosition position) {
 void UserInterface::nouveauTour() {
     goToJoueurActif();
     clearCircle();
+}
+
+
+void UserInterface::playSound(std::string file_name) {
+    if (file_name != "") {
+        sound.setBuffer(*getSoundBuffer(file_name));
+        sound.play();
+    }
 }

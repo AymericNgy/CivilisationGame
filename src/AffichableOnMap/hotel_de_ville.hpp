@@ -34,6 +34,8 @@ class HotelDeVille : public Batiment , public InterfaceCreeRessource , public In
         static const std::string INFO;
         static const std::string NAME;
 
+        static const std::string SOUND_NAME_OF_SELECTION;
+
 
         // /!\ ne peut pas etre achete
         static const int COUT_ACHAT_BOIS=0;
@@ -68,7 +70,7 @@ class HotelDeVille : public Batiment , public InterfaceCreeRessource , public In
         // permet d'implementer InterfaceAttaquer
         float getDistanceAttaque() const {return DISTANCE_ATTAQUE_ORIGINE+distanceAttaqueBonus;}
 
-
+        std::string soundNameOfSelection() override;
 
 };
 

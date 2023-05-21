@@ -122,3 +122,11 @@ bool ElementJoueur::decreasePv(int pv) {
     }
     return false;
 }
+
+std::string ElementJoueur::soundNameOfSelection() {
+    return "";
+}
+
+std::string ElementJoueur::soundNameOfDestruction() {
+    return "";
+}

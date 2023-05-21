@@ -8,7 +8,7 @@ const std::string HotelDeVille::NAME ="Hotel de ville";
 
 const std::string HotelDeVille::ICONE_TEXTURE_FILE_NAME = "hotel_de_ville_icone.png";
 
-
+const std::string HotelDeVille::SOUND_NAME_OF_SELECTION = "hotel_de_ville_selection.wav";
 
 
 int HotelDeVille::nombreActionBonus = 0;
@@ -51,4 +51,8 @@ void HotelDeVille::ressourceParTour(int &bois, int &nourriture, int &_or) {
     bois = BOIS_PAR_TOUR_ORIGINE+boisParTourBonus;
     nourriture = NOURRITURE_PAR_TOUR_ORIGINE+nourritureParTourBonus;
     _or = OR_PAR_TOUR_ORIGINE+orParTourBonus;
+}
+
+std::string HotelDeVille::soundNameOfSelection() {
+    return SOUND_NAME_OF_SELECTION;
 }

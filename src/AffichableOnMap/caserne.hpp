@@ -21,6 +21,8 @@ class Caserne : public Batiment{
         static const int COUT_ACHAT_BOIS=150;
         static const int COUT_ACHAT_NOURRITURE=0;
         static const int COUT_ACHAT_OR=0;
+
+        static const std::string SOUND_NAME_OF_SELECTION;
         
 
 
@@ -42,6 +44,10 @@ class Caserne : public Batiment{
 
 
         void ressourcePourAchat(int &bois, int &nourriture, int &_or);
+
+        std::string soundNameOfSelection() override;
+
+        
 
 
 

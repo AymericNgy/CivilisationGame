@@ -13,5 +13,6 @@ SelectSpecificElement::SelectSpecificElement(ElementJoueur *elementPourAction) :
 
 
 void SelectSpecificElement::execute() {
+    UserInterface::getInstance().playSound(elementPourAction->soundNameOfSelection());
     Jeu::getInstance().getHud().pushInfoElement(elementPourAction);
 };

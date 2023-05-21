@@ -22,6 +22,8 @@ const std::string Mine::NAME="Mine";
 const std::string Mine::ICONE_TEXTURE_FILE_NAME="mine_or_icone.png";
 
 
+const std::string Mine::SOUND_NAME_OF_SELECTION = "mine_selection.wav";
+
 Mine::Mine(Joueur_ptr joueurProprietaire) : Batiment(TEXTURE_FILE_NAME,INFO,NAME,ICONE_TEXTURE_FILE_NAME,joueurProprietaire) {
 
 
@@ -65,4 +67,8 @@ void Mine::_commandeExtractionDePuits() {
 void Mine::_commandeRobotMineur() {
     productionOr=PRODUCTION_OR_ROBOT_MINEUR;
     robotMineurDebloque=true;
+}
+
+std::string Mine::soundNameOfSelection() {
+    return SOUND_NAME_OF_SELECTION;
 }

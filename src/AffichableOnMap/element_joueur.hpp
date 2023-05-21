@@ -71,6 +71,15 @@ class ElementJoueur : public AffichableOnMap{
         // /!\ redefinir dans classe enfant avec bonus si voulu
         virtual int getPvMax() const =0;
 
+        // son que fait l'objet quand il est cree et selectionne
+        // ne joue aucun son si pas redefini
+        virtual std::string soundNameOfSelection();
+
+        // son que fait l'objet quand il est tue
+        // ne joue aucun son si pas redefini
+        virtual std::string soundNameOfDestruction();
+
+
         // appele par Construire<T>::execute() quand c'est un element (this) qui cree l'element
         // construction de l'instance est faite dans void Construire<T>::execute()
         // rajoute les autres traitements a faire avant ici :
@@ -111,8 +120,17 @@ class ElementJoueur : public AffichableOnMap{
 
         // retire pv au nombre de pv du joueur
         // si pv atteint 0 ou moins delete this
+        // /!\ ne plus utiliser l'objet si vous l'avez tuer
         // renvoie true si l'element est mort (0 pv)
         bool decreasePv(int pv);
+
+        // renvoie si l'attaque peut tuer this
+        // [!] A REMETRE
+        // bool peutMourir(int pv) {return (this->pv-pv) <=0;}
+
+
+
+
 
 
 

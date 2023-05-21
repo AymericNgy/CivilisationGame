@@ -14,7 +14,7 @@ const std::string Caserne::NAME ="Caserne";
 
 const std::string Caserne::ICONE_TEXTURE_FILE_NAME = "caserne_icone.png";
 
-
+const std::string Caserne::SOUND_NAME_OF_SELECTION = "caserne_selection.wav";
 
 
 int Caserne::nombreActionBonus = 0;
@@ -52,4 +52,8 @@ void Caserne::ressourcePourAchat(int &bois, int &nourriture, int &_or) {
 
 void Caserne::nouveauTour() {
     resetNombreAction();
+}
+
+std::string Caserne::soundNameOfSelection() {
+    return SOUND_NAME_OF_SELECTION;
 }

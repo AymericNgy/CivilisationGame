@@ -76,6 +76,8 @@ void Jeu::commencer() {
 
     lancerPartie(NouveauJoueurs);
 
+
+
     // finPartie(); //[?] voire pourquoi marche pas
 
 

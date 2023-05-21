@@ -15,7 +15,7 @@ class EnginDeSiege : public Unite , public InterfaceAttaquer{
         static const int NOMBRE_ACTION_MAX_ORIGINE=3;
         static const int NOMBE_PV_MAX_ORIGINE=15;
         static constexpr float NOMBRE_CASE_DEPLACEMENT_ORIGINE=1.5;
-        static const int NOMBRE_DEGAT_ORIGINE=40; //comment modif pour plus gros degats sur batiments
+        static const int NOMBRE_DEGAT_ORIGINE=40; 
         static constexpr float DISTANCE_ATTAQUE_ORIGINE=8;
 
         static int nombreActionBonus;

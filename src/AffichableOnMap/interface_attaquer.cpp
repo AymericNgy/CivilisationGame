@@ -7,6 +7,8 @@
 #include "../UserInterface/UserInterface.hpp"
 #include "fantassin.hpp"
 #include "cavalier.hpp"
+#include "engin_de_siege.hpp"
+#include "batiment.hpp"
 
 
 #include "../utile.hpp"
@@ -27,6 +29,11 @@ float InterfaceAttaquer::coeffAttaque(InterfaceAttaquer *attaquant, ElementJoueu
     if (dynamic_cast<Fantassin*>(attaquant) && dynamic_cast<Cavalier*>(recevant)) {
         return 2;
     }
+    // attaquant = Engin de siege et recevant = batiment => x10
+    if (dynamic_cast<EnginDeSiege*>(attaquant) && dynamic_cast<Batiment*>(recevant)) {
+        return 10;
+    }
+
     return 1;
 }
 

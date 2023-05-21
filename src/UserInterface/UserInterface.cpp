@@ -13,6 +13,8 @@
 
 using namespace std;
 
+const std::string UserInterface::MUSIC_FILE_NAME = "musique.wav";
+
 UserInterface::UserInterface()   {
     // /!!! \ 
     // il ne faut pas que cette fonction utilise de Jeu::getInstance() car Jeu utilise UserInterface::getInstance() dans son constructeur
@@ -43,7 +45,16 @@ UserInterface::UserInterface()   {
 
     infoCommande = nullptr;
 
+    // Charger la musique à partir d'un fichier
+    if (!music.openFromFile(MUSICS_PATH +"/"+ MUSIC_FILE_NAME)) {
+        std::cout<<"."+MUSICS_PATH +"/"+ MUSIC_FILE_NAME+"."<<std::endl;
+        Utile::erreur(__func__,"impossible de lire le fichier pour la musique");
+    }
 
+    music.setLoop(true);
+    music.setVolume(musicVolume);
+    music.play();
+    
         
 
 

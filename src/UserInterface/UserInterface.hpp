@@ -112,6 +112,8 @@ class UserInterface{
 
 		static const int COUCHE_INFO_COMMANDE = 35;
 
+		static const std::string MUSIC_FILE_NAME;
+
 
 		// --- VARIABLES ---
 
@@ -127,7 +129,8 @@ class UserInterface{
 		const double ajoutDeplacementCamera=500;  //en pxl par seconde
 
 
-
+		const std::string MUSICS_PATH = "Ressources/Musics";
+		const int musicVolume = 15;
 
 		const std::string TEXTURES_PATH = "Ressources/Textures";
 		std::map<std::string,Texture_ptr> textures;
@@ -170,6 +173,9 @@ class UserInterface{
 		bool isCaseSelect; //permet de faire en sorte qu'il faut reclicker pour selectionner a nouveau une case
 
 		InfoCommande *infoCommande;
+
+		// permet de jouer la musique du jeu
+		sf::Music music;
 
 		// permet a UserInterface::playSound() d'y charger une musique et de la jouer
 		sf::Sound sound;

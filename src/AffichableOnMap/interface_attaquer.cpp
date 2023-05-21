@@ -13,6 +13,9 @@
 
 #include "../utile.hpp"
 
+
+
+
 ElementJoueur *InterfaceAttaquer::thisElementJoueur() {
     ElementJoueur *ele = dynamic_cast<ElementJoueur*>(this);
     if (ele) {

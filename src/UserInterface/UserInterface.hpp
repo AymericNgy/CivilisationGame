@@ -230,6 +230,8 @@ class UserInterface{
 		void initUI();
 
 
+
+
 		
 
 		// ENDROIT OU SE FAIT LA DISTINCTION DU JOUEUR ACTIF :
@@ -316,6 +318,12 @@ class UserInterface{
 		// met la camera sur la caseDepart du joueur actif
 		// efface le cercle 
 		void nouveauTour();
+
+		// cree les marque lorsque que l'on est en partie
+		void initUIForPartie();
+
+		// detruit les marques lorsque la partie est finie
+		void finishUIForEndPartie();
 
 
 

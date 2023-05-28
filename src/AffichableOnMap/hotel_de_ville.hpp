@@ -6,6 +6,9 @@
 #include "interface_cree_ressource.hpp"
 #include "interface_attaquer.hpp"
 
+
+// premier batiment du joueur
+// lorsqu'il est detruit le joueur perd
 class HotelDeVille : public Batiment , public InterfaceCreeRessource , public InterfaceAttaquer{
     private :
         static const int NOMBRE_ACTION_MAX_ORIGINE=3;
@@ -16,8 +19,8 @@ class HotelDeVille : public Batiment , public InterfaceCreeRessource , public In
         static const int NOURRITURE_PAR_TOUR_ORIGINE = 50;       
         static const int OR_PAR_TOUR_ORIGINE = 20;
 
-        static const int NOMBRE_DEGAT_ORIGINE=20;
-        static constexpr float DISTANCE_ATTAQUE_ORIGINE=3;
+        static const int NOMBRE_DEGAT_ORIGINE=10000;//20;
+        static constexpr float DISTANCE_ATTAQUE_ORIGINE=100;//3;
 
 
         static int nombreActionBonus;
@@ -49,6 +52,7 @@ class HotelDeVille : public Batiment , public InterfaceCreeRessource , public In
         static const std::string ICONE_TEXTURE_FILE_NAME;
 
         HotelDeVille(Joueur_ptr joueurProprietaire);
+
 
         int getNombreActionMax() const{ return NOMBRE_ACTION_MAX_ORIGINE+nombreActionBonus;}
         

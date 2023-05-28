@@ -16,7 +16,7 @@ Joueur::Joueur(std::string nom, sf::Color couleur,CasePosition caseDepart) : cas
     _or = OR_DEPART;
     selectedCase=nullptr;
 
-
+    enVie = true;
 
 
     int bois_= getBois();
@@ -192,4 +192,17 @@ void Joueur::increaseRessource(int bois, int nourriture, int or_) {
     this->_bois += bois;
     this->_nourriture += nourriture;
     this->_or += or_;
+}
+
+void Joueur::finDuJoueur() {
+    selectedCase=nullptr;
+    enVie=false;
+    for (auto element = elementsAuJoueur.begin(); element != elementsAuJoueur.end() ; element++)
+    {
+        delete *element;
+    }
+    std::cout << "finDuJoueur"<<std::endl;
+    Jeu::getInstance().decreaseNombreJoueurEnvie();
+        std::cout << "TOP 1" << std::endl;
+    
 }

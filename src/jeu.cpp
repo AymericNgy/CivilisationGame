@@ -13,17 +13,21 @@
 #include "info_commande.hpp"
 #include "AffichableOnMap/marque.hpp"
 #include "AffichableOnMap/mine.hpp"
+#include "AffichableOnPanel/menu.hpp"
 
 using namespace std;
 
 
 Jeu::Jeu()  {
+    menu=new Menu();
     plateau = nullptr;
 
     hud = nullptr;
 
     indiceJoueurActif=-1;
 
+    etatPartie = MENU;
+    
 
 
 
@@ -64,17 +68,7 @@ void Jeu::commencer() {
 
     // TEMPORAIRE
 
-    std::vector<Joueur_ptr> NouveauJoueurs;
-    
-  
-    NouveauJoueurs.push_back(make_shared<Joueur>("Aymeric",sf::Color::Blue,CasePosition(10,10)));
-    NouveauJoueurs.push_back(make_shared<Joueur>("Titouan",sf::Color::Red,CasePosition(15,10)));
-    NouveauJoueurs.push_back(make_shared<Joueur>("Lou",sf::Color::Green,CasePosition(10,20)));
-    NouveauJoueurs.push_back(make_shared<Joueur>("Natt",sf::Color::Magenta,CasePosition(15,20)));
 
-
-
-    lancerPartie(NouveauJoueurs);
 
 
 
@@ -115,36 +109,50 @@ Joueur_ptr &Jeu::getJoueurActif() {
 
 
 void Jeu::changerJoueur() {
-    indiceJoueurActif+=1;
-    indiceJoueurActif%=NOMBRE_JOUEUR;
+    if (nombreJoueurEnVie==1) {
+        arretPartie();
+    } else {
+        do {
+            indiceJoueurActif+=1;
+            indiceJoueurActif%=NOMBRE_JOUEUR;
+        } while (!joueurs[indiceJoueurActif]->getEnVie());
 
-    updateNouveauTour();
+        updateNouveauTour();
+    }
+
+
+
+
+
 
 }
 
 
-void Jeu::lancerPartie(std::vector<Joueur_ptr> &joueurs) {
-    plateau = new Plateau(Jeu::TAILLE_PLATEAU_X,Jeu::TAILLE_PLATEAU_Y);
+// void Jeu::lancerPartie(std::vector<Joueur_ptr> &joueurs) {
+//     plateau = new Plateau(Jeu::TAILLE_PLATEAU_X,Jeu::TAILLE_PLATEAU_Y);
 
 
-    for (int i=0; i< NOMBRE_JOUEUR;i++) {
-        joueurs[i]->setForPartie();
-    }
+//     for (int i=0; i< NOMBRE_JOUEUR;i++) {
+//         joueurs[i]->setForPartie();
+//     }
 
-    plateau->drawMarqueProprietaire();
+//     plateau->drawMarqueProprietaire();
 
-    for (int i=0; i<joueurs.size();i++) {
+//     for (int i=0; i<joueurs.size();i++) {
                 
-        this->joueurs.push_back(joueurs[i]);
-    }
+//         this->joueurs.push_back(joueurs[i]);
+//     }
 
-    indiceJoueurActif = 0;
-    hud = new Hud();
+//     indiceJoueurActif = 0;
+//     nombreJoueurEnVie=NOMBRE_JOUEUR;
+//     hud = new Hud();
 
-    updateNouveauTour();
+//     updateNouveauTour();
+
+//     std::cout <<"nombreJoueurEnVie " <<nombreJoueurEnVie << std::endl;
 
 
-}
+// }
 
 
 void Jeu::finPartie() {
@@ -177,4 +185,60 @@ void Jeu::updateNouveauTour() {
     
     UserInterface &ui = UserInterface::getInstance();
     ui.nouveauTour();
+}
+
+
+void Jeu::lancerPartie() {
+    std::vector<Joueur_ptr> NouveauJoueurs;
+
+
+    nombreJoueurEnVie=NOMBRE_JOUEUR;
+    
+  
+    NouveauJoueurs.push_back(make_shared<Joueur>("Aymeric",sf::Color::Blue,CasePosition(10,10)));
+    NouveauJoueurs.push_back(make_shared<Joueur>("Titouan",sf::Color::Red,CasePosition(15,10)));
+    NouveauJoueurs.push_back(make_shared<Joueur>("Lou",sf::Color::Green,CasePosition(10,20)));
+    NouveauJoueurs.push_back(make_shared<Joueur>("Natt",sf::Color::Magenta,CasePosition(15,20)));
+
+
+
+    plateau = new Plateau(Jeu::TAILLE_PLATEAU_X,Jeu::TAILLE_PLATEAU_Y);
+
+
+    for (int i=0; i< NOMBRE_JOUEUR;i++) {
+        NouveauJoueurs[i]->setForPartie();
+    }
+
+    plateau->drawMarqueProprietaire();
+
+    for (int i=0; i<NouveauJoueurs.size();i++) {
+                
+        this->joueurs.push_back(NouveauJoueurs[i]);
+    }
+
+    indiceJoueurActif = 0;
+    hud = new Hud();
+
+    updateNouveauTour();
+
+    UserInterface::getInstance().initUIForPartie();
+
+    etatPartie=EN_PARTIE;
+
+
+    delete menu;
+    menu = nullptr;
+}
+
+void Jeu::arretPartie() {
+    etatPartie=MENU;
+    menu=new Menu();
+    UserInterface::getInstance().finishUIForEndPartie();
+    delete hud;
+    hud =nullptr;
+    delete plateau;
+    plateau= nullptr;
+    getJoueurActif()->finDuJoueur(); // [!] probleme vient d'ici
+    std::cout << "TOP A" << std::endl;
+    
 }

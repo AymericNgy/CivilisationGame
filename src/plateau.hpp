@@ -51,7 +51,6 @@ class Plateau {
         Plateau(int taille_x, int taille_y);
 
         // detruit les terrains sur le plateau
-        // [?] [!] fait un seg fault, pourquoi?
         ~Plateau();
 
         bool inPlateau(CasePosition cp) const;

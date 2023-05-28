@@ -310,8 +310,10 @@ void UserInterface::runMainLoop(){
     
              
     initUI();
+    Jeu::EtatPartie etatPartie;
     while (window->isOpen())
     {
+        etatPartie=Jeu::getInstance().getEtatPartie();
 
 
 
@@ -328,22 +330,26 @@ void UserInterface::runMainLoop(){
         updateWindow();
 
 
-        Hud& hud = Jeu::getInstance().getHud();
         sf::Vector2i localPosition = sf::Mouse::getPosition(*window);
         
-
         updateInfoCommande();
 
 
 
 
-        if (!checkClikedCommandes() && !hud.pixelIsOn(localPosition.x,localPosition.y)) { //active selection case que si aucune commande active et pas sur le dashboard
 
-            checkSelectCase();
+        if (etatPartie==Jeu::EN_PARTIE) {
+            updateOverMarque();
+            Hud& hud = Jeu::getInstance().getHud();
+            if (!checkClikedCommandes() && !hud.pixelIsOn(localPosition.x,localPosition.y)) { //active selection case que si aucune commande active et pas sur le dashboard
+
+                checkSelectCase();
+            }
+        }
+        else {
+            checkClikedCommandes();
         }
 
-
-        updateOverMarque();
 
 
 
@@ -398,6 +404,7 @@ bool UserInterface::checkCommandes() {
     {
         
         if ((*it)->pixelIsOn(localPosition.x,localPosition.y)) {
+            std::cout << (*it)->getInfo() <<std::endl;
             (*it)->execute();
             uneCommandeActive = true;
             break; // permet d'activer une seul commande => evite bug si la commande fait un pushCommande
@@ -529,8 +536,18 @@ void UserInterface::updateOverMarque() {
 
 
 void UserInterface::initUI() {
-    marqueOver = new Marque(Marque::OVER,Jeu::getInstance().getPlateau());
     infoCommande = new InfoCommande(COUCHE_INFO_COMMANDE);
+}
+
+
+void UserInterface::initUIForPartie() {
+    marqueOver = new Marque(Marque::OVER,Jeu::getInstance().getPlateau());
+}
+
+
+
+void UserInterface::finishUIForEndPartie() {
+    delete marqueOver;
 }
 
 

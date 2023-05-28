@@ -19,7 +19,6 @@ Ressource::Ressource() : AffichableOnPanel(Pixel(0,0),COUCHE,TEXTURE_NAME){
 
 
 Ressource::~Ressource() {
-    std::cout <<"Ressource::~Ressource()"<<std::endl;
     delete text_bois;
     delete text_nourriture;
     delete text_or;

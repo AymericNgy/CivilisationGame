@@ -29,6 +29,8 @@ class Hud {
 
     public:
         Hud();
+    
+        ~Hud();
 
         // ---FONCTIONS---
 

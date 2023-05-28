@@ -24,6 +24,7 @@ class Joueur : public std::enable_shared_from_this<Joueur>{
         const static int NOURRITURE_DEPART = 10000;
         const static int OR_DEPART = 10000;
 
+        bool enVie;
 
         std::string nom;
         
@@ -131,6 +132,13 @@ class Joueur : public std::enable_shared_from_this<Joueur>{
         // appele au debut du tour d'un joueur
         // active nouveau tour sur tous ses elements
         void nouveauTour();
+
+        // detruit tous les entités appartenant au joueur avec delete, ne pas les utiliser apres !
+        // met enVie=false
+        // a activer lorsque le joueur a perdu ou lorsque la partie est termine
+        void finDuJoueur();
+
+        bool getEnVie() {return enVie;}
 
 
 

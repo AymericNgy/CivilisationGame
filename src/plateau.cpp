@@ -45,6 +45,9 @@ void Plateau::destructGrille() {
     for (const auto& terrain : terrains) {
         delete terrain;
     }
+    for (const auto& case_ : cases) {
+        case_.second->setProprietaire(nullptr);
+    }
 }
 
 
@@ -59,8 +62,6 @@ Plateau::Plateau(int taille_x, int taille_y) {
 
 Plateau::~Plateau() {
     this->destructGrille();
-    std::cout<<"~Plateau() -> POURQUOI CRASH?, finalement pas la cause?"<< std::endl;
-
 }
 
 void Plateau::moveElement(CasePosition positionDepart, CasePosition positionArrive, AffichableOnMap *element) {

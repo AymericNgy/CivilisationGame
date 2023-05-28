@@ -5,6 +5,10 @@ Hud::Hud() {
     updateJoueur();
 }
 
+Hud::~Hud() {
+    clearAll();
+}
+
 // ---FONCTIONS---
 
 // RELATIF AU DASHBOARD

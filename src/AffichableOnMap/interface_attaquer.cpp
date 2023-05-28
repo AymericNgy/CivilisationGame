@@ -9,6 +9,7 @@
 #include "cavalier.hpp"
 #include "engin_de_siege.hpp"
 #include "batiment.hpp"
+#include "hotel_de_ville.hpp"
 
 
 #include "../utile.hpp"
@@ -51,18 +52,29 @@ void InterfaceAttaquer::_commandeAttaquer() {
         // attaque avec coefficient
         float coeffAttaque = InterfaceAttaquer::coeffAttaque(this,ennemiPourAttaque);
 
+        bool joueurQuiEstAttaquePerdu = false;
+        Joueur_ptr joueurQuiEstAttaque = ennemiPourAttaque->getJoueurProprietaire();
 
         if (ennemiPourAttaque->peutMourir(this->getNombreDegat()*coeffAttaque)) {
             UserInterface::getInstance().playSound(ennemiPourAttaque->soundNameOfDestruction());
+            if (dynamic_cast<HotelDeVille*>(ennemiPourAttaque)) { // si hotel de ville detruit le joueur a perdu
+                joueurQuiEstAttaquePerdu = true;
+            }
         }
 
         ennemiPourAttaque->decreasePv(this->getNombreDegat()*coeffAttaque);
+
 
         Jeu::getInstance().getJoueurActif()->changeEtatSelectedCase(Joueur::NORMAL);
 
         UserInterface::getInstance().clearCircle();
 
         Jeu::getInstance().getHud().pushInfoElement(thisElementJoueur());
+
+        if (joueurQuiEstAttaquePerdu) {
+            joueurQuiEstAttaque->finDuJoueur();
+        }
+
     }
 }
 

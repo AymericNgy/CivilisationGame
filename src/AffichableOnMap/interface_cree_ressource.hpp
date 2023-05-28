@@ -5,7 +5,7 @@
 class ElementJoueur;
 
 // A implementer sur un ElementJoueur si il cree des ressources a chaque tour
-// Ajouter ... [!]
+// Ajouter dans nouveauTour() InterfaceCreeRessource::creationRessource()
 class InterfaceCreeRessource {
 
     public :
@@ -19,7 +19,7 @@ class InterfaceCreeRessource {
         ElementJoueur *thisElementJoueur();
 
         // ajoute au joueur actif les ressources definies par InterfaceCreeRessource::ressourceParTour()
-        // [!] ... IMPLEMENTER
+        // dans nouveauTour()
         void creationRessource();
 
 

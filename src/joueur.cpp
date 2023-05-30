@@ -197,12 +197,22 @@ void Joueur::increaseRessource(int bois, int nourriture, int or_) {
 void Joueur::finDuJoueur() {
     selectedCase=nullptr;
     enVie=false;
+    std::vector<ElementJoueur*> listeElement;
     for (auto element = elementsAuJoueur.begin(); element != elementsAuJoueur.end() ; element++)
     {
-        delete *element;
+        listeElement.push_back(*element);
+        std::cout << "debut delete"<<std::endl;
+        std::cout << "fin delete"<<std::endl;
     }
+    std::cout << "Top" << std::endl;
+    for (size_t i = 0; i < listeElement.size(); i++)
+    {
+        delete listeElement[i];
+    }
+    
+
     std::cout << "finDuJoueur"<<std::endl;
     Jeu::getInstance().decreaseNombreJoueurEnvie();
-        std::cout << "TOP 1" << std::endl;
+    std::cout << "TOP 1" << std::endl;
     
 }

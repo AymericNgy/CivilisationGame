@@ -231,6 +231,9 @@ void Jeu::lancerPartie() {
 }
 
 void Jeu::arretPartie() {
+        std::cout << "TOP A" << std::endl;
+    getJoueurActif()->finDuJoueur(); // [!] probleme vient d'ici
+    std::cout << "TOP B" << std::endl;
     etatPartie=MENU;
     menu=new Menu();
     UserInterface::getInstance().finishUIForEndPartie();
@@ -238,7 +241,6 @@ void Jeu::arretPartie() {
     hud =nullptr;
     delete plateau;
     plateau= nullptr;
-    getJoueurActif()->finDuJoueur(); // [!] probleme vient d'ici
-    std::cout << "TOP A" << std::endl;
+
     
 }

@@ -20,7 +20,9 @@ AffichableOnMap::AffichableOnMap(Plateau &plateau, CasePosition casePosition, in
 
 
 AffichableOnMap::~AffichableOnMap() {
+    std::cout << "debut ~AffichableOnMap()" << std::endl;
     this->plateau->removeElement(this->getCasePosition(),this);
+    std::cout << "fin ~AffichableOnMap()"<< std::endl;
 }
 
 void AffichableOnMap::moveToPosition(CasePosition casePosition) {

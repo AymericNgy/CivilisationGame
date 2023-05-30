@@ -547,6 +547,7 @@ void UserInterface::initUIForPartie() {
 
 
 void UserInterface::finishUIForEndPartie() {
+    deselectCase();
     delete marqueOver;
 }
 

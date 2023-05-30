@@ -16,6 +16,7 @@ typedef std::shared_ptr<std::set<AffichableOnMap*>> SetPtrAffichableOnMap_ptr;
 // classe qui permet a une classe d'etre affichable sur la map
 // elle gere le deplacement sur la map du jeu de l'objet
 // on utilise des pointeurs pour pouvoire faire des delete quand on veut detruire l'objet
+// utilise des AffichableOnMap que pendant la duree d'existance du plateau
 class AffichableOnMap
 {
     protected:
@@ -27,7 +28,7 @@ class AffichableOnMap
         SpriteForUI sprite;
         //std::set<CommandeAffichableOnMap_ptr> actionsPossible; DEPRACATED => beaucoup plus logiqu de creer a chaque fois
 
- 
+
 
 
 

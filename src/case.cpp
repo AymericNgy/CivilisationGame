@@ -1,5 +1,6 @@
 #include "case.hpp"
 #include "AffichableOnMap/terrain.hpp"
+#include "AffichableOnMap/camp_de_bucheron.hpp"
 #include "plateau.hpp"
 #include <iostream>
 #include "Commande/commande_square.hpp"
@@ -13,6 +14,8 @@
 #include "joueur.hpp"
 #include "Commande/creer_element.hpp"
 #include "AffichableOnMap/mine.hpp"
+#include "AffichableOnMap/moulin.hpp"
+#include "AffichableOnMap/chateau.hpp"
 
 
 // ---Case---
@@ -84,6 +87,9 @@ void Case::_commandeConstuire()
     ListPtrCommandeSquare_ptr commandes = std::make_shared<std::list<CommandeSquare *>>();
     commandes->push_back(new CreerElement<Caserne>(getPosition(),Jeu::getInstance().getJoueurActif(),nullptr));
     commandes->push_back(new CreerElement<Mine>(getPosition(),Jeu::getInstance().getJoueurActif(),nullptr));
+    commandes->push_back(new CreerElement<Chateau>(getPosition(),Jeu::getInstance().getJoueurActif(),nullptr));
+    commandes->push_back(new CreerElement<Camp_de_bucheron>(getPosition(),Jeu::getInstance().getJoueurActif(),nullptr));
+     commandes->push_back(new CreerElement<Moulin>(getPosition(),Jeu::getInstance().getJoueurActif(),nullptr));
     Jeu::getInstance().getHud().pushCommandes(commandes,"choississez un batiment a construire");
 }
 

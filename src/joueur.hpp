@@ -28,10 +28,7 @@ class Joueur : public std::enable_shared_from_this<Joueur>{
     private :
         // ---ATTRIBUTS---
 
-        // ressources de depart
-        const static int BOIS_DEPART = 10000;
-        const static int NOURRITURE_DEPART = 10000;
-        const static int OR_DEPART = 10000;
+
 
 
         bool enVie;
@@ -89,6 +86,13 @@ class Joueur : public std::enable_shared_from_this<Joueur>{
         Joueur(std::string nom, sf::Color couleur, CasePosition caseDepart);
         Joueur(const Joueur &autre)=delete;
         Joueur &operator=(const Joueur &autre)=delete;
+
+        // --- CONSTANTES ---
+
+        // ressources de depart
+        const static int BOIS_DEPART = 10000;
+        const static int NOURRITURE_DEPART = 10000;
+        const static int OR_DEPART = 10000;
 
         // ---METHODES---
 

@@ -169,10 +169,10 @@ void Jeu::lancerPartie() {
     nombreJoueurEnVie=NOMBRE_JOUEUR;
     
   
-    NouveauJoueurs.push_back(make_shared<Joueur>("Aymeric",sf::Color::Blue,CasePosition(10,10)));
-    NouveauJoueurs.push_back(make_shared<Joueur>("Titouan",sf::Color::Red,CasePosition(15,10)));
-    NouveauJoueurs.push_back(make_shared<Joueur>("Lou",sf::Color::Green,CasePosition(10,20)));
-    NouveauJoueurs.push_back(make_shared<Joueur>("Natt",sf::Color::Magenta,CasePosition(15,20)));
+    NouveauJoueurs.push_back(make_shared<Joueur>("Joueur 1",sf::Color::Blue,CasePosition(10,10)));
+    NouveauJoueurs.push_back(make_shared<Joueur>("Joueur 2",sf::Color::Red,CasePosition(15,10)));
+    NouveauJoueurs.push_back(make_shared<Joueur>("Joueur 3",sf::Color::Green,CasePosition(10,20)));
+    NouveauJoueurs.push_back(make_shared<Joueur>("Joueur 4",sf::Color::Magenta,CasePosition(15,20)));
 
 
 

@@ -26,7 +26,7 @@ digraph "Jeu"
   Node10 [label="AffichableOnMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_affichable_on_map.html",tooltip=" "];
   Node5 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sprite" ,fontname="Helvetica"];
   Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" plateau" ,fontname="Helvetica"];
-  Node11 [label="Plateau",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_plateau.html",tooltip=" "];
+  Node11 [label="Plateau",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_plateau.html",tooltip="permet d'avoir des INFOS sur les elements presents sur le plateau /!\\ Deplacement sur plateau gere pa..."];
   Node12 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" banner" ,fontname="Helvetica"];
   Node12 [label="Banner",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_banner.html",tooltip=" "];
   Node4 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

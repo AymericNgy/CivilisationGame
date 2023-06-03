@@ -34,7 +34,7 @@ class Jeu{
 			enum EtatPartie {MENU,EN_PARTIE};
 	protected :
 	
-		
+		// ---ATTRIBUTS---
 
 
 		// POUR LA PARTIE :
@@ -70,18 +70,26 @@ class Jeu{
 		// hud de jeu
 		Hud *hud;
 
-
+		// ---METHODES---
 		
-		// decharge tous les elements d'une partie (plateau, hud, joueurs)
+		/** 
+		 * \brief decharge tous les elements d'une partie (plateau, hud, joueurs)
+		 */
 		void finPartie();
 
-
+		/**
+		 * \brief constructeur de Jeu
+		 * */
         Jeu();
 
-		static void setInstance(Jeu* instance) {m_instance = instance;} //permet de setInstance avant l'assignation des attributs dans le constructeur (qui utilisent getInstance())
 
-		// met a jour Hud et joueur actif pour un nouveau tour
+
+
+		/**
+		 * \brief met a jour Hud et joueur actif pour un nouveau tour
+		*/
 		void updateNouveauTour();
+
 
 
 
@@ -90,6 +98,7 @@ class Jeu{
 		void operator=(const Jeu &) = delete;
 		Jeu(Jeu &other) = delete;
 
+
 		Plateau& getPlateau();
 
 		Hud& getHud();
@@ -97,17 +106,20 @@ class Jeu{
 		
 
 		/**
-		 * \brief permet de lancer la boucle de l'interface graphique
+		 * \brief lance la boucle de l'interface graphique,
+		 * permet d'utiliser le jeu
 		*/
         void commencer();
 
 		/**
-		 * 
+		 * \brief Permet d'acceder au joueur actif
 		*/
 		Joueur_ptr &getJoueurActif();
 
-		// passe au joueur suivant
-		// si il reste seulement un joueur arrete la partie
+		/**
+		 * \brief passe au joueur suivant,
+		 * si il reste seulement un joueur arrete la partie
+		*/
 		void changerJoueur();
 
 		/**
@@ -117,11 +129,22 @@ class Jeu{
 		*/
 		EtatPartie getEtatPartie() {return etatPartie;}
 
+		/**
+		 * \brief Permet de lancer une partie.
+		 * Lance une partie avec 4 joueurs
+		 * Cree un plateau, un hud
+		 * */		
 		void lancerPartie();
 
+		/**
+		 * \brief arrete la partie
+		 * supprime les joueurs, le plateau, le hud
+		*/
 		void arretPartie();
 
 		void decreaseNombreJoueurEnvie() {nombreJoueurEnVie--;}
+
+
 
 
 

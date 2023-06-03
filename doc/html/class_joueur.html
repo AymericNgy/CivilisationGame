@@ -93,6 +93,9 @@ $(document).ready(function(){initNavTree('class_joueur.html',''); initResizable(
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="class_joueur.html" title="Joueur de la partie.">Joueur</a> de la partie.  
+ <a href="class_joueur.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="joueur_8hpp_source.html">joueur.hpp</a>&gt;</code></p>
 
 <p>Inherits std::enable_shared_from_this&lt; Joueur &gt;.</p>
@@ -108,6 +111,7 @@ Public Types</h2></td></tr>
 , <a class="el" href="class_joueur.html#a703e88258abe148fd7658db95f563139a347695c5d23f96411f74ccbd152f7478">DEPLACER_UNITE</a>
 , <a class="el" href="class_joueur.html#a703e88258abe148fd7658db95f563139a29fde4eeaa0661dee1cdf6b79087b3ad">ATTAQUER</a>
  }</td></tr>
+<tr class="memdesc:a703e88258abe148fd7658db95f563139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Etat dans lequel est le joueur lorsqu'il vaut utilser la case selectionnee.  <a href="class_joueur.html#a703e88258abe148fd7658db95f563139">More...</a><br /></td></tr>
 <tr class="separator:a703e88258abe148fd7658db95f563139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -121,53 +125,79 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acb0d9bca2f95df44e89f539e0d004209"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#acb0d9bca2f95df44e89f539e0d004209">setForPartie</a> ()</td></tr>
 <tr class="separator:acb0d9bca2f95df44e89f539e0d004209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03fe4f48d6d490371657e0a674368eea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a03fe4f48d6d490371657e0a674368eea">_addElement</a> (<a class="el" href="class_element_joueur.html">ElementJoueur</a> *element)</td></tr>
+<tr class="memdesc:a03fe4f48d6d490371657e0a674368eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">ajoute un element au joueur, /!\ appele UNIQUEMENT pour le constructeur de <a class="el" href="class_element_joueur.html">ElementJoueur</a>  <a href="class_joueur.html#a03fe4f48d6d490371657e0a674368eea">More...</a><br /></td></tr>
 <tr class="separator:a03fe4f48d6d490371657e0a674368eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f87681cdd386f9604a04f9f23f8b0d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a2f87681cdd386f9604a04f9f23f8b0d7">_removeElement</a> (<a class="el" href="class_element_joueur.html">ElementJoueur</a> *element)</td></tr>
+<tr class="memdesc:a2f87681cdd386f9604a04f9f23f8b0d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">retire un element au joueur, /!\ appele UNIQUEMENT par le destructeur <a class="el" href="class_element_joueur.html#a4690befb766b2114b3f197bb1dab4b92">ElementJoueur::~ElementJoueur()</a>  <a href="class_joueur.html#a2f87681cdd386f9604a04f9f23f8b0d7">More...</a><br /></td></tr>
 <tr class="separator:a2f87681cdd386f9604a04f9f23f8b0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9da3b6b384cdca09586e62ad832f80c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a9da3b6b384cdca09586e62ad832f80c1">whenSelectCase</a> (<a class="el" href="case_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a> &amp;case_)</td></tr>
+<tr class="memdesc:a9da3b6b384cdca09586e62ad832f80c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">active ce que fait le joueur quand il selectionne une case  <a href="class_joueur.html#a9da3b6b384cdca09586e62ad832f80c1">More...</a><br /></td></tr>
 <tr class="separator:a9da3b6b384cdca09586e62ad832f80c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a358970ff84355419100187187a987fc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a358970ff84355419100187187a987fc1">loadSelectedCase</a> ()</td></tr>
+<tr class="memdesc:a358970ff84355419100187187a987fc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">charge les commandes pour la case selectionne  <a href="class_joueur.html#a358970ff84355419100187187a987fc1">More...</a><br /></td></tr>
 <tr class="separator:a358970ff84355419100187187a987fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d72976914456bc32268c42010eb009c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a8d72976914456bc32268c42010eb009c">whenDeselectCase</a> ()</td></tr>
+<tr class="memdesc:a8d72976914456bc32268c42010eb009c"><td class="mdescLeft">&#160;</td><td class="mdescRight">met le joueur en mode normal (etatSelectCase=NORMAL) et netoie le dashboard  <a href="class_joueur.html#a8d72976914456bc32268c42010eb009c">More...</a><br /></td></tr>
 <tr class="separator:a8d72976914456bc32268c42010eb009c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75a291279f90ef6c5646cf0ff4baa159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a75a291279f90ef6c5646cf0ff4baa159">changeEtatSelectedCase</a> (<a class="el" href="class_joueur.html#a703e88258abe148fd7658db95f563139">EtatSelectedCase</a> etat)</td></tr>
+<tr class="memdesc:a75a291279f90ef6c5646cf0ff4baa159"><td class="mdescLeft">&#160;</td><td class="mdescRight">change l'etat d'utilisation de la case selectionnee  <a href="class_joueur.html#a75a291279f90ef6c5646cf0ff4baa159">More...</a><br /></td></tr>
 <tr class="separator:a75a291279f90ef6c5646cf0ff4baa159"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9ab886f087a4657b034d44eb6161605"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#ae9ab886f087a4657b034d44eb6161605">getBois</a> () const</td></tr>
+<tr class="memdesc:ae9ab886f087a4657b034d44eb6161605"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie le nombre de bois du joueur  <a href="class_joueur.html#ae9ab886f087a4657b034d44eb6161605">More...</a><br /></td></tr>
 <tr class="separator:ae9ab886f087a4657b034d44eb6161605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b0f907834767dff7bd4f40faae99120"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a3b0f907834767dff7bd4f40faae99120">getNourriture</a> () const</td></tr>
+<tr class="memdesc:a3b0f907834767dff7bd4f40faae99120"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie le nombre de nourriture du joueur  <a href="class_joueur.html#a3b0f907834767dff7bd4f40faae99120">More...</a><br /></td></tr>
 <tr class="separator:a3b0f907834767dff7bd4f40faae99120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32af801c91a01a3c1308a3fe2979eb09"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a32af801c91a01a3c1308a3fe2979eb09">getOr</a> () const</td></tr>
+<tr class="memdesc:a32af801c91a01a3c1308a3fe2979eb09"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie le nombre d'or du joueur  <a href="class_joueur.html#a32af801c91a01a3c1308a3fe2979eb09">More...</a><br /></td></tr>
 <tr class="separator:a32af801c91a01a3c1308a3fe2979eb09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46f8de64ee6cb65e73bfbddce72c0444"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a46f8de64ee6cb65e73bfbddce72c0444">peutDecreaseBois</a> (int bois)</td></tr>
+<tr class="memdesc:a46f8de64ee6cb65e73bfbddce72c0444"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie si possible d'enlever une quantite de bois  <a href="class_joueur.html#a46f8de64ee6cb65e73bfbddce72c0444">More...</a><br /></td></tr>
 <tr class="separator:a46f8de64ee6cb65e73bfbddce72c0444"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad53957ac0815c39da98a479485ac611c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#ad53957ac0815c39da98a479485ac611c">peutDecreaseNourriture</a> (int nourriture)</td></tr>
+<tr class="memdesc:ad53957ac0815c39da98a479485ac611c"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie si possible d'enlever une quantite de nourriture  <a href="class_joueur.html#ad53957ac0815c39da98a479485ac611c">More...</a><br /></td></tr>
 <tr class="separator:ad53957ac0815c39da98a479485ac611c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5a7568b7bc8022ea81b41681fed064f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#ae5a7568b7bc8022ea81b41681fed064f">peutDecreaseOr</a> (int <a class="el" href="class_joueur.html#a219e5a2f505538119ec95eea8a3f47d8">_or</a>)</td></tr>
+<tr class="memdesc:ae5a7568b7bc8022ea81b41681fed064f"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie si possible d'enlever une quantite d'or  <a href="class_joueur.html#ae5a7568b7bc8022ea81b41681fed064f">More...</a><br /></td></tr>
 <tr class="separator:ae5a7568b7bc8022ea81b41681fed064f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23d6e93c1096ca2b7c43a85a9bf9353a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a23d6e93c1096ca2b7c43a85a9bf9353a">decreaseBois</a> (int bois)</td></tr>
+<tr class="memdesc:a23d6e93c1096ca2b7c43a85a9bf9353a"><td class="mdescLeft">&#160;</td><td class="mdescRight">enleve bois si possible (&gt;0), renvoie si possible, met a jour les infos du HUD  <a href="class_joueur.html#a23d6e93c1096ca2b7c43a85a9bf9353a">More...</a><br /></td></tr>
 <tr class="separator:a23d6e93c1096ca2b7c43a85a9bf9353a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a8d62caf8e6999b765783bec6424660"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a8a8d62caf8e6999b765783bec6424660">decreaseNourriture</a> (int nourriture)</td></tr>
+<tr class="memdesc:a8a8d62caf8e6999b765783bec6424660"><td class="mdescLeft">&#160;</td><td class="mdescRight">enleve nourriture si possible (&gt;0), renvoie si possible, met a jour les infos du HUD  <a href="class_joueur.html#a8a8d62caf8e6999b765783bec6424660">More...</a><br /></td></tr>
 <tr class="separator:a8a8d62caf8e6999b765783bec6424660"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5efebd16e6db0037c3ff394af02077ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a5efebd16e6db0037c3ff394af02077ef">decreaseOr</a> (int <a class="el" href="class_joueur.html#a219e5a2f505538119ec95eea8a3f47d8">_or</a>)</td></tr>
+<tr class="memdesc:a5efebd16e6db0037c3ff394af02077ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">enleve or si possible (&gt;0), renvoie si possible, met a jour les infos du HUD  <a href="class_joueur.html#a5efebd16e6db0037c3ff394af02077ef">More...</a><br /></td></tr>
 <tr class="separator:a5efebd16e6db0037c3ff394af02077ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec79e48738a1cb843c696ab7313c1185"><td class="memItemLeft" align="right" valign="top">sf::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#aec79e48738a1cb843c696ab7313c1185">getCouleur</a> ()</td></tr>
+<tr class="memdesc:aec79e48738a1cb843c696ab7313c1185"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie la couleur du joueur  <a href="class_joueur.html#aec79e48738a1cb843c696ab7313c1185">More...</a><br /></td></tr>
 <tr class="separator:aec79e48738a1cb843c696ab7313c1185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a104621c95cf152be6efec6235e377dd4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a104621c95cf152be6efec6235e377dd4">getName</a> ()</td></tr>
+<tr class="memdesc:a104621c95cf152be6efec6235e377dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie le nom du joueur  <a href="class_joueur.html#a104621c95cf152be6efec6235e377dd4">More...</a><br /></td></tr>
 <tr class="separator:a104621c95cf152be6efec6235e377dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad56de26561a42ccd09d4679f1cc5233"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_case_position.html">CasePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#aad56de26561a42ccd09d4679f1cc5233">getCaseDepart</a> ()</td></tr>
+<tr class="memdesc:aad56de26561a42ccd09d4679f1cc5233"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie la case de depart du joueur  <a href="class_joueur.html#aad56de26561a42ccd09d4679f1cc5233">More...</a><br /></td></tr>
 <tr class="separator:aad56de26561a42ccd09d4679f1cc5233"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8981ee999fccaac70013e497dc124d7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a8981ee999fccaac70013e497dc124d7a">increaseRessource</a> (int bois, int nourriture, int or_)</td></tr>
+<tr class="memdesc:a8981ee999fccaac70013e497dc124d7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">augmente les ressources du joueur  <a href="class_joueur.html#a8981ee999fccaac70013e497dc124d7a">More...</a><br /></td></tr>
 <tr class="separator:a8981ee999fccaac70013e497dc124d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7e39027555d32296bcb293d12133f5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#af7e39027555d32296bcb293d12133f5f">nouveauTour</a> ()</td></tr>
+<tr class="memdesc:af7e39027555d32296bcb293d12133f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">a appeler au debut du tour d'un joueur active nouveau tour sur tous ses elements  <a href="class_joueur.html#af7e39027555d32296bcb293d12133f5f">More...</a><br /></td></tr>
 <tr class="separator:af7e39027555d32296bcb293d12133f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aedad18f90dfdafc1e32116728c723649"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#aedad18f90dfdafc1e32116728c723649">finDuJoueur</a> ()</td></tr>
+<tr class="memdesc:aedad18f90dfdafc1e32116728c723649"><td class="mdescLeft">&#160;</td><td class="mdescRight">detruit tous les entités appartenant au joueur avec delete, ne pas les utiliser apres !<br  />
+met enVie=false <br  />
+a activer lorsque le joueur a perdu ou lorsque la partie est termine <br  />
+ <a href="class_joueur.html#aedad18f90dfdafc1e32116728c723649">More...</a><br /></td></tr>
 <tr class="separator:aedad18f90dfdafc1e32116728c723649"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1050a24de908d0be730953dfa215fcab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a1050a24de908d0be730953dfa215fcab">getEnVie</a> ()</td></tr>
+<tr class="memdesc:a1050a24de908d0be730953dfa215fcab"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie si le joueur est en vie  <a href="class_joueur.html#a1050a24de908d0be730953dfa215fcab">More...</a><br /></td></tr>
 <tr class="separator:a1050a24de908d0be730953dfa215fcab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a95a14b174792b61ae6a260d880353d69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dashboard_8hpp.html#ac939dadbb29efb27591385c5f3cacade">ListPtrCommandeSquare_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a95a14b174792b61ae6a260d880353d69">CommandesWhenSelectCase</a> (<a class="el" href="case_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a> &amp;case_)</td></tr>
+<tr class="memdesc:a95a14b174792b61ae6a260d880353d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie les commandes quand une case est selectionne, depend de EtatSelectedCase, cree les commandes avec new, devront etre supprimees dans <a class="el" href="class_dashboard.html#a072cd358a89cc49a7f3fde9a66de1e75">Dashboard::pushCommandeSquare()</a>, renvoie nullptr si il n'y a pas de commandes a faire.  <a href="class_joueur.html#a95a14b174792b61ae6a260d880353d69">More...</a><br /></td></tr>
 <tr class="separator:a95a14b174792b61ae6a260d880353d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -177,8 +207,10 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:abaee0b4f259181bf66dbab54bef971bb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#abaee0b4f259181bf66dbab54bef971bb">nom</a></td></tr>
 <tr class="separator:abaee0b4f259181bf66dbab54bef971bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca74b60a52b958ca736831adddc22243"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_joueur.html#a703e88258abe148fd7658db95f563139">EtatSelectedCase</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#aca74b60a52b958ca736831adddc22243">etatSelectCase</a></td></tr>
+<tr class="memdesc:aca74b60a52b958ca736831adddc22243"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet de definir a quoi sert la case selectionne  <a href="class_joueur.html#aca74b60a52b958ca736831adddc22243">More...</a><br /></td></tr>
 <tr class="separator:aca74b60a52b958ca736831adddc22243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68b515a966e481236c2c482e846cc41f"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="class_element_joueur.html">ElementJoueur</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a68b515a966e481236c2c482e846cc41f">elementsAuJoueur</a></td></tr>
+<tr class="memdesc:a68b515a966e481236c2c482e846cc41f"><td class="mdescLeft">&#160;</td><td class="mdescRight">liste des elements du joueur, s'ajoute automatiquement quand un element est cree se retire automatiquement quand un element est detruit  <a href="class_joueur.html#a68b515a966e481236c2c482e846cc41f">More...</a><br /></td></tr>
 <tr class="separator:a68b515a966e481236c2c482e846cc41f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bad7412e9e7b78f36ee5f569472b7c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_case_position.html">CasePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a8bad7412e9e7b78f36ee5f569472b7c6">caseDepart</a></td></tr>
 <tr class="separator:a8bad7412e9e7b78f36ee5f569472b7c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -202,7 +234,9 @@ Static Private Attributes</h2></td></tr>
 <tr class="memitem:a018739622819cb47fb6b141fd6065cd3"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a018739622819cb47fb6b141fd6065cd3">OR_DEPART</a> = 10000</td></tr>
 <tr class="separator:a018739622819cb47fb6b141fd6065cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_joueur.html" title="Joueur de la partie.">Joueur</a> de la partie. </p>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a703e88258abe148fd7658db95f563139"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a703e88258abe148fd7658db95f563139">&#9670;&nbsp;</a></span>EtatSelectedCase</h2>
 
@@ -214,6 +248,8 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Etat dans lequel est le joueur lorsqu'il vaut utilser la case selectionnee. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a703e88258abe148fd7658db95f563139a56a800c820062d89d796536a96e9e46c"></a>NORMAL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a703e88258abe148fd7658db95f563139a347695c5d23f96411f74ccbd152f7478"></a>DEPLACER_UNITE&#160;</td><td class="fielddoc"></td></tr>
@@ -300,6 +336,15 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>ajoute un element au joueur, /!\ appele UNIQUEMENT pour le constructeur de <a class="el" href="class_element_joueur.html">ElementJoueur</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>: element a ajouter</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_element_joueur.html#a691ab5b6ff3aa009f2ccbf50c782c23d">ElementJoueur::ElementJoueur</a> </dd></dl>
+
 </div>
 </div>
 <a id="a2f87681cdd386f9604a04f9f23f8b0d7"></a>
@@ -317,6 +362,15 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>retire un element au joueur, /!\ appele UNIQUEMENT par le destructeur <a class="el" href="class_element_joueur.html#a4690befb766b2114b3f197bb1dab4b92">ElementJoueur::~ElementJoueur()</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>: element a retirer</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_element_joueur.html#a4690befb766b2114b3f197bb1dab4b92">ElementJoueur::~ElementJoueur</a> </dd></dl>
 
 </div>
 </div>
@@ -344,6 +398,14 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>change l'etat d'utilisation de la case selectionnee </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">etat</td><td>: nouvel etat </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a95a14b174792b61ae6a260d880353d69"></a>
@@ -370,6 +432,14 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>renvoie les commandes quand une case est selectionne, depend de EtatSelectedCase, cree les commandes avec new, devront etre supprimees dans <a class="el" href="class_dashboard.html#a072cd358a89cc49a7f3fde9a66de1e75">Dashboard::pushCommandeSquare()</a>, renvoie nullptr si il n'y a pas de commandes a faire. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">case_</td><td>: case selectionnee </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a23d6e93c1096ca2b7c43a85a9bf9353a"></a>
@@ -387,6 +457,15 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>enleve bois si possible (&gt;0), renvoie si possible, met a jour les infos du HUD </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bois</td><td>: quantite de bois a enlever </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>si possible d'enlever la quantite de bois </dd></dl>
 
 </div>
 </div>
@@ -406,6 +485,15 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>enleve nourriture si possible (&gt;0), renvoie si possible, met a jour les infos du HUD </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nourriture</td><td>: quantite de nourriture a enlever </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>si possible d'enlever la quantite de nourriture </dd></dl>
+
 </div>
 </div>
 <a id="a5efebd16e6db0037c3ff394af02077ef"></a>
@@ -424,6 +512,15 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>enleve or si possible (&gt;0), renvoie si possible, met a jour les infos du HUD </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">or_</td><td>: quantite d'or a enlever </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>si possible d'enlever la quantite d'or </dd></dl>
+
 </div>
 </div>
 <a id="aedad18f90dfdafc1e32116728c723649"></a>
@@ -440,6 +537,11 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>detruit tous les entités appartenant au joueur avec delete, ne pas les utiliser apres !<br  />
+met enVie=false <br  />
+a activer lorsque le joueur a perdu ou lorsque la partie est termine <br  />
+</p>
 
 </div>
 </div>
@@ -466,6 +568,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>renvoie le nombre de bois du joueur </p>
+
 </div>
 </div>
 <a id="aad56de26561a42ccd09d4679f1cc5233"></a>
@@ -490,6 +594,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>renvoie la case de depart du joueur </p>
 
 </div>
 </div>
@@ -516,6 +622,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>renvoie la couleur du joueur </p>
+
 </div>
 </div>
 <a id="a1050a24de908d0be730953dfa215fcab"></a>
@@ -540,6 +648,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>renvoie si le joueur est en vie </p>
 
 </div>
 </div>
@@ -566,6 +676,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>renvoie le nom du joueur </p>
+
 </div>
 </div>
 <a id="a3b0f907834767dff7bd4f40faae99120"></a>
@@ -591,6 +703,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>renvoie le nombre de nourriture du joueur </p>
+
 </div>
 </div>
 <a id="a32af801c91a01a3c1308a3fe2979eb09"></a>
@@ -615,6 +729,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>renvoie le nombre d'or du joueur </p>
 
 </div>
 </div>
@@ -650,6 +766,16 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>augmente les ressources du joueur </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bois</td><td>: quantite de bois a ajouter </td></tr>
+    <tr><td class="paramname">nourriture</td><td>: quantite de nourriture a ajouter </td></tr>
+    <tr><td class="paramname">or_</td><td>: quantite d'or a ajouter </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a358970ff84355419100187187a987fc1"></a>
@@ -667,6 +793,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>charge les commandes pour la case selectionne </p>
+
 </div>
 </div>
 <a id="af7e39027555d32296bcb293d12133f5f"></a>
@@ -683,6 +811,8 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>a appeler au debut du tour d'un joueur active nouveau tour sur tous ses elements </p>
 
 </div>
 </div>
@@ -728,6 +858,14 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>renvoie si possible d'enlever une quantite de bois </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bois</td><td>: quantite de bois a enlever </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ad53957ac0815c39da98a479485ac611c"></a>
@@ -745,6 +883,14 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>renvoie si possible d'enlever une quantite de nourriture </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nourriture</td><td>: quantite de nourriture a enlever </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -764,6 +910,14 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>renvoie si possible d'enlever une quantite d'or </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">or_</td><td>: quantite d'or a enlever </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="acb0d9bca2f95df44e89f539e0d004209"></a>
@@ -780,6 +934,7 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>a faire au lancement de la partie, rend le joueur proprietaire de sa case de depart construit l'hotel de ville </p>
 
 </div>
 </div>
@@ -798,6 +953,8 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>met le joueur en mode normal (etatSelectCase=NORMAL) et netoie le dashboard </p>
+
 </div>
 </div>
 <a id="a9da3b6b384cdca09586e62ad832f80c1"></a>
@@ -815,6 +972,14 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>active ce que fait le joueur quand il selectionne une case </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">case_</td><td>: case selectionnee </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -971,6 +1136,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>liste des elements du joueur, s'ajoute automatiquement quand un element est cree se retire automatiquement quand un element est detruit </p>
+
 </div>
 </div>
 <a id="a15a7b4b16e8ebd9c5f503e4e9775c982"></a>
@@ -1014,6 +1181,8 @@ Static Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>permet de definir a quoi sert la case selectionne </p>
 
 </div>
 </div>

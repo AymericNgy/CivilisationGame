@@ -18,7 +18,6 @@ var class_jeu =
     [ "getPlateau", "class_jeu.html#ad9be152c173c88eaf6517d918d548b1f", null ],
     [ "lancerPartie", "class_jeu.html#a98de76a91961f5c12bb1df678484dafa", null ],
     [ "operator=", "class_jeu.html#ad10d26914571a1dae19ad7704d1f234f", null ],
-    [ "setInstance", "class_jeu.html#a7855d0adf3b7cf400a1cbd2254a5a4c6", null ],
     [ "updateNouveauTour", "class_jeu.html#ab0492ce962642c4a74c8f64d116853db", null ],
     [ "etatPartie", "class_jeu.html#a8150697b00f5ae129b6961c671754fbb", null ],
     [ "hud", "class_jeu.html#a77444de3e31b46852aabb9cc21077d30", null ],

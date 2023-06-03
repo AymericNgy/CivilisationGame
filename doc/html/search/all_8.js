@@ -9,10 +9,9 @@ var searchData=
   ['hotel_5fde_5fville_2ecpp_256',['hotel_de_ville.cpp',['../hotel__de__ville_8cpp.html',1,'']]],
   ['hotel_5fde_5fville_2ehpp_257',['hotel_de_ville.hpp',['../hotel__de__ville_8hpp.html',1,'']]],
   ['hoteldeville_258',['HotelDeVille',['../class_hotel_de_ville.html',1,'HotelDeVille'],['../class_hotel_de_ville.html#a471c27cea798fb9b4882ff736eb5864b',1,'HotelDeVille::HotelDeVille()']]],
-  ['hud_259',['Hud',['../class_hud.html',1,'']]],
+  ['hud_259',['Hud',['../class_hud.html',1,'Hud'],['../class_hud.html#ad367d9f8d5947cd6b150658f4a7011c4',1,'Hud::Hud()']]],
   ['hud_260',['hud',['../class_jeu.html#a77444de3e31b46852aabb9cc21077d30',1,'Jeu']]],
-  ['hud_261',['Hud',['../class_hud.html#ad367d9f8d5947cd6b150658f4a7011c4',1,'Hud']]],
-  ['hud_2ecpp_262',['hud.cpp',['../hud_8cpp.html',1,'']]],
-  ['hud_2ehpp_263',['hud.hpp',['../hud_8hpp.html',1,'']]],
-  ['hud_5fptr_264',['Hud_ptr',['../hud_8hpp.html#a507da431cb5b7aa5fd9477044ebeb303',1,'hud.hpp']]]
+  ['hud_2ecpp_261',['hud.cpp',['../hud_8cpp.html',1,'']]],
+  ['hud_2ehpp_262',['hud.hpp',['../hud_8hpp.html',1,'']]],
+  ['hud_5fptr_263',['Hud_ptr',['../hud_8hpp.html#a507da431cb5b7aa5fd9477044ebeb303',1,'hud.hpp']]]
 ];

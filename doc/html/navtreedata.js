@@ -54,8 +54,8 @@ var NAVTREEINDEX =
 "_sprite_for_u_i_8cpp.html",
 "class_cavalier.html#af0da1798137859267dd94ebc7b03e8be",
 "class_hotel_de_ville.html#a91d199528d86415a973e71cc6810df03",
-"class_moulin.html#a9a482164b840274a0b61a40918a618f8",
-"classunite__d__elite.html#af7b78f9269ed21115467ea8b888f59fd"
+"class_moulin.html#a9c047d6c31b0f61960cc070ffb987543",
+"classunite__d__elite.html#afe8b527b5b947233bb36aa6c9ce65be4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

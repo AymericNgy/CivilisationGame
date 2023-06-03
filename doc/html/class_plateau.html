@@ -92,6 +92,11 @@ $(document).ready(function(){initNavTree('class_plateau.html',''); initResizable
 </div><!--header-->
 <div class="contents">
 
+<p>permet d'avoir des INFOS sur les elements presents sur le plateau<br  />
+/!\ Deplacement sur plateau gere par les affichableOnMap : <br  />
+Ce sont eux et seulement eux qui doivent appeler les methodes de deplacement de plateau  
+ <a href="class_plateau.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="plateau_8hpp_source.html">plateau.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -99,66 +104,101 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a59028ea9b3e006b27728b744e66ee29d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a59028ea9b3e006b27728b744e66ee29d">Plateau</a> (int <a class="el" href="class_plateau.html#a5fbb24e7087d15293fdfd0ac4414425a">taille_x</a>, int <a class="el" href="class_plateau.html#a4a185803c5033f96a87bce308550300b">taille_y</a>)</td></tr>
 <tr class="separator:a59028ea9b3e006b27728b744e66ee29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e6ae72e4d7e9923f996c1247e6a6c8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a0e6ae72e4d7e9923f996c1247e6a6c8b">~Plateau</a> ()</td></tr>
+<tr class="memdesc:a0e6ae72e4d7e9923f996c1247e6a6c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">detruit les terrains sur le plateau  <a href="class_plateau.html#a0e6ae72e4d7e9923f996c1247e6a6c8b">More...</a><br /></td></tr>
 <tr class="separator:a0e6ae72e4d7e9923f996c1247e6a6c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8050a03a46df318df890be2712a5e1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#ae8050a03a46df318df890be2712a5e1d">inPlateau</a> (<a class="el" href="class_case_position.html">CasePosition</a> cp) const</td></tr>
+<tr class="memdesc:ae8050a03a46df318df890be2712a5e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie true si la case est dans le plateau  <a href="class_plateau.html#ae8050a03a46df318df890be2712a5e1d">More...</a><br /></td></tr>
 <tr class="separator:ae8050a03a46df318df890be2712a5e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a212cdbbefaaea8b71535af236cf5c0f3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a212cdbbefaaea8b71535af236cf5c0f3">nombreElementCase</a> (<a class="el" href="class_case_position.html">CasePosition</a> cp) const</td></tr>
+<tr class="memdesc:a212cdbbefaaea8b71535af236cf5c0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie le nombre d'element sur la case 'cp'  <a href="class_plateau.html#a212cdbbefaaea8b71535af236cf5c0f3">More...</a><br /></td></tr>
 <tr class="separator:a212cdbbefaaea8b71535af236cf5c0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4383f53bf7dbe529bc2865227a417796"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a4383f53bf7dbe529bc2865227a417796">moveElement</a> (<a class="el" href="class_case_position.html">CasePosition</a> positionDepart, <a class="el" href="class_case_position.html">CasePosition</a> positionArrive, <a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> *element)</td></tr>
+<tr class="memdesc:a4383f53bf7dbe529bc2865227a417796"><td class="mdescLeft">&#160;</td><td class="mdescRight">deplace l'element 'element' de la case 'positionDepart' a la case 'positionArrive' /!\ DOIT ETRE UTILISE UNIQUEMENT PAR <a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> /!\ <br  />
+  <a href="class_plateau.html#a4383f53bf7dbe529bc2865227a417796">More...</a><br /></td></tr>
 <tr class="separator:a4383f53bf7dbe529bc2865227a417796"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16f612b26cdc56cb0f142b96ada76f65"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a16f612b26cdc56cb0f142b96ada76f65">addElement</a> (<a class="el" href="class_case_position.html">CasePosition</a> position, <a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> *element)</td></tr>
+<tr class="memdesc:a16f612b26cdc56cb0f142b96ada76f65"><td class="mdescLeft">&#160;</td><td class="mdescRight">ajoute l'element 'element' a la case 'position' /!\ DOIT ETRE UTILISE UNIQUEMENT PAR <a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> /!\  <a href="class_plateau.html#a16f612b26cdc56cb0f142b96ada76f65">More...</a><br /></td></tr>
 <tr class="separator:a16f612b26cdc56cb0f142b96ada76f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6607130f41e980cc65926ed0c4fde3dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a6607130f41e980cc65926ed0c4fde3dc">removeElement</a> (<a class="el" href="class_case_position.html">CasePosition</a> position, <a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> *element)</td></tr>
+<tr class="memdesc:a6607130f41e980cc65926ed0c4fde3dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">retire l'element 'element' de la case 'position' /!\ DOIT ETRE UTILISE UNIQUEMENT PAR <a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> /!\  <a href="class_plateau.html#a6607130f41e980cc65926ed0c4fde3dc">More...</a><br /></td></tr>
 <tr class="separator:a6607130f41e980cc65926ed0c4fde3dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1342a679a6e011f20cc94ab84b772eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#ae1342a679a6e011f20cc94ab84b772eb">getTaille_x</a> () const</td></tr>
+<tr class="memdesc:ae1342a679a6e011f20cc94ab84b772eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie la taille du plateau celon x  <a href="class_plateau.html#ae1342a679a6e011f20cc94ab84b772eb">More...</a><br /></td></tr>
 <tr class="separator:ae1342a679a6e011f20cc94ab84b772eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc22b413a2750f8cc70364dc39e562db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#adc22b413a2750f8cc70364dc39e562db">getTaille_y</a> () const</td></tr>
+<tr class="memdesc:adc22b413a2750f8cc70364dc39e562db"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie la taille du plateau celon y  <a href="class_plateau.html#adc22b413a2750f8cc70364dc39e562db">More...</a><br /></td></tr>
 <tr class="separator:adc22b413a2750f8cc70364dc39e562db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea6fbbd885761e9d5228a16de49a0f2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="case_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#aea6fbbd885761e9d5228a16de49a0f2e">getCaseAt</a> (<a class="el" href="class_case_position.html">CasePosition</a> position)</td></tr>
+<tr class="memdesc:aea6fbbd885761e9d5228a16de49a0f2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie la case a la position 'position' <br  />
+message d'erreur si la case n'existe pas  <a href="class_plateau.html#aea6fbbd885761e9d5228a16de49a0f2e">More...</a><br /></td></tr>
 <tr class="separator:aea6fbbd885761e9d5228a16de49a0f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef25b081f1011f0b938601793be342b5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#aef25b081f1011f0b938601793be342b5">setCaseProprietaire</a> (<a class="el" href="class_case_position.html">CasePosition</a> casePosition, <a class="el" href="element__joueur_8hpp.html#a2c6fa586ee4d7f082785a0399bbb5daa">Joueur_ptr</a> proprietaire)</td></tr>
+<tr class="memdesc:aef25b081f1011f0b938601793be342b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie la distance entre la case 'position_1' et la case 'position_2' <br  />
+ <a href="class_plateau.html#aef25b081f1011f0b938601793be342b5">More...</a><br /></td></tr>
 <tr class="separator:aef25b081f1011f0b938601793be342b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa44a88d2c94ea8414278247f84c8f942"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#aa44a88d2c94ea8414278247f84c8f942">updateMarqueProprietaire</a> ()</td></tr>
+<tr class="memdesc:aa44a88d2c94ea8414278247f84c8f942"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche marque proprietiare (mise a jour) si plateau est dans mode afficher marques  <a href="class_plateau.html#aa44a88d2c94ea8414278247f84c8f942">More...</a><br /></td></tr>
 <tr class="separator:aa44a88d2c94ea8414278247f84c8f942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7800e598408556b52111f98ef417e54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#ad7800e598408556b52111f98ef417e54">drawMarqueProprietaire</a> ()</td></tr>
+<tr class="memdesc:ad7800e598408556b52111f98ef417e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche marque proprietiare (mise a jour)  <a href="class_plateau.html#ad7800e598408556b52111f98ef417e54">More...</a><br /></td></tr>
 <tr class="separator:ad7800e598408556b52111f98ef417e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d8ec6c527ac5cb04543df6050b996bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a2d8ec6c527ac5cb04543df6050b996bc">eraseMarqueProprietaire</a> ()</td></tr>
+<tr class="memdesc:a2d8ec6c527ac5cb04543df6050b996bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">efface marque proprietiare (mise a jour)  <a href="class_plateau.html#a2d8ec6c527ac5cb04543df6050b996bc">More...</a><br /></td></tr>
 <tr class="separator:a2d8ec6c527ac5cb04543df6050b996bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af51de8be28f39db2cd345ebaea740dc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#af51de8be28f39db2cd345ebaea740dc3">appartientDansAdjacence</a> (<a class="el" href="element__joueur_8hpp.html#a2c6fa586ee4d7f082785a0399bbb5daa">Joueur_ptr</a> joueur, <a class="el" href="class_case_position.html">CasePosition</a> case_)</td></tr>
+<tr class="memdesc:af51de8be28f39db2cd345ebaea740dc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie si le joueur a une case qui lui appartient dans les cases adjacentes au parametre case_ <br  />
+ <a href="class_plateau.html#af51de8be28f39db2cd345ebaea740dc3">More...</a><br /></td></tr>
 <tr class="separator:af51de8be28f39db2cd345ebaea740dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4956cb54e37ee5dff21bf50d5aaa491e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_element_joueur.html">ElementJoueur</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a4956cb54e37ee5dff21bf50d5aaa491e">ennemiSurCase</a> (<a class="el" href="element__joueur_8hpp.html#a2c6fa586ee4d7f082785a0399bbb5daa">Joueur_ptr</a> joueur, <a class="el" href="class_case_position.html">CasePosition</a> position)</td></tr>
+<tr class="memdesc:a4956cb54e37ee5dff21bf50d5aaa491e"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie l'ennemi sur la case a la position 'position' qui a le plus de vie <br  />
+renvoie nullptr s'il n'y a pas d'ennemi sur la case  <a href="class_plateau.html#a4956cb54e37ee5dff21bf50d5aaa491e">More...</a><br /></td></tr>
 <tr class="separator:a4956cb54e37ee5dff21bf50d5aaa491e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a7b21be43156430e4571e646e8a851e67"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a7b21be43156430e4571e646e8a851e67">distance</a> (<a class="el" href="class_case_position.html">CasePosition</a> position_1, <a class="el" href="class_case_position.html">CasePosition</a> position_2)</td></tr>
+<tr class="memdesc:a7b21be43156430e4571e646e8a851e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie la distance entre la case 'position_1' et la case 'position_2' <br  />
+renvoie +0.0001 si position_1=position_2  <a href="class_plateau.html#a7b21be43156430e4571e646e8a851e67">More...</a><br /></td></tr>
 <tr class="separator:a7b21be43156430e4571e646e8a851e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:aaf81b8aae00d212173668738de97dd31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#aaf81b8aae00d212173668738de97dd31">constructGrille</a> (int <a class="el" href="class_plateau.html#a5fbb24e7087d15293fdfd0ac4414425a">taille_x</a>, int <a class="el" href="class_plateau.html#a4a185803c5033f96a87bce308550300b">taille_y</a>)</td></tr>
+<tr class="memdesc:aaf81b8aae00d212173668738de97dd31"><td class="mdescLeft">&#160;</td><td class="mdescRight">cree les cases de la map <br  />
+cree les terrains dessus  <a href="class_plateau.html#aaf81b8aae00d212173668738de97dd31">More...</a><br /></td></tr>
 <tr class="separator:aaf81b8aae00d212173668738de97dd31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d94c6f37605067b51748567275be6d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a3d94c6f37605067b51748567275be6d0">destructGrille</a> ()</td></tr>
+<tr class="memdesc:a3d94c6f37605067b51748567275be6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">detruit les terrains sur le plateau  <a href="class_plateau.html#a3d94c6f37605067b51748567275be6d0">More...</a><br /></td></tr>
 <tr class="separator:a3d94c6f37605067b51748567275be6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8526c13ebab785160242dd738692fb22"><td class="memItemLeft" align="right" valign="top"><a class="el" href="case_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a8526c13ebab785160242dd738692fb22">getCaseAt</a> (<a class="el" href="class_case_position.html">CasePosition</a> cp) const</td></tr>
+<tr class="memdesc:a8526c13ebab785160242dd738692fb22"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie la case a la position 'cp' <br  />
+message d'erreur si la case n'existe pas  <a href="class_plateau.html#a8526c13ebab785160242dd738692fb22">More...</a><br /></td></tr>
 <tr class="separator:a8526c13ebab785160242dd738692fb22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a22f5b70a35adf5463e91a301870df21b"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="class_case_position.html">CasePosition</a>, <a class="el" href="case_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a22f5b70a35adf5463e91a301870df21b">cases</a></td></tr>
+<tr class="memdesc:a22f5b70a35adf5463e91a301870df21b"><td class="mdescLeft">&#160;</td><td class="mdescRight">ensemble des cases du plateau  <a href="class_plateau.html#a22f5b70a35adf5463e91a301870df21b">More...</a><br /></td></tr>
 <tr class="separator:a22f5b70a35adf5463e91a301870df21b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3d096129f5a797058e7e3a9c8a273a9"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="class_terrain.html">Terrain</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#af3d096129f5a797058e7e3a9c8a273a9">terrains</a></td></tr>
+<tr class="memdesc:af3d096129f5a797058e7e3a9c8a273a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ensemble des terrains du plateau  <a href="class_plateau.html#af3d096129f5a797058e7e3a9c8a273a9">More...</a><br /></td></tr>
 <tr class="separator:af3d096129f5a797058e7e3a9c8a273a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fbb24e7087d15293fdfd0ac4414425a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a5fbb24e7087d15293fdfd0ac4414425a">taille_x</a></td></tr>
 <tr class="separator:a5fbb24e7087d15293fdfd0ac4414425a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a185803c5033f96a87bce308550300b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a4a185803c5033f96a87bce308550300b">taille_y</a></td></tr>
 <tr class="separator:a4a185803c5033f96a87bce308550300b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34499f3aaaa8b6b4a625cc2fb96b8c9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a34499f3aaaa8b6b4a625cc2fb96b8c9f">afficherMarquesProprietaires</a></td></tr>
-<tr class="separator:a34499f3aaaa8b6b4a625cc2fb96b8c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9aab4706a8d5118325b8efe1ba38fa5b"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="class_marque.html">Marque</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a9aab4706a8d5118325b8efe1ba38fa5b">marquesProprietaire</a></td></tr>
+<tr class="memdesc:a9aab4706a8d5118325b8efe1ba38fa5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet d'afficher sur le plateau qui est proprietaire de chaque case avec des marques  <a href="class_plateau.html#a9aab4706a8d5118325b8efe1ba38fa5b">More...</a><br /></td></tr>
 <tr class="separator:a9aab4706a8d5118325b8efe1ba38fa5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34499f3aaaa8b6b4a625cc2fb96b8c9f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_plateau.html#a34499f3aaaa8b6b4a625cc2fb96b8c9f">afficherMarquesProprietaires</a></td></tr>
+<tr class="memdesc:a34499f3aaaa8b6b4a625cc2fb96b8c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">true si on affiche les marques de proprietaire  <a href="class_plateau.html#a34499f3aaaa8b6b4a625cc2fb96b8c9f">More...</a><br /></td></tr>
+<tr class="separator:a34499f3aaaa8b6b4a625cc2fb96b8c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>permet d'avoir des INFOS sur les elements presents sur le plateau<br  />
+/!\ Deplacement sur plateau gere par les affichableOnMap : <br  />
+Ce sont eux et seulement eux qui doivent appeler les methodes de deplacement de plateau </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a59028ea9b3e006b27728b744e66ee29d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a59028ea9b3e006b27728b744e66ee29d">&#9670;&nbsp;</a></span>Plateau()</h2>
 
@@ -202,6 +242,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>detruit les terrains sur le plateau </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -231,6 +273,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>ajoute l'element 'element' a la case 'position' /!\ DOIT ETRE UTILISE UNIQUEMENT PAR <a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> /!\ </p>
+
 </div>
 </div>
 <a id="af51de8be28f39db2cd345ebaea740dc3"></a>
@@ -258,6 +302,17 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>renvoie si le joueur a une case qui lui appartient dans les cases adjacentes au parametre case_ <br  />
+</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joueur</td><td>joueur dont on veut savoir si il a une case qui lui appartient dans les cases adjacentes au parametre case_ </td></tr>
+    <tr><td class="paramname">case_</td><td>case au centre </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true si le joueur a une case qui lui appartient dans les cases adjacentes au parametre case_, renvoie faux si la case appartient au joueur </dd></dl>
 
 </div>
 </div>
@@ -295,6 +350,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>cree les cases de la map <br  />
+cree les terrains dessus </p>
+
 </div>
 </div>
 <a id="a3d94c6f37605067b51748567275be6d0"></a>
@@ -319,6 +377,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>detruit les terrains sur le plateau </p>
 
 </div>
 </div>
@@ -356,6 +416,16 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>renvoie la distance entre la case 'position_1' et la case 'position_2' <br  />
+renvoie +0.0001 si position_1=position_2 </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position_1</td><td>position de la case 1 </td></tr>
+    <tr><td class="paramname">position_2</td><td>position de la case 2 </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ad7800e598408556b52111f98ef417e54"></a>
@@ -372,6 +442,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>affiche marque proprietiare (mise a jour) </p>
 
 </div>
 </div>
@@ -401,6 +473,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>renvoie l'ennemi sur la case a la position 'position' qui a le plus de vie <br  />
+renvoie nullptr s'il n'y a pas d'ennemi sur la case </p>
+
 </div>
 </div>
 <a id="a2d8ec6c527ac5cb04543df6050b996bc"></a>
@@ -417,6 +492,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>efface marque proprietiare (mise a jour) </p>
 
 </div>
 </div>
@@ -444,6 +521,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>renvoie la case a la position 'cp' <br  />
+message d'erreur si la case n'existe pas </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>position de la case </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="aea6fbbd885761e9d5228a16de49a0f2e"></a>
@@ -461,6 +547,15 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>renvoie la case a la position 'position' <br  />
+message d'erreur si la case n'existe pas </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>position de la case </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -487,6 +582,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>renvoie la taille du plateau celon x </p>
+
 </div>
 </div>
 <a id="adc22b413a2750f8cc70364dc39e562db"></a>
@@ -512,6 +609,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>renvoie la taille du plateau celon y </p>
+
 </div>
 </div>
 <a id="ae8050a03a46df318df890be2712a5e1d"></a>
@@ -529,6 +628,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>renvoie true si la case est dans le plateau </p>
 
 </div>
 </div>
@@ -564,6 +665,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>deplace l'element 'element' de la case 'positionDepart' a la case 'positionArrive' /!\ DOIT ETRE UTILISE UNIQUEMENT PAR <a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> /!\ <br  />
+ </p>
+
 </div>
 </div>
 <a id="a212cdbbefaaea8b71535af236cf5c0f3"></a>
@@ -581,6 +685,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>renvoie le nombre d'element sur la case 'cp' </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cp</td><td>position de la case </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -610,6 +722,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>retire l'element 'element' de la case 'position' /!\ DOIT ETRE UTILISE UNIQUEMENT PAR <a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> /!\ </p>
+
 </div>
 </div>
 <a id="aef25b081f1011f0b938601793be342b5"></a>
@@ -638,6 +752,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>renvoie la distance entre la case 'position_1' et la case 'position_2' <br  />
+</p>
+
 </div>
 </div>
 <a id="aa44a88d2c94ea8414278247f84c8f942"></a>
@@ -654,6 +771,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>affiche marque proprietiare (mise a jour) si plateau est dans mode afficher marques </p>
 
 </div>
 </div>
@@ -678,6 +797,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>true si on affiche les marques de proprietaire </p>
+
 </div>
 </div>
 <a id="a22f5b70a35adf5463e91a301870df21b"></a>
@@ -700,6 +821,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>ensemble des cases du plateau </p>
+
 </div>
 </div>
 <a id="a9aab4706a8d5118325b8efe1ba38fa5b"></a>
@@ -721,6 +844,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>permet d'afficher sur le plateau qui est proprietaire de chaque case avec des marques </p>
 
 </div>
 </div>
@@ -787,6 +912,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>ensemble des terrains du plateau </p>
 
 </div>
 </div>

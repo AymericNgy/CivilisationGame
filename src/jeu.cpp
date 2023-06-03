@@ -66,32 +66,6 @@ void Jeu::commencer() {
 
 
 
-    // TEMPORAIRE
-
-
-
-
-
-    // finPartie(); //[?] voire pourquoi marche pas
-
-
-    // FIN TEMPORAIRE
-
-
-
-
-
-    // [!] TESTE
-
-    
-
-
-    
-
-    // [!] FIN TESTE
-
-
-    
 
     userInterface.runMainLoop();
 }
@@ -211,6 +185,8 @@ void Jeu::lancerPartie() {
 
     plateau->drawMarqueProprietaire();
 
+
+
     for (int i=0; i<NouveauJoueurs.size();i++) {
                 
         this->joueurs.push_back(NouveauJoueurs[i]);
@@ -231,9 +207,7 @@ void Jeu::lancerPartie() {
 }
 
 void Jeu::arretPartie() {
-        std::cout << "TOP A" << std::endl;
-    getJoueurActif()->finDuJoueur(); // [!] probleme vient d'ici
-    std::cout << "TOP B" << std::endl;
+    getJoueurActif()->finDuJoueur(); 
     etatPartie=MENU;
     menu=new Menu();
     UserInterface::getInstance().finishUIForEndPartie();
@@ -241,6 +215,7 @@ void Jeu::arretPartie() {
     hud =nullptr;
     delete plateau;
     plateau= nullptr;
+    this->joueurs.clear();
 
     
 }

@@ -1,0 +1,23 @@
+digraph "Batiment"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Batiment",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="ElementJoueur",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_element_joueur.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="AffichableOnMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_affichable_on_map.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Camp_de_bucheron",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_camp__de__bucheron.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Caserne",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_caserne.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Chateau",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_chateau.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="HotelDeVille",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hotel_de_ville.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Mine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mine.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Moulin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_moulin.html",tooltip=" "];
+}

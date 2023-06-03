@@ -1,0 +1,54 @@
+digraph "AffichableOnPanel"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="AffichableOnPanel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Banner",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_banner.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Commande",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_commande.html",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="CommandeSquare",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_commande_square.html",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="AcheterCase",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_acheter_case.html",tooltip=" "];
+  Node4 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Attaquer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_attaquer.html",tooltip=" "];
+  Node4 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="ChoixAttaquer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_choix_attaquer.html",tooltip=" "];
+  Node4 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="ChoixConstuire",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_choix_constuire.html",tooltip=" "];
+  Node4 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="ChoixSeDeplacer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_choix_se_deplacer.html",tooltip=" "];
+  Node4 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="CreerElement\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_creer_element.html",tooltip=" "];
+  Node4 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="ExtractionDePuits",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_extraction_de_puits.html",tooltip=" "];
+  Node4 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="FauxTranchante",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_faux_tranchante.html",tooltip=" "];
+  Node4 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="HacheTranchante",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hache_tranchante.html",tooltip=" "];
+  Node4 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="RobotFaucheur",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_faucheur.html",tooltip=" "];
+  Node4 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="RobotMineur",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_mineur.html",tooltip=" "];
+  Node4 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="RobotTronconneuse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_robot_tronconneuse.html",tooltip=" "];
+  Node4 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="SeDeplacer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_se_deplacer.html",tooltip=" "];
+  Node4 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="SelectElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_select_element.html",tooltip=" "];
+  Node4 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="SelectSpecificElement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_select_specific_element.html",tooltip=" "];
+  Node3 -> Node20 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="LancerPartie",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_lancer_partie.html",tooltip=" "];
+  Node3 -> Node21 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="NextPlayerArrow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_next_player_arrow.html",tooltip=" "];
+  Node1 -> Node22 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node22 [label="Dashboard",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dashboard.html",tooltip=" "];
+  Node1 -> Node23 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node23 [label="Menu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_menu.html",tooltip=" "];
+  Node1 -> Node24 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node24 [label="Ressource",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ressource.html",tooltip=" "];
+}

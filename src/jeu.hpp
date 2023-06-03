@@ -17,43 +17,62 @@ class Dashboard;
 typedef std::shared_ptr<Joueur> Joueur_ptr;
 
 
-
-
-//singleton [!] il faudra le rendre thread safe si on utilise des thread
+/**
+ * \class Jeu
+ * \brief Permet de lancer une partie. \n
+ * Permet d'acceder au joueur actif, au plateau et au hud
+ * 
+ *
+ * Description détaillée de la classe Jeu.
+ */
 class Jeu{
 	public :
+			/**
+			 * \enum EtatPartie
+			 * \brief Permet de savoir si on est dans le menu ou en partie
+			*/
 			enum EtatPartie {MENU,EN_PARTIE};
 	protected :
+	
+		
 
 
 		// POUR LA PARTIE :
 
-
+		/**
+		 * \brief Permet de savoir si on est dans le menu ou en partie
+		*/
 		EtatPartie etatPartie;
 
-
+		// dimensions du plateau
 		const static int TAILLE_PLATEAU_X = 20;
 		const static int TAILLE_PLATEAU_Y = 40;
 
-		const static int NOMBRE_JOUEUR = 4; // pour les testes
+
+		const static int NOMBRE_JOUEUR = 4; 
 		int nombreJoueurEnVie;
 
+		// liste des joueurs
         std::vector<Joueur_ptr> joueurs;
         int indiceJoueurActif;
 
+		/**
+		 * \brief attribut static permettant d'acceder a l'instance de Jeu (singleton)
+		*/
 		static Jeu *m_instance;
 
+		// plateau de jeu
 		Plateau *plateau;
 
+		// menu de jeu
 		Menu *menu;
 
+		// hud de jeu
 		Hud *hud;
 
-		// lance la partie : creation plateau, dashboard
-		//void lancerPartie(std::vector<Joueur_ptr> &joueurs);
+
 		
-		// decharge tous les elements d'une partie (plateau, dashboard)
-		// [!] A TESTER, peut faire segfault?
+		// decharge tous les elements d'une partie (plateau, hud, joueurs)
 		void finPartie();
 
 
@@ -77,15 +96,25 @@ class Jeu{
 
 		
 
-
+		/**
+		 * \brief permet de lancer la boucle de l'interface graphique
+		*/
         void commencer();
 
+		/**
+		 * 
+		*/
 		Joueur_ptr &getJoueurActif();
 
 		// passe au joueur suivant
 		// si il reste seulement un joueur arrete la partie
 		void changerJoueur();
 
+		/**
+		 * \brief Permet de savoir si on est dans le menu ou en partie
+		 * 
+		 * \return EtatPartie
+		*/
 		EtatPartie getEtatPartie() {return etatPartie;}
 
 		void lancerPartie();

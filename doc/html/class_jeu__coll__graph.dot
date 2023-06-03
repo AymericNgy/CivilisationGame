@@ -1,0 +1,50 @@
+digraph "Jeu"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Jeu",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Permet de lancer une partie.  Permet d'acceder au joueur actif, au plateau et au hud."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" hud" ,fontname="Helvetica"];
+  Node2 [label="Hud",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hud.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" dashboard" ,fontname="Helvetica"];
+  Node3 [label="Dashboard",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_dashboard.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="AffichableOnPanel",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_affichable_on_panel.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sprite" ,fontname="Helvetica"];
+  Node5 [label="SpriteForUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_sprite_for_u_i.html",tooltip=" "];
+  Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="DrawableForUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_drawable_for_u_i.html",tooltip=" "];
+  Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" casePosition" ,fontname="Helvetica"];
+  Node7 [label="CasePosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_case_position.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" icon_element_info" ,fontname="Helvetica"];
+  Node8 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" creationRessource\ndistanceAttaque\ninfo_normal\nnom_element_info\nnombreDegat\nnombre_case_deplacement\ntour_element_info\nvie_element_info" ,fontname="Helvetica"];
+  Node8 [label="TextForUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_text_for_u_i.html",tooltip=" "];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" elementJoueurPourInfo" ,fontname="Helvetica"];
+  Node9 [label="ElementJoueur",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_element_joueur.html",tooltip=" "];
+  Node10 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="AffichableOnMap",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_affichable_on_map.html",tooltip=" "];
+  Node5 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" sprite" ,fontname="Helvetica"];
+  Node11 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" plateau" ,fontname="Helvetica"];
+  Node11 [label="Plateau",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_plateau.html",tooltip=" "];
+  Node12 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" banner" ,fontname="Helvetica"];
+  Node12 [label="Banner",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_banner.html",tooltip=" "];
+  Node4 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" nextPlayerArraow" ,fontname="Helvetica"];
+  Node13 [label="NextPlayerArrow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_next_player_arrow.html",tooltip=" "];
+  Node14 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Commande",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_commande.html",tooltip=" "];
+  Node4 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ressource" ,fontname="Helvetica"];
+  Node15 [label="Ressource",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_ressource.html",tooltip=" "];
+  Node4 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node15 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" text_bois\ntext_nourriture\ntext_or" ,fontname="Helvetica"];
+  Node1 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" m_instance" ,fontname="Helvetica"];
+  Node11 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" plateau" ,fontname="Helvetica"];
+  Node16 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" menu" ,fontname="Helvetica"];
+  Node16 [label="Menu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_menu.html",tooltip=" "];
+  Node4 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 -> Node16 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lancerPartieBouton" ,fontname="Helvetica"];
+  Node17 [label="LancerPartie",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_lancer_partie.html",tooltip=" "];
+  Node14 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

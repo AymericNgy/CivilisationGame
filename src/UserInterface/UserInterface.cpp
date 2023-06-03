@@ -42,6 +42,7 @@ UserInterface::UserInterface()   {
 
     isMousePressed = false;
     isCaseSelect = false;
+    
 
     infoCommande = nullptr;
 

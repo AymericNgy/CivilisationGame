@@ -3,7 +3,6 @@ var class_info_commande =
     [ "InfoCommande", "class_info_commande.html#a3e5d800befa9f029090025c1045c0500", null ],
     [ "clear", "class_info_commande.html#a9e7167121477b29f3db30f2269f64131", null ],
     [ "setInfo", "class_info_commande.html#af67cfd9f55b950d315498f18f9e979e0", null ],
-    [ "setPosition", "class_info_commande.html#a382264bdedb6df9a4fd786336d41cfa1", null ],
     [ "CHARACTER_SIZE", "class_info_commande.html#accf9b900c5554bef144ba117065cdd64", null ],
     [ "COLOR_RECTANGLE", "class_info_commande.html#a3257b04806fc46585ba6c348b0937dfd", null ],
     [ "COLOR_TEXT", "class_info_commande.html#a1306bb0b8fe60e577668ee868c4d99fd", null ],

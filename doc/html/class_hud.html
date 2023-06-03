@@ -91,6 +91,10 @@ $(document).ready(function(){initNavTree('class_hud.html',''); initResizable(); 
 </div><!--header-->
 <div class="contents">
 
+<p>permet d'afficher les infos sur le joueur actif <br  />
+/!\ a creer apres que les joueurs soient crees  
+ <a href="class_hud.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="hud_8hpp_source.html">hud.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Hud:</div>
@@ -105,49 +109,90 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2fbb662bbc70f646e081f9206a879b66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#a2fbb662bbc70f646e081f9206a879b66">~Hud</a> ()</td></tr>
 <tr class="separator:a2fbb662bbc70f646e081f9206a879b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7be9f13636405fc98a7d449caa75607"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#af7be9f13636405fc98a7d449caa75607">removeInfoElement</a> ()</td></tr>
+<tr class="memdesc:af7be9f13636405fc98a7d449caa75607"><td class="mdescLeft">&#160;</td><td class="mdescRight">enleve les infos d'un element sur le dashboard <br  />
+ <a href="class_hud.html#af7be9f13636405fc98a7d449caa75607">More...</a><br /></td></tr>
 <tr class="separator:af7be9f13636405fc98a7d449caa75607"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a828d74f5982b9ad40148281ef4ea4f4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#a828d74f5982b9ad40148281ef4ea4f4d">removeInfoNormal</a> ()</td></tr>
+<tr class="memdesc:a828d74f5982b9ad40148281ef4ea4f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">enleve les infos sur le dashboard <br  />
+ <a href="class_hud.html#a828d74f5982b9ad40148281ef4ea4f4d">More...</a><br /></td></tr>
 <tr class="separator:a828d74f5982b9ad40148281ef4ea4f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afef55534ec0365e7f4c178c5f3bc7b04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#afef55534ec0365e7f4c178c5f3bc7b04">pushCommandeSquare</a> (<a class="el" href="dashboard_8hpp.html#ac939dadbb29efb27591385c5f3cacade">ListPtrCommandeSquare_ptr</a> commandes)</td></tr>
+<tr class="memdesc:afef55534ec0365e7f4c178c5f3bc7b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">va placer au bonne endroit les commandes et detruire les anciennes <br  />
+ne supprime pas les infos sur le dashboard <br  />
+/!\ se charge de detruire les commandes envoyées ne pas reutiliser les commandes  <a href="class_hud.html#afef55534ec0365e7f4c178c5f3bc7b04">More...</a><br /></td></tr>
 <tr class="separator:afef55534ec0365e7f4c178c5f3bc7b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26e6bc17d38988c23f740e71832de4b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#a26e6bc17d38988c23f740e71832de4b7">pushInfoElement</a> (<a class="el" href="class_element_joueur.html">ElementJoueur</a> *ElementJoueurPourInfo)</td></tr>
+<tr class="memdesc:a26e6bc17d38988c23f740e71832de4b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">affiche les infos d'un element sur le dashboard <br  />
+ <a href="class_hud.html#a26e6bc17d38988c23f740e71832de4b7">More...</a><br /></td></tr>
 <tr class="separator:a26e6bc17d38988c23f740e71832de4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5437af55a098276947be7a60067135b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#a5437af55a098276947be7a60067135b0">pushCommandes</a> (<a class="el" href="dashboard_8hpp.html#ac939dadbb29efb27591385c5f3cacade">ListPtrCommandeSquare_ptr</a> commandes, std::string info)</td></tr>
+<tr class="memdesc:a5437af55a098276947be7a60067135b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">va placer au bonne endroit les commandes et detruire les anciennes <br  />
+change les infos sur le dashboard <br  />
+/!\ se charge de detruire les commandes envoyées ne pas reutiliser les commandes  <a href="class_hud.html#a5437af55a098276947be7a60067135b0">More...</a><br /></td></tr>
 <tr class="separator:a5437af55a098276947be7a60067135b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e8ad8d4685b9be9c1d7c756de9c0af0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#a3e8ad8d4685b9be9c1d7c756de9c0af0">cleanCommandeSquare</a> ()</td></tr>
+<tr class="memdesc:a3e8ad8d4685b9be9c1d7c756de9c0af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">detruit les comandeSquare contenu dans commandesSquare <br  />
+ <a href="class_hud.html#a3e8ad8d4685b9be9c1d7c756de9c0af0">More...</a><br /></td></tr>
 <tr class="separator:a3e8ad8d4685b9be9c1d7c756de9c0af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89a344bf0f7569632251867df2f662ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#a89a344bf0f7569632251867df2f662ed">updateInfoElement</a> ()</td></tr>
+<tr class="memdesc:a89a344bf0f7569632251867df2f662ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">met a jour les infos sur le dashboard <br  />
+ <a href="class_hud.html#a89a344bf0f7569632251867df2f662ed">More...</a><br /></td></tr>
 <tr class="separator:a89a344bf0f7569632251867df2f662ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf3a28fd0a7ba086429024af78bc54be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#acf3a28fd0a7ba086429024af78bc54be">pixelIsOn</a> (int x, int y) const</td></tr>
+<tr class="memdesc:acf3a28fd0a7ba086429024af78bc54be"><td class="mdescLeft">&#160;</td><td class="mdescRight">verifie si le pixel en parametre est sur le hud <br  />
+ <a href="class_hud.html#acf3a28fd0a7ba086429024af78bc54be">More...</a><br /></td></tr>
 <tr class="separator:acf3a28fd0a7ba086429024af78bc54be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8d97d09aaa1f1be2303a36e3c1d4c22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#ac8d97d09aaa1f1be2303a36e3c1d4c22">updateRessources</a> ()</td></tr>
+<tr class="memdesc:ac8d97d09aaa1f1be2303a36e3c1d4c22"><td class="mdescLeft">&#160;</td><td class="mdescRight">met a jour les ressources du joueur actif <br  />
+ <a href="class_hud.html#ac8d97d09aaa1f1be2303a36e3c1d4c22">More...</a><br /></td></tr>
 <tr class="separator:ac8d97d09aaa1f1be2303a36e3c1d4c22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a949e7d8a2c20bde34ed361bdd6a6580d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#a949e7d8a2c20bde34ed361bdd6a6580d">removeCommande</a> (<a class="el" href="class_commande_square.html">CommandeSquare</a> *commande)</td></tr>
+<tr class="memdesc:a949e7d8a2c20bde34ed361bdd6a6580d"><td class="mdescLeft">&#160;</td><td class="mdescRight">enleve une commande du dashboard <br  />
+/!\ va detruire la commande avec delete utile pour que les commandes puissent se retirer a la fin de leur execute()  <a href="class_hud.html#a949e7d8a2c20bde34ed361bdd6a6580d">More...</a><br /></td></tr>
 <tr class="separator:a949e7d8a2c20bde34ed361bdd6a6580d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab93f893a75706599a1d5ededde71a99b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#ab93f893a75706599a1d5ededde71a99b">changeJoueur</a> ()</td></tr>
+<tr class="memdesc:ab93f893a75706599a1d5ededde71a99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">vide le hud et change le joueur actif affiche <br  />
+ <a href="class_hud.html#ab93f893a75706599a1d5ededde71a99b">More...</a><br /></td></tr>
 <tr class="separator:ab93f893a75706599a1d5ededde71a99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d6be0751fcb5d79a71d3331aec9d972"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#a6d6be0751fcb5d79a71d3331aec9d972">clearAll</a> ()</td></tr>
+<tr class="memdesc:a6d6be0751fcb5d79a71d3331aec9d972"><td class="mdescLeft">&#160;</td><td class="mdescRight">vide le hud des commandes et infos <br  />
+ <a href="class_hud.html#a6d6be0751fcb5d79a71d3331aec9d972">More...</a><br /></td></tr>
 <tr class="separator:a6d6be0751fcb5d79a71d3331aec9d972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ad33133b4b03bf601acbcca98a5b9edb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#ad33133b4b03bf601acbcca98a5b9edb1">updateBanner</a> ()</td></tr>
+<tr class="memdesc:ad33133b4b03bf601acbcca98a5b9edb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">met a jour la banner en la couleur du joueur actif <br  />
+ <a href="class_hud.html#ad33133b4b03bf601acbcca98a5b9edb1">More...</a><br /></td></tr>
 <tr class="separator:ad33133b4b03bf601acbcca98a5b9edb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6b0dca1e40e2b53ace43ed0ea7ec879"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#aa6b0dca1e40e2b53ace43ed0ea7ec879">updateJoueur</a> ()</td></tr>
+<tr class="memdesc:aa6b0dca1e40e2b53ace43ed0ea7ec879"><td class="mdescLeft">&#160;</td><td class="mdescRight">met a joueur les infos du joueur actif sur le hud (banner et ressource) <br  />
+ <a href="class_hud.html#aa6b0dca1e40e2b53ace43ed0ea7ec879">More...</a><br /></td></tr>
 <tr class="separator:aa6b0dca1e40e2b53ace43ed0ea7ec879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a3730f176a92b34776bb8475d9636599f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_dashboard.html">Dashboard</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#a3730f176a92b34776bb8475d9636599f">dashboard</a></td></tr>
+<tr class="memdesc:a3730f176a92b34776bb8475d9636599f"><td class="mdescLeft">&#160;</td><td class="mdescRight">dashboard du hud <br  />
+endroit ou se present les commandes et leurs descriptions  <a href="class_hud.html#a3730f176a92b34776bb8475d9636599f">More...</a><br /></td></tr>
 <tr class="separator:a3730f176a92b34776bb8475d9636599f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff7f93cf95129dfd540eac2f7b1ea2e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ressource.html">Ressource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#aff7f93cf95129dfd540eac2f7b1ea2e4">ressource</a></td></tr>
+<tr class="memdesc:aff7f93cf95129dfd540eac2f7b1ea2e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ressource du joueur actif <br  />
+ <a href="class_hud.html#aff7f93cf95129dfd540eac2f7b1ea2e4">More...</a><br /></td></tr>
 <tr class="separator:aff7f93cf95129dfd540eac2f7b1ea2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2476e4c08cbb3e6f41b43da6562e7f38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_banner.html">Banner</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#a2476e4c08cbb3e6f41b43da6562e7f38">banner</a></td></tr>
+<tr class="memdesc:a2476e4c08cbb3e6f41b43da6562e7f38"><td class="mdescLeft">&#160;</td><td class="mdescRight">banner de la couleur du joueur actif <br  />
+ <a href="class_hud.html#a2476e4c08cbb3e6f41b43da6562e7f38">More...</a><br /></td></tr>
 <tr class="separator:a2476e4c08cbb3e6f41b43da6562e7f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9907496960104a3f258eb294b9424a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_next_player_arrow.html">NextPlayerArrow</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_hud.html#ab9907496960104a3f258eb294b9424a6">nextPlayerArraow</a></td></tr>
+<tr class="memdesc:ab9907496960104a3f258eb294b9424a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">fleche permettant de changer le joueur actif <br  />
+ <a href="class_hud.html#ab9907496960104a3f258eb294b9424a6">More...</a><br /></td></tr>
 <tr class="separator:ab9907496960104a3f258eb294b9424a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>permet d'afficher les infos sur le joueur actif <br  />
+/!\ a creer apres que les joueurs soient crees </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad367d9f8d5947cd6b150658f4a7011c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad367d9f8d5947cd6b150658f4a7011c4">&#9670;&nbsp;</a></span>Hud()</h2>
 
@@ -198,6 +243,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>vide le hud et change le joueur actif affiche <br  />
+</p>
+
 </div>
 </div>
 <a id="a3e8ad8d4685b9be9c1d7c756de9c0af0"></a>
@@ -214,6 +262,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>detruit les comandeSquare contenu dans commandesSquare <br  />
+</p>
 
 </div>
 </div>
@@ -239,6 +290,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>vide le hud des commandes et infos <br  />
+</p>
 
 </div>
 </div>
@@ -268,6 +322,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>verifie si le pixel en parametre est sur le hud <br  />
+</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>coordonnee x du pixel </td></tr>
+    <tr><td class="paramname">y</td><td>coordonnee y du pixel </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a5437af55a098276947be7a60067135b0"></a>
@@ -296,6 +360,17 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>va placer au bonne endroit les commandes et detruire les anciennes <br  />
+change les infos sur le dashboard <br  />
+/!\ se charge de detruire les commandes envoyées ne pas reutiliser les commandes </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">commandes</td><td>commandes a afficher </td></tr>
+    <tr><td class="paramname">info</td><td>info a afficher </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="afef55534ec0365e7f4c178c5f3bc7b04"></a>
@@ -314,6 +389,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>va placer au bonne endroit les commandes et detruire les anciennes <br  />
+ne supprime pas les infos sur le dashboard <br  />
+/!\ se charge de detruire les commandes envoyées ne pas reutiliser les commandes </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">commandes</td><td>commandes a afficher </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a26e6bc17d38988c23f740e71832de4b7"></a>
@@ -331,6 +416,16 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>affiche les infos d'un element sur le dashboard <br  />
+</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_element_joueur.html">ElementJoueur</a> </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ElementJoueurPourInfo</td><td>element dont on veut afficher les infos </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -358,6 +453,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>enleve une commande du dashboard <br  />
+/!\ va detruire la commande avec delete utile pour que les commandes puissent se retirer a la fin de leur execute() </p>
+
 </div>
 </div>
 <a id="af7be9f13636405fc98a7d449caa75607"></a>
@@ -375,6 +473,10 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>enleve les infos d'un element sur le dashboard <br  />
+</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_element_joueur.html">ElementJoueur</a> </dd></dl>
+
 </div>
 </div>
 <a id="a828d74f5982b9ad40148281ef4ea4f4d"></a>
@@ -391,6 +493,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>enleve les infos sur le dashboard <br  />
+</p>
 
 </div>
 </div>
@@ -417,6 +522,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>met a jour la banner en la couleur du joueur actif <br  />
+</p>
+
 </div>
 </div>
 <a id="a89a344bf0f7569632251867df2f662ed"></a>
@@ -433,6 +541,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>met a jour les infos sur le dashboard <br  />
+</p>
 
 </div>
 </div>
@@ -459,6 +570,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>met a joueur les infos du joueur actif sur le hud (banner et ressource) <br  />
+</p>
+
 </div>
 </div>
 <a id="ac8d97d09aaa1f1be2303a36e3c1d4c22"></a>
@@ -484,6 +598,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>met a jour les ressources du joueur actif <br  />
+</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -507,6 +624,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>banner de la couleur du joueur actif <br  />
+</p>
+
 </div>
 </div>
 <a id="a3730f176a92b34776bb8475d9636599f"></a>
@@ -528,6 +648,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>dashboard du hud <br  />
+endroit ou se present les commandes et leurs descriptions </p>
 
 </div>
 </div>
@@ -551,6 +674,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>fleche permettant de changer le joueur actif <br  />
+</p>
+
 </div>
 </div>
 <a id="aff7f93cf95129dfd540eac2f7b1ea2e4"></a>
@@ -572,6 +698,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>ressource du joueur actif <br  />
+</p>
 
 </div>
 </div>

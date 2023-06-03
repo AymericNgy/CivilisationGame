@@ -15,7 +15,7 @@ digraph "Fantassin"
   Node6 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node6 [label="DrawableForUI",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_drawable_for_u_i.html",tooltip=" "];
   Node7 -> Node6 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" casePosition" ,fontname="Helvetica"];
-  Node7 [label="CasePosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_case_position.html",tooltip=" "];
+  Node7 [label="CasePosition",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_case_position.html",tooltip="position d'une case sur le plateau"];
   Node8 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" plateau" ,fontname="Helvetica"];
   Node8 [label="Plateau",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_plateau.html",tooltip="permet d'avoir des INFOS sur les elements presents sur le plateau /!\\ Deplacement sur plateau gere pa..."];
   Node9 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];

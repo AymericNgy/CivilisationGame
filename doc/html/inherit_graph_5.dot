@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Hud",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hud.html",tooltip=" "];
+  Node0 [label="Hud",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hud.html",tooltip="permet d'afficher les infos sur le joueur actif  /!\\ a creer apres que les joueurs soient crees"];
 }

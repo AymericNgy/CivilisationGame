@@ -271,18 +271,6 @@ void UserInterface::updateWindow() {
     
     window->clear();
 
-    // // [!] TESTE
-
-    // // Declare and load a font
-    // sf::Font font;
-    // font.loadFromFile("Classica-Book.ttf");
-    // // Create a text
-    // sf::Text text("hello", font);
-    // text.setCharacterSize(30);
-    // text.setStyle(sf::Text::Bold);
-    // text.setFillColor(sf::Color::Red);
-
-    // window->draw(text);
 
 
 
@@ -472,34 +460,9 @@ void UserInterface::testQuit(list_event_ptr eventList) {
 }
 
 
-void UserInterface::compute_fps() {
-    int num_frames = 0;
-    auto start_time = std::chrono::high_resolution_clock::now();
-    auto end_time = start_time;
 
-    while (true) {
-        // Do some computation or rendering here
-        num_frames++;
 
-        // Check if 100 ms have elapsed
-        end_time = std::chrono::high_resolution_clock::now();
-        auto elapsed_time = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time).count();
-        if (elapsed_time >= 100) {
-            // Compute and print fps
-            double fps = (double)num_frames / ((double)elapsed_time / 1000.0);
-            std::cout << "FPS: " << fps << std::endl;
 
-            // Reset counters and start time
-            num_frames = 0;
-            start_time = end_time;
-        }
-    }
-}
-
-void UserInterface::runComputeFps() {
-    std::thread fps_thread(&UserInterface::compute_fps, this);
-    fps_thread.detach();
-}
 
 
 

@@ -4,5 +4,5 @@ digraph "Graphical Class Hierarchy"
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
   rankdir="LR";
-  Node0 [label="Case",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_case.html",tooltip=" "];
+  Node0 [label="Case",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_case.html",tooltip="Case du plateau  Permet de savoir ce qu'il y a sur la case (AffichableOnMap), et qui est le proprieta..."];
 }

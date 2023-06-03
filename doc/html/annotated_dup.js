@@ -44,6 +44,7 @@ var annotated_dup =
     [ "NextPlayerArrow", "class_next_player_arrow.html", "class_next_player_arrow" ],
     [ "Pixel", "class_pixel.html", "class_pixel" ],
     [ "Plateau", "class_plateau.html", "class_plateau" ],
+    [ "Point", "class_point.html", null ],
     [ "Point_", "struct_point__.html", "struct_point__" ],
     [ "RectangleForUI", "class_rectangle_for_u_i.html", "class_rectangle_for_u_i" ],
     [ "Ressource", "class_ressource.html", "class_ressource" ],

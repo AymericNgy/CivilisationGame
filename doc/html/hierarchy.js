@@ -83,6 +83,7 @@ var hierarchy =
     [ "Jeu", "class_jeu.html", null ],
     [ "Pixel", "class_pixel.html", null ],
     [ "Plateau", "class_plateau.html", null ],
+    [ "Point", "class_point.html", null ],
     [ "Point_", "struct_point__.html", null ],
     [ "sf::RectangleShape", null, [
       [ "RectangleForUI", "class_rectangle_for_u_i.html", null ]

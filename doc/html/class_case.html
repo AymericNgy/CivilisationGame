@@ -90,6 +90,10 @@ $(document).ready(function(){initNavTree('class_case.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="class_case.html" title="Case du plateau  Permet de savoir ce qu&#39;il y a sur la case (AffichableOnMap), et qui est le proprieta...">Case</a> du plateau <br  />
+Permet de savoir ce qu'il y a sur la case (<a class="el" href="class_affichable_on_map.html">AffichableOnMap</a>), et qui est le proprietaire de la case.  
+ <a href="class_case.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="case_8hpp_source.html">case.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Case:</div>
@@ -100,6 +104,7 @@ Collaboration diagram for Case:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a01ddc0c99442cba5f869dcc04aaafd59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#a01ddc0c99442cba5f869dcc04aaafd59">Case</a> (<a class="el" href="class_case_position.html">CasePosition</a> <a class="el" href="class_case.html#a2479e2a884be57b4e4968b3637d96120">casePosition</a>, <a class="el" href="class_plateau.html">Plateau</a> &amp;plateau)</td></tr>
+<tr class="memdesc:a01ddc0c99442cba5f869dcc04aaafd59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_case.html" title="Case du plateau  Permet de savoir ce qu&#39;il y a sur la case (AffichableOnMap), et qui est le proprieta...">Case</a>.  <a href="class_case.html#a01ddc0c99442cba5f869dcc04aaafd59">More...</a><br /></td></tr>
 <tr class="separator:a01ddc0c99442cba5f869dcc04aaafd59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab004564aae3e15db0c7fd5dde0b4c379"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#ab004564aae3e15db0c7fd5dde0b4c379">~Case</a> ()</td></tr>
 <tr class="separator:ab004564aae3e15db0c7fd5dde0b4c379"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,42 +113,63 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6720ae4909bc0738050d46edfc71a76"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#ad6720ae4909bc0738050d46edfc71a76">Case</a> (const <a class="el" href="class_case.html">Case</a> &amp;other)=delete</td></tr>
 <tr class="separator:ad6720ae4909bc0738050d46edfc71a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac0ed178c6f00a153f0f51f66aeca6fa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#aac0ed178c6f00a153f0f51f66aeca6fa">addElementOn</a> (<a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> *element)</td></tr>
+<tr class="memdesc:aac0ed178c6f00a153f0f51f66aeca6fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">ajoute un element sur la case // /!\ DOIT ETRE UTILISE UNIQUEMENT PAR <a class="el" href="class_plateau.html" title="permet d&#39;avoir des INFOS sur les elements presents sur le plateau /!\ Deplacement sur plateau gere pa...">Plateau</a> /!\ .  <a href="class_case.html#aac0ed178c6f00a153f0f51f66aeca6fa">More...</a><br /></td></tr>
 <tr class="separator:aac0ed178c6f00a153f0f51f66aeca6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd9344a9935017fea04fc2666cf90f43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#abd9344a9935017fea04fc2666cf90f43">removeElementOn</a> (<a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> *element)</td></tr>
+<tr class="memdesc:abd9344a9935017fea04fc2666cf90f43"><td class="mdescLeft">&#160;</td><td class="mdescRight">enleve un element sur la case /!\ DOIT ETRE UTILISE UNIQUEMENT PAR <a class="el" href="class_plateau.html" title="permet d&#39;avoir des INFOS sur les elements presents sur le plateau /!\ Deplacement sur plateau gere pa...">Plateau</a> /!\ .  <a href="class_case.html#abd9344a9935017fea04fc2666cf90f43">More...</a><br /></td></tr>
 <tr class="separator:abd9344a9935017fea04fc2666cf90f43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49a919f49c81547c89b1c854431af792"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#a49a919f49c81547c89b1c854431af792">getElementsOn</a> ()</td></tr>
+<tr class="memdesc:a49a919f49c81547c89b1c854431af792"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie les <a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> sur la case  <a href="class_case.html#a49a919f49c81547c89b1c854431af792">More...</a><br /></td></tr>
 <tr class="separator:a49a919f49c81547c89b1c854431af792"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e3adb4f0124a423bcb2de58d9cfdcd6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#a1e3adb4f0124a423bcb2de58d9cfdcd6">nbElement</a> () const</td></tr>
+<tr class="memdesc:a1e3adb4f0124a423bcb2de58d9cfdcd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie le nombre d'element sur la case  <a href="class_case.html#a1e3adb4f0124a423bcb2de58d9cfdcd6">More...</a><br /></td></tr>
 <tr class="separator:a1e3adb4f0124a423bcb2de58d9cfdcd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb37be87aa2a8c8ae030fa674d926f9c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#aeb37be87aa2a8c8ae030fa674d926f9c">nombreElementJoueurOn</a> ()</td></tr>
+<tr class="memdesc:aeb37be87aa2a8c8ae030fa674d926f9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie le nombre d'element sur la case de type <a class="el" href="class_element_joueur.html">ElementJoueur</a>  <a href="class_case.html#aeb37be87aa2a8c8ae030fa674d926f9c">More...</a><br /></td></tr>
 <tr class="separator:aeb37be87aa2a8c8ae030fa674d926f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63573809094573115d3876c7d5579524"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#a63573809094573115d3876c7d5579524">nombreElementJoueurOn</a> (<a class="el" href="element__joueur_8hpp.html#a2c6fa586ee4d7f082785a0399bbb5daa">Joueur_ptr</a> joueur)</td></tr>
+<tr class="memdesc:a63573809094573115d3876c7d5579524"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie le nombre d'element sur la case de type <a class="el" href="class_element_joueur.html">ElementJoueur</a> appartenant au joueur 'joueur'  <a href="class_case.html#a63573809094573115d3876c7d5579524">More...</a><br /></td></tr>
 <tr class="separator:a63573809094573115d3876c7d5579524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a034d76ac3ccb4ae78b2ca730cd6ba53b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#a034d76ac3ccb4ae78b2ca730cd6ba53b">setProprietaire</a> (<a class="el" href="element__joueur_8hpp.html#a2c6fa586ee4d7f082785a0399bbb5daa">Joueur_ptr</a> <a class="el" href="class_case.html#a34f6d41b7a23f88dbb7ec7948c649ec3">proprietaire</a>)</td></tr>
+<tr class="memdesc:a034d76ac3ccb4ae78b2ca730cd6ba53b"><td class="mdescLeft">&#160;</td><td class="mdescRight">definit le proprietaire de la case  <a href="class_case.html#a034d76ac3ccb4ae78b2ca730cd6ba53b">More...</a><br /></td></tr>
 <tr class="separator:a034d76ac3ccb4ae78b2ca730cd6ba53b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd1599eb7d472424ebbc70492c94f66b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#afd1599eb7d472424ebbc70492c94f66b">batimentsOn</a> ()</td></tr>
+<tr class="memdesc:afd1599eb7d472424ebbc70492c94f66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie si il y a un batiment construit sur la case  <a href="class_case.html#afd1599eb7d472424ebbc70492c94f66b">More...</a><br /></td></tr>
 <tr class="separator:afd1599eb7d472424ebbc70492c94f66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1d3782e32c72b6862b4cc9fce289bf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="element__joueur_8hpp.html#a2c6fa586ee4d7f082785a0399bbb5daa">Joueur_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#ad1d3782e32c72b6862b4cc9fce289bf8">getProprietaire</a> () const</td></tr>
+<tr class="memdesc:ad1d3782e32c72b6862b4cc9fce289bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie le proprietaire de la case  <a href="class_case.html#ad1d3782e32c72b6862b4cc9fce289bf8">More...</a><br /></td></tr>
 <tr class="separator:ad1d3782e32c72b6862b4cc9fce289bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88bb4537bb078f519339abd4c1dcd197"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_case_position.html">CasePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#a88bb4537bb078f519339abd4c1dcd197">getPosition</a> ()</td></tr>
+<tr class="memdesc:a88bb4537bb078f519339abd4c1dcd197"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie la position de la case sur le plateau  <a href="class_case.html#a88bb4537bb078f519339abd4c1dcd197">More...</a><br /></td></tr>
 <tr class="separator:a88bb4537bb078f519339abd4c1dcd197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa41e442544e821c39bf7c4883db14027"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#aa41e442544e821c39bf7c4883db14027">_commandeSelectElement</a> ()</td></tr>
+<tr class="memdesc:aa41e442544e821c39bf7c4883db14027"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet de mettre dans le HUD les commandes pour selectionner tous les elements appartenant au joueur actif sur la case <br  />
+si il n'y a qu'un seul element sur la case, la commande est directement executee  <a href="class_case.html#aa41e442544e821c39bf7c4883db14027">More...</a><br /></td></tr>
 <tr class="separator:aa41e442544e821c39bf7c4883db14027"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa12334e41e509e0ac38a3fb8ab4ccbc2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#aa12334e41e509e0ac38a3fb8ab4ccbc2">_commandeAcheterCase</a> ()</td></tr>
+<tr class="memdesc:aa12334e41e509e0ac38a3fb8ab4ccbc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">definit le joueur actif comme proprietaire de la case  <a href="class_case.html#aa12334e41e509e0ac38a3fb8ab4ccbc2">More...</a><br /></td></tr>
 <tr class="separator:aa12334e41e509e0ac38a3fb8ab4ccbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a324159603918d2b2afd2a71174877c03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#a324159603918d2b2afd2a71174877c03">_commandeConstuire</a> ()</td></tr>
+<tr class="memdesc:a324159603918d2b2afd2a71174877c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet de mettre dans le HUD les commandes pour construire chaque batiment disponible dans le jeu, sauf l'hotel de ville, sur la case <br  />
+ <a href="class_case.html#a324159603918d2b2afd2a71174877c03">More...</a><br /></td></tr>
 <tr class="separator:a324159603918d2b2afd2a71174877c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:aac9a1d9d0e16347815cb1c2b48bd42e1"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#aac9a1d9d0e16347815cb1c2b48bd42e1">elementsOn</a></td></tr>
+<tr class="memdesc:aac9a1d9d0e16347815cb1c2b48bd42e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">liste des elements sur la case  <a href="class_case.html#aac9a1d9d0e16347815cb1c2b48bd42e1">More...</a><br /></td></tr>
 <tr class="separator:aac9a1d9d0e16347815cb1c2b48bd42e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34f6d41b7a23f88dbb7ec7948c649ec3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="element__joueur_8hpp.html#a2c6fa586ee4d7f082785a0399bbb5daa">Joueur_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#a34f6d41b7a23f88dbb7ec7948c649ec3">proprietaire</a></td></tr>
+<tr class="memdesc:a34f6d41b7a23f88dbb7ec7948c649ec3"><td class="mdescLeft">&#160;</td><td class="mdescRight">proprietaire de la case  <a href="class_case.html#a34f6d41b7a23f88dbb7ec7948c649ec3">More...</a><br /></td></tr>
 <tr class="separator:a34f6d41b7a23f88dbb7ec7948c649ec3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2479e2a884be57b4e4968b3637d96120"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_case_position.html">CasePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_case.html#a2479e2a884be57b4e4968b3637d96120">casePosition</a></td></tr>
+<tr class="memdesc:a2479e2a884be57b4e4968b3637d96120"><td class="mdescLeft">&#160;</td><td class="mdescRight">position de la case sur le plateau  <a href="class_case.html#a2479e2a884be57b4e4968b3637d96120">More...</a><br /></td></tr>
 <tr class="separator:a2479e2a884be57b4e4968b3637d96120"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_case.html" title="Case du plateau  Permet de savoir ce qu&#39;il y a sur la case (AffichableOnMap), et qui est le proprieta...">Case</a> du plateau <br  />
+Permet de savoir ce qu'il y a sur la case (<a class="el" href="class_affichable_on_map.html">AffichableOnMap</a>), et qui est le proprietaire de la case. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a01ddc0c99442cba5f869dcc04aaafd59"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a01ddc0c99442cba5f869dcc04aaafd59">&#9670;&nbsp;</a></span>Case() <span class="overload">[1/2]</span></h2>
 
@@ -169,6 +195,15 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructeur de <a class="el" href="class_case.html" title="Case du plateau  Permet de savoir ce qu&#39;il y a sur la case (AffichableOnMap), et qui est le proprieta...">Case</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">casePosition</td><td>position de la case sur le plateau </td></tr>
+    <tr><td class="paramname">plateau</td><td>plateau sur lequel se trouve la case </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -231,6 +266,8 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>definit le joueur actif comme proprietaire de la case </p>
+
 </div>
 </div>
 <a id="a324159603918d2b2afd2a71174877c03"></a>
@@ -248,6 +285,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>permet de mettre dans le HUD les commandes pour construire chaque batiment disponible dans le jeu, sauf l'hotel de ville, sur la case <br  />
+</p>
+
 </div>
 </div>
 <a id="aa41e442544e821c39bf7c4883db14027"></a>
@@ -264,6 +304,9 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>permet de mettre dans le HUD les commandes pour selectionner tous les elements appartenant au joueur actif sur la case <br  />
+si il n'y a qu'un seul element sur la case, la commande est directement executee </p>
 
 </div>
 </div>
@@ -291,6 +334,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>ajoute un element sur la case // /!\ DOIT ETRE UTILISE UNIQUEMENT PAR <a class="el" href="class_plateau.html" title="permet d&#39;avoir des INFOS sur les elements presents sur le plateau /!\ Deplacement sur plateau gere pa...">Plateau</a> /!\ . </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_plateau.html#a16f612b26cdc56cb0f142b96ada76f65" title="ajoute l&#39;element &#39;element&#39; a la case &#39;position&#39; /!\ DOIT ETRE UTILISE UNIQUEMENT PAR AffichableOnMap ...">Plateau::addElement</a> </dd></dl>
+
 </div>
 </div>
 <a id="afd1599eb7d472424ebbc70492c94f66b"></a>
@@ -308,6 +354,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>renvoie si il y a un batiment construit sur la case </p>
+<dl class="section return"><dt>Returns</dt><dd>true si il y a un batiment construit sur la case, false sinon </dd></dl>
+
 </div>
 </div>
 <a id="a49a919f49c81547c89b1c854431af792"></a>
@@ -324,6 +373,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>renvoie les <a class="el" href="class_affichable_on_map.html">AffichableOnMap</a> sur la case </p>
 
 </div>
 </div>
@@ -350,6 +401,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>renvoie la position de la case sur le plateau </p>
+
 </div>
 </div>
 <a id="ad1d3782e32c72b6862b4cc9fce289bf8"></a>
@@ -374,6 +427,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>renvoie le proprietaire de la case </p>
 
 </div>
 </div>
@@ -400,6 +455,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>renvoie le nombre d'element sur la case </p>
+
 </div>
 </div>
 <a id="aeb37be87aa2a8c8ae030fa674d926f9c"></a>
@@ -416,6 +473,8 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>renvoie le nombre d'element sur la case de type <a class="el" href="class_element_joueur.html">ElementJoueur</a> </p>
 
 </div>
 </div>
@@ -434,6 +493,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>renvoie le nombre d'element sur la case de type <a class="el" href="class_element_joueur.html">ElementJoueur</a> appartenant au joueur 'joueur' </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">joueur</td><td>joueur dont on veut connaitre le nombre d'element sur la case </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -487,6 +554,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>enleve un element sur la case /!\ DOIT ETRE UTILISE UNIQUEMENT PAR <a class="el" href="class_plateau.html" title="permet d&#39;avoir des INFOS sur les elements presents sur le plateau /!\ Deplacement sur plateau gere pa...">Plateau</a> /!\ . </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="class_plateau.html#a6607130f41e980cc65926ed0c4fde3dc" title="retire l&#39;element &#39;element&#39; de la case &#39;position&#39; /!\ DOIT ETRE UTILISE UNIQUEMENT PAR AffichableOnMap...">Plateau::removeElement</a> </dd></dl>
+
 </div>
 </div>
 <a id="a034d76ac3ccb4ae78b2ca730cd6ba53b"></a>
@@ -504,6 +574,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>definit le proprietaire de la case </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">proprietaire</td><td>nouveau proprietaire de la case </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -528,6 +606,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>position de la case sur le plateau </p>
+
 </div>
 </div>
 <a id="aac9a1d9d0e16347815cb1c2b48bd42e1"></a>
@@ -550,6 +630,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>liste des elements sur la case </p>
+
 </div>
 </div>
 <a id="a34f6d41b7a23f88dbb7ec7948c649ec3"></a>
@@ -571,6 +653,8 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>proprietaire de la case </p>
 
 </div>
 </div>

@@ -5,6 +5,11 @@
 #include "element_joueur.hpp"
 
 
+/**
+ * \class Batiment
+ * \brief classe abstraite representant un batiment
+ * 
+*/
 class Batiment : public ElementJoueur{
     protected:
         const static int COUCHE = 15;

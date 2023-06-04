@@ -102,31 +102,6 @@ void Jeu::changerJoueur() {
 }
 
 
-// void Jeu::lancerPartie(std::vector<Joueur_ptr> &joueurs) {
-//     plateau = new Plateau(Jeu::TAILLE_PLATEAU_X,Jeu::TAILLE_PLATEAU_Y);
-
-
-//     for (int i=0; i< NOMBRE_JOUEUR;i++) {
-//         joueurs[i]->setForPartie();
-//     }
-
-//     plateau->drawMarqueProprietaire();
-
-//     for (int i=0; i<joueurs.size();i++) {
-                
-//         this->joueurs.push_back(joueurs[i]);
-//     }
-
-//     indiceJoueurActif = 0;
-//     nombreJoueurEnVie=NOMBRE_JOUEUR;
-//     hud = new Hud();
-
-//     updateNouveauTour();
-
-//     std::cout <<"nombreJoueurEnVie " <<nombreJoueurEnVie << std::endl;
-
-
-// }
 
 
 void Jeu::finPartie() {

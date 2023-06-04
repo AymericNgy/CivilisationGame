@@ -201,18 +201,14 @@ void Joueur::finDuJoueur() {
     for (auto element = elementsAuJoueur.begin(); element != elementsAuJoueur.end() ; element++)
     {
         listeElement.push_back(*element);
-        std::cout << "debut delete"<<std::endl;
-        std::cout << "fin delete"<<std::endl;
     }
-    std::cout << "Top" << std::endl;
     for (size_t i = 0; i < listeElement.size(); i++)
     {
         delete listeElement[i];
     }
     
 
-    std::cout << "finDuJoueur"<<std::endl;
+
     Jeu::getInstance().decreaseNombreJoueurEnvie();
-    std::cout << "TOP 1" << std::endl;
     
 }

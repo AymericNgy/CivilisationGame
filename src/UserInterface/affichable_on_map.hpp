@@ -13,21 +13,28 @@ class Jeu;
 typedef std::shared_ptr<std::set<AffichableOnMap*>> SetPtrAffichableOnMap_ptr;
 
 
-// classe qui permet a une classe d'etre affichable sur la map
-// elle gere le deplacement sur la map du jeu de l'objet
-// on utilise des pointeurs pour pouvoire faire des delete quand on veut detruire l'objet
-// utilise des AffichableOnMap que pendant la duree d'existance du plateau
+
+/**
+ * \class AffichableOnMap
+ * \brief Classe abstraite qui permet a une classe d'etre affichable sur la map
+ * elle gere le deplacement sur la map du jeu de l'objet
+ * on utilise des pointeurs pour pouvoire faire des delete quand on veut detruire l'objet
+ * utilise des AffichableOnMap que pendant la duree d'existance du plateau
+*/
 class AffichableOnMap
 {
     protected:
         
-        // permet aux instances de se deplacer tout seul sur le plateau
+
+        /**
+         * \brief pointeur vers le plateau
+        */
         Plateau *plateau;
 
-
+        /**
+         * \brief sprite de l'objet
+        */
         SpriteForUI sprite;
-        //std::set<CommandeAffichableOnMap_ptr> actionsPossible; DEPRACATED => beaucoup plus logiqu de creer a chaque fois
-
 
 
 
@@ -39,13 +46,22 @@ class AffichableOnMap
 
         virtual CasePosition getCasePosition() const {return sprite.getCasePosition();}
 
-        // /!\ ne pas utiliser lors de la creation de Jeu, car cette fonction fait appelle à Jeu::getInstance()
+
+        /**
+         * \brief constructeur \n
+         *  /!\ ne pas utiliser lors de la creation de Jeu, car cette fonction fait appelle à Jeu::getInstance()
+        */
         AffichableOnMap(CasePosition casePosition, int couche, std::string textureName);
 
-        // A utiliser lors de la creation de Jeu
+
+        /**
+         * \brief constructeur \n
+         *  A utiliser lors de la creation de Jeu
+        */
         AffichableOnMap(Plateau &plateau, CasePosition casePosition, int couche, std::string textureName);
 
         virtual ~AffichableOnMap();
+
 
         void setTextures(std::string textureName);
 

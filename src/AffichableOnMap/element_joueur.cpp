@@ -26,9 +26,7 @@ ElementJoueur::ElementJoueur(int couche,std::string textureFileName, std::string
 
 
 ElementJoueur::~ElementJoueur() {
-    std::cout << "~ElementJoueur" << std::endl;
     joueurProprietaire->_removeElement(this);
-    std::cout << "fin ~ElementJoueur" << std::endl;
 }
 
 void ElementJoueur::init(bool initNombreAction) {

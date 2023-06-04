@@ -30,14 +30,7 @@ all : jeu
 debug: 
 	make DEBUG=yes
 
-# Regle pour activer les tests
-test : $(OBJ_FILES) test/obj/jeu_TEST.o
-	g++ $(LDFLAGS) -o test/exec/jeu_TEST $(filter-out ./obj/main.o, $(OBJ_FILES))  test/obj/jeu_TEST.o $(LIBS)
-# g++ $(LDFLAGS) -o test/jeu_TEST $^ test/jeu_TEST.o $(LIBS)
 
-
-test/obj/jeu_TEST.o : test/src/jeu_TEST.cpp
-	g++ test/src/jeu_TEST.cpp -c -o test/obj/jeu_TEST.o
 
 clean:
 	rm -rf obj/* && rm ./jeu
@@ -49,6 +42,35 @@ jeu: $(OBJ_FILES)
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp $(SRC_DIR)/%.hpp
 	@mkdir -p $(dir $@)
 	g++ $(CPPFLAGS) -c -o $@ $<
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# --- POUR LES TESTS ---
+
+
+# Regle pour activer les tests
+test : $(OBJ_FILES) test/obj/jeu_TEST.o test/obj/plateau_TEST.o
+	g++ $(LDFLAGS) -o test/exec/jeu_TEST $(filter-out ./obj/main.o, $(OBJ_FILES))  test/obj/jeu_TEST.o $(LIBS)
+# g++ $(LDFLAGS) -o test/jeu_TEST $^ test/jeu_TEST.o $(LIBS)
+
+
+test/obj/jeu_TEST.o : test/src/jeu_TEST.cpp
+	g++ test/src/jeu_TEST.cpp -c -o test/obj/jeu_TEST.o
+
+
 
 
 

@@ -31,13 +31,13 @@ debug:
 	make DEBUG=yes
 
 # Regle pour activer les tests
-test : $(OBJ_FILES) test/jeu_TEST.o
-	g++ $(LDFLAGS) -o test/jeu_TEST $(filter-out ./obj/main.o, $(OBJ_FILES))  test/jeu_TEST.o $(LIBS)
+test : $(OBJ_FILES) test/obj/jeu_TEST.o
+	g++ $(LDFLAGS) -o test/exec/jeu_TEST $(filter-out ./obj/main.o, $(OBJ_FILES))  test/obj/jeu_TEST.o $(LIBS)
 # g++ $(LDFLAGS) -o test/jeu_TEST $^ test/jeu_TEST.o $(LIBS)
 
 
-test/jeu_TEST.o : test/jeu_TEST.cpp
-	g++ test/jeu_TEST.cpp -c -o test/jeu_TEST.o
+test/obj/jeu_TEST.o : test/src/jeu_TEST.cpp
+	g++ test/src/jeu_TEST.cpp -c -o test/obj/jeu_TEST.o
 
 clean:
 	rm -rf obj/* && rm ./jeu

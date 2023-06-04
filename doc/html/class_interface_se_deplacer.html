@@ -89,6 +89,10 @@ $(document).ready(function(){initNavTree('class_interface_se_deplacer.html','');
 </div><!--header-->
 <div class="contents">
 
+<p>A implementer sur un <a class="el" href="class_element_joueur.html" title="classe abstraite correspondant a tous les elements pouvant appartenir a un joueur S&#39;ajoute a sa creat...">ElementJoueur</a> si il peut se deplacer <br  />
+Ajouter commande <a class="el" href="class_choix_se_deplacer.html" title="permet de choisir de deplacer une instance de InterfaceSeDeplacer /!\ S&#39;ASSURER que elementPourAction...">ChoixSeDeplacer</a> a la liste renvoye par ElementJoueur::getActionpossible()  
+ <a href="class_interface_se_deplacer.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="interface__se__deplacer_8hpp_source.html">interface_se_deplacer.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for InterfaceSeDeplacer:</div>
@@ -99,6 +103,8 @@ Inheritance diagram for InterfaceSeDeplacer:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3426a8d0596b7274bc9381358793565"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interface_se_deplacer.html#ae3426a8d0596b7274bc9381358793565">getNombreCaseDeplacement</a> () const =0</td></tr>
+<tr class="memdesc:ae3426a8d0596b7274bc9381358793565"><td class="mdescLeft">&#160;</td><td class="mdescRight">/!\ redefinir dans classe enfant avec bonus si voulu <br  />
+ <a href="class_interface_se_deplacer.html#ae3426a8d0596b7274bc9381358793565">More...</a><br /></td></tr>
 <tr class="separator:ae3426a8d0596b7274bc9381358793565"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba379b3eb084850fb99e964b6e18fdb9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_element_joueur.html">ElementJoueur</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interface_se_deplacer.html#aba379b3eb084850fb99e964b6e18fdb9">thisElementJoueur</a> ()</td></tr>
 <tr class="separator:aba379b3eb084850fb99e964b6e18fdb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,7 +113,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac36849d4f010a926a2e134faee024632"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_interface_se_deplacer.html#ac36849d4f010a926a2e134faee024632">_commandeChoixSeDeplacer</a> ()</td></tr>
 <tr class="separator:ac36849d4f010a926a2e134faee024632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A implementer sur un <a class="el" href="class_element_joueur.html" title="classe abstraite correspondant a tous les elements pouvant appartenir a un joueur S&#39;ajoute a sa creat...">ElementJoueur</a> si il peut se deplacer <br  />
+Ajouter commande <a class="el" href="class_choix_se_deplacer.html" title="permet de choisir de deplacer une instance de InterfaceSeDeplacer /!\ S&#39;ASSURER que elementPourAction...">ChoixSeDeplacer</a> a la liste renvoye par ElementJoueur::getActionpossible() </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac36849d4f010a926a2e134faee024632"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac36849d4f010a926a2e134faee024632">&#9670;&nbsp;</a></span>_commandeChoixSeDeplacer()</h2>
 
@@ -164,6 +173,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>/!\ redefinir dans classe enfant avec bonus si voulu <br  />
+</p>
 
 <p>Implemented in <a class="el" href="classunite__d__elite.html#a0cd894c02dcf2d4a968d9b37fdbdb1f4">unite_d_elite</a>, <a class="el" href="class_mage.html#ae7040dace98b4b6a1eb926dd5a82f6b1">Mage</a>, <a class="el" href="class_fantassin.html#a4f9c6d1c7a5787917baa23f035d06a99">Fantassin</a>, <a class="el" href="class_engin_de_siege.html#ab1ea334284b2666eab15d618af90a571">EnginDeSiege</a>, <a class="el" href="class_cavalier.html#ad964f5dfa52188bc2f8864d9d201d24c">Cavalier</a>, and <a class="el" href="class_archer.html#a39cebeabd753c640925a0cf5393a3c91">Archer</a>.</p>
 

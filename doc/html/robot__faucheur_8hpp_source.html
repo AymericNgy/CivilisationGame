@@ -92,36 +92,37 @@ $(document).ready(function(){initNavTree('robot__faucheur_8hpp_source.html','');
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_moulin.html">Moulin</a>;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// permet d&#39;evoluer au niveau 2 de production d&#39;or la mine</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_robot_faucheur.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_robot_faucheur.html">RobotFaucheur</a> : <span class="keyword">public</span> <a class="code" href="class_commande_square.html">CommandeSquare</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    private :</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_robot_faucheur.html#ad83ffb41c88d9f54b18ad3e9c369fd03">   11</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_robot_faucheur.html#ad83ffb41c88d9f54b18ad3e9c369fd03">TEXTURE_NAME</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_robot_faucheur.html#acfadf62fbed2e2971df74b710c5e5ecd">   12</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_robot_faucheur.html#acfadf62fbed2e2971df74b710c5e5ecd">INFO</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_robot_faucheur.html#ab223c1bf1a77367d216aa19f9c6d2c39">   14</a></span>&#160;        <a class="code" href="class_moulin.html">Moulin</a> *<a class="code" href="class_robot_faucheur.html#ab223c1bf1a77367d216aa19f9c6d2c39">moulinPourAction</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_robot_faucheur.html#a53fe78f6675f5458c57d03e12fd5bcad">   16</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_robot_faucheur.html#a53fe78f6675f5458c57d03e12fd5bcad">PRIX_OR</a> = 1500;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    public :</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="class_robot_faucheur.html#a940d8af5179aa764a23cc9b3bc41049e">RobotFaucheur</a> (<a class="code" href="class_moulin.html">Moulin</a>* <a class="code" href="class_robot_faucheur.html#ab223c1bf1a77367d216aa19f9c6d2c39">moulinPourAction</a>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_robot_faucheur.html#a7517bbc3180b0f294f2e36777203b5b1">execute</a>();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_robot_faucheur.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_robot_faucheur.html">RobotFaucheur</a> : <span class="keyword">public</span> <a class="code" href="class_commande_square.html">CommandeSquare</a> {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    private :</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_robot_faucheur.html#ad83ffb41c88d9f54b18ad3e9c369fd03">   16</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_robot_faucheur.html#ad83ffb41c88d9f54b18ad3e9c369fd03">TEXTURE_NAME</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_robot_faucheur.html#acfadf62fbed2e2971df74b710c5e5ecd">   17</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_robot_faucheur.html#acfadf62fbed2e2971df74b710c5e5ecd">INFO</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_robot_faucheur.html#ab223c1bf1a77367d216aa19f9c6d2c39">   19</a></span>&#160;        <a class="code" href="class_moulin.html">Moulin</a> *<a class="code" href="class_robot_faucheur.html#ab223c1bf1a77367d216aa19f9c6d2c39">moulinPourAction</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_robot_faucheur.html#a53fe78f6675f5458c57d03e12fd5bcad">   21</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_robot_faucheur.html#a53fe78f6675f5458c57d03e12fd5bcad">PRIX_OR</a> = 1500;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    public :</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="class_robot_faucheur.html#a940d8af5179aa764a23cc9b3bc41049e">RobotFaucheur</a> (<a class="code" href="class_moulin.html">Moulin</a>* <a class="code" href="class_robot_faucheur.html#ab223c1bf1a77367d216aa19f9c6d2c39">moulinPourAction</a>);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_robot_faucheur.html#a7517bbc3180b0f294f2e36777203b5b1">execute</a>();</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_commande_square_html"><div class="ttname"><a href="class_commande_square.html">CommandeSquare</a></div><div class="ttdef"><b>Definition:</b> commande_square.hpp:16</div></div>
-<div class="ttc" id="aclass_moulin_html"><div class="ttname"><a href="class_moulin.html">Moulin</a></div><div class="ttdef"><b>Definition:</b> moulin.hpp:8</div></div>
-<div class="ttc" id="aclass_robot_faucheur_html"><div class="ttname"><a href="class_robot_faucheur.html">RobotFaucheur</a></div><div class="ttdef"><b>Definition:</b> robot_faucheur.hpp:9</div></div>
-<div class="ttc" id="aclass_robot_faucheur_html_a53fe78f6675f5458c57d03e12fd5bcad"><div class="ttname"><a href="class_robot_faucheur.html#a53fe78f6675f5458c57d03e12fd5bcad">RobotFaucheur::PRIX_OR</a></div><div class="ttdeci">static const int PRIX_OR</div><div class="ttdef"><b>Definition:</b> robot_faucheur.hpp:16</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_commande_square_html"><div class="ttname"><a href="class_commande_square.html">CommandeSquare</a></div><div class="ttdoc">commande qu'on peut rajouter en bas à gauche du Dahsboard et qui sont carrees le dashBoard va se char...</div><div class="ttdef"><b>Definition:</b> commande_square.hpp:20</div></div>
+<div class="ttc" id="aclass_moulin_html"><div class="ttname"><a href="class_moulin.html">Moulin</a></div><div class="ttdoc">batiment qui permet de produire de la nourriture</div><div class="ttdef"><b>Definition:</b> moulin.hpp:13</div></div>
+<div class="ttc" id="aclass_robot_faucheur_html"><div class="ttname"><a href="class_robot_faucheur.html">RobotFaucheur</a></div><div class="ttdef"><b>Definition:</b> robot_faucheur.hpp:14</div></div>
+<div class="ttc" id="aclass_robot_faucheur_html_a53fe78f6675f5458c57d03e12fd5bcad"><div class="ttname"><a href="class_robot_faucheur.html#a53fe78f6675f5458c57d03e12fd5bcad">RobotFaucheur::PRIX_OR</a></div><div class="ttdeci">static const int PRIX_OR</div><div class="ttdef"><b>Definition:</b> robot_faucheur.hpp:21</div></div>
 <div class="ttc" id="aclass_robot_faucheur_html_a7517bbc3180b0f294f2e36777203b5b1"><div class="ttname"><a href="class_robot_faucheur.html#a7517bbc3180b0f294f2e36777203b5b1">RobotFaucheur::execute</a></div><div class="ttdeci">void execute()</div><div class="ttdef"><b>Definition:</b> robot_faucheur.cpp:19</div></div>
 <div class="ttc" id="aclass_robot_faucheur_html_a940d8af5179aa764a23cc9b3bc41049e"><div class="ttname"><a href="class_robot_faucheur.html#a940d8af5179aa764a23cc9b3bc41049e">RobotFaucheur::RobotFaucheur</a></div><div class="ttdeci">RobotFaucheur(Moulin *moulinPourAction)</div><div class="ttdef"><b>Definition:</b> robot_faucheur.cpp:14</div></div>
-<div class="ttc" id="aclass_robot_faucheur_html_ab223c1bf1a77367d216aa19f9c6d2c39"><div class="ttname"><a href="class_robot_faucheur.html#ab223c1bf1a77367d216aa19f9c6d2c39">RobotFaucheur::moulinPourAction</a></div><div class="ttdeci">Moulin * moulinPourAction</div><div class="ttdef"><b>Definition:</b> robot_faucheur.hpp:14</div></div>
-<div class="ttc" id="aclass_robot_faucheur_html_acfadf62fbed2e2971df74b710c5e5ecd"><div class="ttname"><a href="class_robot_faucheur.html#acfadf62fbed2e2971df74b710c5e5ecd">RobotFaucheur::INFO</a></div><div class="ttdeci">static const std::string INFO</div><div class="ttdef"><b>Definition:</b> robot_faucheur.hpp:12</div></div>
-<div class="ttc" id="aclass_robot_faucheur_html_ad83ffb41c88d9f54b18ad3e9c369fd03"><div class="ttname"><a href="class_robot_faucheur.html#ad83ffb41c88d9f54b18ad3e9c369fd03">RobotFaucheur::TEXTURE_NAME</a></div><div class="ttdeci">static const std::string TEXTURE_NAME</div><div class="ttdef"><b>Definition:</b> robot_faucheur.hpp:11</div></div>
+<div class="ttc" id="aclass_robot_faucheur_html_ab223c1bf1a77367d216aa19f9c6d2c39"><div class="ttname"><a href="class_robot_faucheur.html#ab223c1bf1a77367d216aa19f9c6d2c39">RobotFaucheur::moulinPourAction</a></div><div class="ttdeci">Moulin * moulinPourAction</div><div class="ttdef"><b>Definition:</b> robot_faucheur.hpp:19</div></div>
+<div class="ttc" id="aclass_robot_faucheur_html_acfadf62fbed2e2971df74b710c5e5ecd"><div class="ttname"><a href="class_robot_faucheur.html#acfadf62fbed2e2971df74b710c5e5ecd">RobotFaucheur::INFO</a></div><div class="ttdeci">static const std::string INFO</div><div class="ttdef"><b>Definition:</b> robot_faucheur.hpp:17</div></div>
+<div class="ttc" id="aclass_robot_faucheur_html_ad83ffb41c88d9f54b18ad3e9c369fd03"><div class="ttname"><a href="class_robot_faucheur.html#ad83ffb41c88d9f54b18ad3e9c369fd03">RobotFaucheur::TEXTURE_NAME</a></div><div class="ttdeci">static const std::string TEXTURE_NAME</div><div class="ttdef"><b>Definition:</b> robot_faucheur.hpp:16</div></div>
 <div class="ttc" id="acommande__square_8hpp_html"><div class="ttname"><a href="commande__square_8hpp.html">commande_square.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

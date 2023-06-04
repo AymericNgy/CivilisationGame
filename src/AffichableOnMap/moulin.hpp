@@ -5,6 +5,11 @@
 #include "batiment.hpp"
 #include "interface_cree_ressource.hpp"
 
+
+/**
+ * \class Moulin
+ * \brief batiment qui permet de produire de la nourriture
+*/
 class Moulin : public Batiment , public InterfaceCreeRessource {
     private :
         static const int NOMBRE_ACTION_MAX_ORIGINE=1;

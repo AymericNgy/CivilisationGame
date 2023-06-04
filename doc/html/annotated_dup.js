@@ -14,6 +14,7 @@ var annotated_dup =
     [ "Cavalier", "class_cavalier.html", "class_cavalier" ],
     [ "Chateau", "class_chateau.html", "class_chateau" ],
     [ "ChoixAttaquer", "class_choix_attaquer.html", "class_choix_attaquer" ],
+    [ "ChoixConstruire", "class_choix_construire.html", null ],
     [ "ChoixConstuire", "class_choix_constuire.html", "class_choix_constuire" ],
     [ "ChoixSeDeplacer", "class_choix_se_deplacer.html", "class_choix_se_deplacer" ],
     [ "Commande", "class_commande.html", "class_commande" ],

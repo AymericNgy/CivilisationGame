@@ -91,37 +91,30 @@ $(document).ready(function(){initNavTree('banner_8hpp_source.html',''); initResi
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../UserInterface/affichable_on_panel.hpp&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/* Prend la couleur du joueur actif quand Banner::update() est appele</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*/</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_banner.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_banner.html">Banner</a> : <span class="keyword">public</span> <a class="code" href="class_affichable_on_panel.html">AffichableOnPanel</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    private :</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_banner.html#a47607e3cd894abea99e71780fa96db6d">   11</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_banner.html#a47607e3cd894abea99e71780fa96db6d">COUCHE</a> = 20;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_banner.html#a91440afefeb67ae8882f4f8491ee153b">   13</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_banner.html#a91440afefeb67ae8882f4f8491ee153b">WIDTH</a> = 100;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_banner.html#ad52a01d08680c49424976bbbde688b0c">   14</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_banner.html#ad52a01d08680c49424976bbbde688b0c">HEIGHT</a> = 100;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_banner.html#a3ab1e1c03e34c7f4d9afeb5d860387b3">   16</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_banner.html#a3ab1e1c03e34c7f4d9afeb5d860387b3">POSITION_X</a>; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_banner.html#a7b26670781fc102554e48c016f8ff1e2">   17</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_banner.html#a7b26670781fc102554e48c016f8ff1e2">POSITION_Y</a>;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_banner.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_banner.html">Banner</a> : <span class="keyword">public</span> <a class="code" href="class_affichable_on_panel.html">AffichableOnPanel</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    private :</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_banner.html#a47607e3cd894abea99e71780fa96db6d">   14</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_banner.html#a47607e3cd894abea99e71780fa96db6d">COUCHE</a> = 20;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_banner.html#a91440afefeb67ae8882f4f8491ee153b">   16</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_banner.html#a91440afefeb67ae8882f4f8491ee153b">WIDTH</a> = 100;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_banner.html#ad52a01d08680c49424976bbbde688b0c">   17</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_banner.html#ad52a01d08680c49424976bbbde688b0c">HEIGHT</a> = 100;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_banner.html#a807dbefe174fa06653cbe768c592fb16">   19</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_banner.html#a807dbefe174fa06653cbe768c592fb16">TEXTURE_NAME</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    public :</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="class_banner.html#aba008096f2c32cd219aa6eb962f108fd">Banner</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_banner.html#a3ab1e1c03e34c7f4d9afeb5d860387b3">   19</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_banner.html#a3ab1e1c03e34c7f4d9afeb5d860387b3">POSITION_X</a>; </div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_banner.html#a7b26670781fc102554e48c016f8ff1e2">   20</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_banner.html#a7b26670781fc102554e48c016f8ff1e2">POSITION_Y</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_banner.html#a807dbefe174fa06653cbe768c592fb16">   22</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_banner.html#a807dbefe174fa06653cbe768c592fb16">TEXTURE_NAME</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_banner.html#a8c3641aff490f390756f151313489f44">update</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    public :</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="class_banner.html#aba008096f2c32cd219aa6eb962f108fd">Banner</a>();</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_banner.html#a8c3641aff490f390756f151313489f44">update</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
@@ -134,17 +127,24 @@ $(document).ready(function(){initNavTree('banner_8hpp_source.html',''); initResi
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_affichable_on_panel_html"><div class="ttname"><a href="class_affichable_on_panel.html">AffichableOnPanel</a></div><div class="ttdef"><b>Definition:</b> affichable_on_panel.hpp:19</div></div>
-<div class="ttc" id="aclass_banner_html"><div class="ttname"><a href="class_banner.html">Banner</a></div><div class="ttdef"><b>Definition:</b> banner.hpp:9</div></div>
-<div class="ttc" id="aclass_banner_html_a3ab1e1c03e34c7f4d9afeb5d860387b3"><div class="ttname"><a href="class_banner.html#a3ab1e1c03e34c7f4d9afeb5d860387b3">Banner::POSITION_X</a></div><div class="ttdeci">static const int POSITION_X</div><div class="ttdef"><b>Definition:</b> banner.hpp:16</div></div>
-<div class="ttc" id="aclass_banner_html_a47607e3cd894abea99e71780fa96db6d"><div class="ttname"><a href="class_banner.html#a47607e3cd894abea99e71780fa96db6d">Banner::COUCHE</a></div><div class="ttdeci">static const int COUCHE</div><div class="ttdef"><b>Definition:</b> banner.hpp:11</div></div>
-<div class="ttc" id="aclass_banner_html_a7b26670781fc102554e48c016f8ff1e2"><div class="ttname"><a href="class_banner.html#a7b26670781fc102554e48c016f8ff1e2">Banner::POSITION_Y</a></div><div class="ttdeci">static const int POSITION_Y</div><div class="ttdef"><b>Definition:</b> banner.hpp:17</div></div>
-<div class="ttc" id="aclass_banner_html_a807dbefe174fa06653cbe768c592fb16"><div class="ttname"><a href="class_banner.html#a807dbefe174fa06653cbe768c592fb16">Banner::TEXTURE_NAME</a></div><div class="ttdeci">static const std::string TEXTURE_NAME</div><div class="ttdef"><b>Definition:</b> banner.hpp:19</div></div>
-<div class="ttc" id="aclass_banner_html_a8c3641aff490f390756f151313489f44"><div class="ttname"><a href="class_banner.html#a8c3641aff490f390756f151313489f44">Banner::update</a></div><div class="ttdeci">void update()</div><div class="ttdef"><b>Definition:</b> banner.cpp:18</div></div>
-<div class="ttc" id="aclass_banner_html_a91440afefeb67ae8882f4f8491ee153b"><div class="ttname"><a href="class_banner.html#a91440afefeb67ae8882f4f8491ee153b">Banner::WIDTH</a></div><div class="ttdeci">static const int WIDTH</div><div class="ttdef"><b>Definition:</b> banner.hpp:13</div></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_affichable_on_panel_html"><div class="ttname"><a href="class_affichable_on_panel.html">AffichableOnPanel</a></div><div class="ttdoc">Classe abstraite qui permet a une classe d'etre affichable de facon fixe sur le panel elle gere le de...</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.hpp:23</div></div>
+<div class="ttc" id="aclass_banner_html"><div class="ttname"><a href="class_banner.html">Banner</a></div><div class="ttdoc">prend la couleur du joueur actif quand Banner::update() est appele</div><div class="ttdef"><b>Definition:</b> banner.hpp:12</div></div>
+<div class="ttc" id="aclass_banner_html_a3ab1e1c03e34c7f4d9afeb5d860387b3"><div class="ttname"><a href="class_banner.html#a3ab1e1c03e34c7f4d9afeb5d860387b3">Banner::POSITION_X</a></div><div class="ttdeci">static const int POSITION_X</div><div class="ttdef"><b>Definition:</b> banner.hpp:19</div></div>
+<div class="ttc" id="aclass_banner_html_a47607e3cd894abea99e71780fa96db6d"><div class="ttname"><a href="class_banner.html#a47607e3cd894abea99e71780fa96db6d">Banner::COUCHE</a></div><div class="ttdeci">static const int COUCHE</div><div class="ttdef"><b>Definition:</b> banner.hpp:14</div></div>
+<div class="ttc" id="aclass_banner_html_a7b26670781fc102554e48c016f8ff1e2"><div class="ttname"><a href="class_banner.html#a7b26670781fc102554e48c016f8ff1e2">Banner::POSITION_Y</a></div><div class="ttdeci">static const int POSITION_Y</div><div class="ttdef"><b>Definition:</b> banner.hpp:20</div></div>
+<div class="ttc" id="aclass_banner_html_a807dbefe174fa06653cbe768c592fb16"><div class="ttname"><a href="class_banner.html#a807dbefe174fa06653cbe768c592fb16">Banner::TEXTURE_NAME</a></div><div class="ttdeci">static const std::string TEXTURE_NAME</div><div class="ttdef"><b>Definition:</b> banner.hpp:22</div></div>
+<div class="ttc" id="aclass_banner_html_a8c3641aff490f390756f151313489f44"><div class="ttname"><a href="class_banner.html#a8c3641aff490f390756f151313489f44">Banner::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">met a jour la couleur du joueur actif</div><div class="ttdef"><b>Definition:</b> banner.cpp:18</div></div>
+<div class="ttc" id="aclass_banner_html_a91440afefeb67ae8882f4f8491ee153b"><div class="ttname"><a href="class_banner.html#a91440afefeb67ae8882f4f8491ee153b">Banner::WIDTH</a></div><div class="ttdeci">static const int WIDTH</div><div class="ttdef"><b>Definition:</b> banner.hpp:16</div></div>
 <div class="ttc" id="aclass_banner_html_aba008096f2c32cd219aa6eb962f108fd"><div class="ttname"><a href="class_banner.html#aba008096f2c32cd219aa6eb962f108fd">Banner::Banner</a></div><div class="ttdeci">Banner()</div><div class="ttdef"><b>Definition:</b> banner.cpp:13</div></div>
-<div class="ttc" id="aclass_banner_html_ad52a01d08680c49424976bbbde688b0c"><div class="ttname"><a href="class_banner.html#ad52a01d08680c49424976bbbde688b0c">Banner::HEIGHT</a></div><div class="ttdeci">static const int HEIGHT</div><div class="ttdef"><b>Definition:</b> banner.hpp:14</div></div>
+<div class="ttc" id="aclass_banner_html_ad52a01d08680c49424976bbbde688b0c"><div class="ttname"><a href="class_banner.html#ad52a01d08680c49424976bbbde688b0c">Banner::HEIGHT</a></div><div class="ttdeci">static const int HEIGHT</div><div class="ttdef"><b>Definition:</b> banner.hpp:17</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

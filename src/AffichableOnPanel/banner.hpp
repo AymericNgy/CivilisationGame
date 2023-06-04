@@ -4,7 +4,10 @@
 #include "../UserInterface/affichable_on_panel.hpp"
 
 
-/* Prend la couleur du joueur actif quand Banner::update() est appele
+
+/**
+ * \class Banner
+ * \brief prend la couleur du joueur actif quand Banner::update() est appele
 */
 class Banner : public AffichableOnPanel {
     private :
@@ -19,8 +22,12 @@ class Banner : public AffichableOnPanel {
         static const std::string TEXTURE_NAME;
 
     public :
+
         Banner();
 
+        /**
+         * \brief met a jour la couleur du joueur actif
+        */
         void update();
 
 

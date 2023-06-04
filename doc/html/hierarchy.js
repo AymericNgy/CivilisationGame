@@ -51,6 +51,7 @@ var hierarchy =
     ] ],
     [ "Case", "class_case.html", null ],
     [ "CasePosition", "class_case_position.html", null ],
+    [ "ChoixConstruire", "class_choix_construire.html", null ],
     [ "DrawableForUI", "class_drawable_for_u_i.html", [
       [ "RectangleForUI", "class_rectangle_for_u_i.html", null ],
       [ "SpriteForUI", "class_sprite_for_u_i.html", null ],

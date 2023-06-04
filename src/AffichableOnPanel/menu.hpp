@@ -4,6 +4,11 @@
 #include "../UserInterface/affichable_on_panel.hpp"
 #include "../Commande/lancer_partie.hpp"
 
+/**
+ * \class Menu
+ * \brief ecran d'accueil du jeu \n
+ * on peut lancer la partie depuis cet ecran
+*/
 class Menu : public AffichableOnPanel {
     private :
     // ---CONSTANTES---

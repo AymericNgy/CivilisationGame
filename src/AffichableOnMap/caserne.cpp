@@ -35,7 +35,6 @@ ListPtrCommandeSquare_ptr Caserne::getActionPossible(){
     commandes->push_back(new CreerElement<Mage>(this->getCasePosition(),this->joueurProprietaire,this));
     commandes->push_back(new CreerElement<Archer>(this->getCasePosition(),this->joueurProprietaire,this));
     commandes->push_back(new CreerElement<EnginDeSiege>(this->getCasePosition(),this->joueurProprietaire,this));
-    commandes->push_back(new CreerElement<unite_d_elite>(this->getCasePosition(),this->joueurProprietaire,this));
 
 
 

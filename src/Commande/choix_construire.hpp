@@ -6,7 +6,10 @@
 class Case ;
 typedef std::shared_ptr<Case> Case_ptr;
 
-
+/**
+ * \class ChoixConstruire
+ * \brief permet de choisir de construire sur une case
+*/
 class ChoixConstuire : public CommandeSquare {
     private :
         static const std::string TEXTURE_NAME;
@@ -15,6 +18,10 @@ class ChoixConstuire : public CommandeSquare {
 
 
     public : 
+        /**
+         * \brief constructeur
+         * \param casePourAction case sur laquelle on veut construire
+        */
         ChoixConstuire(Case_ptr casePourAction);
         void execute();
 

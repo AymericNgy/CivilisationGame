@@ -5,7 +5,11 @@
 
 class Mine;
 
-// permet d'evoluer au niveau 2 de production d'or la mine
+
+/**
+ * \class ExtractionDePuits
+ * \brief permet d'evoluer au niveau 2 de production d'or la mine
+*/
 class ExtractionDePuits : public CommandeSquare {
     private :
         static const std::string TEXTURE_NAME;
@@ -16,6 +20,10 @@ class ExtractionDePuits : public CommandeSquare {
         static const int PRIX_OR = 500;
     
     public :
+        /**
+         * \brief constructeur
+         * \param minePourAction mine qu'on veut faire evoluer
+        */
         ExtractionDePuits(Mine *minePourAction);
         void execute();
 

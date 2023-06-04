@@ -5,7 +5,13 @@
 
 class Camp_de_bucheron;
 
-// permet d'evoluer au niveau 2 de production d'or la mine
+
+
+/**
+ * \class HacheTranchante
+ * \brief permet d'evoluer au niveau 2 de production de bois du camp de bucheron
+ */
+
 class HacheTranchante : public CommandeSquare {
     private :
         static const std::string TEXTURE_NAME;
@@ -16,7 +22,11 @@ class HacheTranchante : public CommandeSquare {
         static const int PRIX_OR = 500;
     
     public :
-        HacheTranchante(Camp_de_bucheron*campPourAction);
+        /**
+         * \brief constructeur
+         * \param campPourAction camp de bucheron qu'on veut faire evoluer
+        */
+        HacheTranchante(Camp_de_bucheron* campPourAction);
         void execute();
 
 

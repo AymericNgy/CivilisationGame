@@ -8,7 +8,11 @@
 #include "interface_attaquer.hpp"
 
 
-
+/**
+ * \class unite_d_elite
+ * \brief classe representant une unite d'elite \n
+ * cree par le chateau
+*/
 class unite_d_elite : public Unite , public InterfaceAttaquer{
     private :
 
@@ -57,13 +61,20 @@ class unite_d_elite : public Unite , public InterfaceAttaquer{
         
         int getPvMax() const {return NOMBE_PV_MAX_ORIGINE+nombrePvBonus;}
 
-        // permet d'implementer InterfaceSeDeplacer
+
+        /**
+         * \brief permet d'implementer InterfaceSeDeplacer
+        */
         float getNombreCaseDeplacement() const  {return NOMBRE_CASE_DEPLACEMENT_ORIGINE+mombreCaseDeplacementBonus;}
         
-        // permet d'implementer InterfaceAttaquer
+        /**
+         * \brief permet d'implementer InterfaceSeDeplacer
+        */
         float getNombreDegat() const {return NOMBRE_DEGAT_ORIGINE+nombreDegatBonus;}
 
-        // permet d'implementer InterfaceAttaquer
+        /**
+         * \brief permet d'implementer InterfaceSeDeplacer
+        */
         float getDistanceAttaque() const {return DISTANCE_ATTAQUE_ORIGINE+distanceAttaqueBonus;}
 
 

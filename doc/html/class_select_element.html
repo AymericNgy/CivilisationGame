@@ -91,6 +91,9 @@ $(document).ready(function(){initNavTree('class_select_element.html',''); initRe
 </div><!--header-->
 <div class="contents">
 
+<p>Permet de l'option de choisir un element specifique sur une case.  
+ <a href="class_select_element.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="select__element_8hpp_source.html">select_element.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for SelectElement:</div>
@@ -106,18 +109,24 @@ Collaboration diagram for SelectElement:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae8cfc27a18fd6edd018bdc13f73b266e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_select_element.html#ae8cfc27a18fd6edd018bdc13f73b266e">SelectElement</a> (<a class="el" href="case_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a> <a class="el" href="class_select_element.html#a2166c796171a13b11996a23dfa7ff8aa">casePourAction</a>)</td></tr>
+<tr class="memdesc:ae8cfc27a18fd6edd018bdc13f73b266e"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructeur  <a href="class_select_element.html#ae8cfc27a18fd6edd018bdc13f73b266e">More...</a><br /></td></tr>
 <tr class="separator:ae8cfc27a18fd6edd018bdc13f73b266e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5ebf94268e25f4912f86701306ff13f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_select_element.html#ad5ebf94268e25f4912f86701306ff13f">execute</a> ()</td></tr>
-<tr class="separator:ad5ebf94268e25f4912f86701306ff13f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dc8e72721b16e5656825d1820a9932c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_select_element.html#a4dc8e72721b16e5656825d1820a9932c">execute</a> () override</td></tr>
+<tr class="separator:a4dc8e72721b16e5656825d1820a9932c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_commande_square"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_commande_square')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_commande_square.html">CommandeSquare</a></td></tr>
 <tr class="memitem:a37771193885ba5f2cefa0c5347622d75 inherit pub_methods_class_commande_square"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande_square.html#a37771193885ba5f2cefa0c5347622d75">CommandeSquare</a> (std::string texturePathName, std::string <a class="el" href="class_commande.html#a93112cc654931c1f9d32f2e892c49877">info</a>, int bois, int nourriture, int _or)</td></tr>
+<tr class="memdesc:a37771193885ba5f2cefa0c5347622d75 inherit pub_methods_class_commande_square"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructeur  <a href="class_commande_square.html#a37771193885ba5f2cefa0c5347622d75">More...</a><br /></td></tr>
 <tr class="separator:a37771193885ba5f2cefa0c5347622d75 inherit pub_methods_class_commande_square"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_commande"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_commande')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_commande.html">Commande</a></td></tr>
 <tr class="memitem:a58bb34a404a783f373f4e986d1a5dbbe inherit pub_methods_class_commande"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande.html#a58bb34a404a783f373f4e986d1a5dbbe">peutAcheter</a> ()</td></tr>
+<tr class="memdesc:a58bb34a404a783f373f4e986d1a5dbbe inherit pub_methods_class_commande"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie si le joueur actif peut acheter la commande  <a href="class_commande.html#a58bb34a404a783f373f4e986d1a5dbbe">More...</a><br /></td></tr>
 <tr class="separator:a58bb34a404a783f373f4e986d1a5dbbe inherit pub_methods_class_commande"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6fbf8dcc9293376c05666208f5cfde6 inherit pub_methods_class_commande"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande.html#af6fbf8dcc9293376c05666208f5cfde6">acheter</a> ()</td></tr>
+<tr class="memdesc:af6fbf8dcc9293376c05666208f5cfde6 inherit pub_methods_class_commande"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie si le joueur actif peut acheter la commande <br  />
+si oui enleve les ressources au joueur actif  <a href="class_commande.html#af6fbf8dcc9293376c05666208f5cfde6">More...</a><br /></td></tr>
 <tr class="separator:af6fbf8dcc9293376c05666208f5cfde6 inherit pub_methods_class_commande"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9bc33801a3ac7f7938a26c00edd5b7d inherit pub_methods_class_commande"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande.html#af9bc33801a3ac7f7938a26c00edd5b7d">Commande</a> (<a class="el" href="class_pixel.html">Pixel</a> position, std::string texturePathName, std::string <a class="el" href="class_commande.html#a93112cc654931c1f9d32f2e892c49877">info</a>, int bois, int nourriture, int _or)</td></tr>
+<tr class="memdesc:af9bc33801a3ac7f7938a26c00edd5b7d inherit pub_methods_class_commande"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructeur  <a href="class_commande.html#af9bc33801a3ac7f7938a26c00edd5b7d">More...</a><br /></td></tr>
 <tr class="separator:af9bc33801a3ac7f7938a26c00edd5b7d inherit pub_methods_class_commande"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad069acb8c19b9b2e09edaebc9151e351 inherit pub_methods_class_commande"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande.html#ad069acb8c19b9b2e09edaebc9151e351">getInfo</a> () const</td></tr>
 <tr class="separator:ad069acb8c19b9b2e09edaebc9151e351 inherit pub_methods_class_commande"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,33 +135,41 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d7565711abd61d42392117ec418260d inherit pub_methods_class_commande"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande.html#a4d7565711abd61d42392117ec418260d">pixelIsOn</a> (int x, int y) const</td></tr>
 <tr class="separator:a4d7565711abd61d42392117ec418260d inherit pub_methods_class_commande"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e3ec6b067ac57b05883d17218269afc inherit pub_methods_class_commande"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande.html#a4e3ec6b067ac57b05883d17218269afc">prix</a> (int &amp;bois, int &amp;nourriture, int &amp;_or)</td></tr>
+<tr class="memdesc:a4e3ec6b067ac57b05883d17218269afc inherit pub_methods_class_commande"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie le prix en bois, nourriture et or de la commande  <a href="class_commande.html#a4e3ec6b067ac57b05883d17218269afc">More...</a><br /></td></tr>
 <tr class="separator:a4e3ec6b067ac57b05883d17218269afc inherit pub_methods_class_commande"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_affichable_on_panel"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_affichable_on_panel')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_affichable_on_panel.html">AffichableOnPanel</a></td></tr>
 <tr class="memitem:a3a3207c67a27f50a5b3afa2c5677f7ba inherit pub_methods_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a3a3207c67a27f50a5b3afa2c5677f7ba">getTextureFileName</a> () const</td></tr>
+<tr class="memdesc:a3a3207c67a27f50a5b3afa2c5677f7ba inherit pub_methods_class_affichable_on_panel"><td class="mdescLeft">&#160;</td><td class="mdescRight">reucperer la texture du sprite  <a href="class_affichable_on_panel.html#a3a3207c67a27f50a5b3afa2c5677f7ba">More...</a><br /></td></tr>
 <tr class="separator:a3a3207c67a27f50a5b3afa2c5677f7ba inherit pub_methods_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af89235f90b04732fc82c104c0a029a05 inherit pub_methods_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#af89235f90b04732fc82c104c0a029a05">setPosition</a> (int i, int j)</td></tr>
+<tr class="memdesc:af89235f90b04732fc82c104c0a029a05 inherit pub_methods_class_affichable_on_panel"><td class="mdescLeft">&#160;</td><td class="mdescRight">deinir la position du sprite  <a href="class_affichable_on_panel.html#af89235f90b04732fc82c104c0a029a05">More...</a><br /></td></tr>
 <tr class="separator:af89235f90b04732fc82c104c0a029a05 inherit pub_methods_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d8f44bce163833bb5cc500a306a1a2d inherit pub_methods_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_pixel.html">Pixel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a2d8f44bce163833bb5cc500a306a1a2d">getPosition</a> () const</td></tr>
 <tr class="separator:a2d8f44bce163833bb5cc500a306a1a2d inherit pub_methods_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a909a1d2a01adba8c442368a8f6c7d5f6 inherit pub_methods_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a909a1d2a01adba8c442368a8f6c7d5f6">AffichableOnPanel</a> (<a class="el" href="class_pixel.html">Pixel</a> position, int couche, std::string textureName)</td></tr>
+<tr class="memdesc:a909a1d2a01adba8c442368a8f6c7d5f6 inherit pub_methods_class_affichable_on_panel"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructeur  <a href="class_affichable_on_panel.html#a909a1d2a01adba8c442368a8f6c7d5f6">More...</a><br /></td></tr>
 <tr class="separator:a909a1d2a01adba8c442368a8f6c7d5f6 inherit pub_methods_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fb60d81f5e20aa0137c7d6fdeff4cf7 inherit pub_methods_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a4fb60d81f5e20aa0137c7d6fdeff4cf7">~AffichableOnPanel</a> ()</td></tr>
 <tr class="separator:a4fb60d81f5e20aa0137c7d6fdeff4cf7 inherit pub_methods_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08b987fc95df0860398eb4b06ecd5ee9 inherit pub_methods_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a08b987fc95df0860398eb4b06ecd5ee9">setTextures</a> (std::string textureName)</td></tr>
 <tr class="separator:a08b987fc95df0860398eb4b06ecd5ee9 inherit pub_methods_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02815892bcdb39f354ebec14d4d9c882 inherit pub_methods_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a02815892bcdb39f354ebec14d4d9c882">pixelIsOn</a> (int x, int y) const</td></tr>
+<tr class="memdesc:a02815892bcdb39f354ebec14d4d9c882 inherit pub_methods_class_affichable_on_panel"><td class="mdescLeft">&#160;</td><td class="mdescRight">teste si le pixel de coordonnes (x,y) fait partie du sprite  <a href="class_affichable_on_panel.html#a02815892bcdb39f354ebec14d4d9c882">More...</a><br /></td></tr>
 <tr class="separator:a02815892bcdb39f354ebec14d4d9c882 inherit pub_methods_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a2166c796171a13b11996a23dfa7ff8aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="case_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_select_element.html#a2166c796171a13b11996a23dfa7ff8aa">casePourAction</a></td></tr>
+<tr class="memdesc:a2166c796171a13b11996a23dfa7ff8aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">case sur laquelle on veut selectionner un element  <a href="class_select_element.html#a2166c796171a13b11996a23dfa7ff8aa">More...</a><br /></td></tr>
 <tr class="separator:a2166c796171a13b11996a23dfa7ff8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:ac230801108d63d7979d519d3444569a3"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_select_element.html#ac230801108d63d7979d519d3444569a3">TEXTURE_NAME</a> = &quot;select_element_commande.png&quot;</td></tr>
+<tr class="memdesc:ac230801108d63d7979d519d3444569a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">nom de la texture de la commande  <a href="class_select_element.html#ac230801108d63d7979d519d3444569a3">More...</a><br /></td></tr>
 <tr class="separator:ac230801108d63d7979d519d3444569a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33c197f82f292ec36ca6d7da3cdf3802"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_select_element.html#a33c197f82f292ec36ca6d7da3cdf3802">INFO</a> = &quot;Choisissez l'une de vos unites presentes sur la case&quot;</td></tr>
+<tr class="memdesc:a33c197f82f292ec36ca6d7da3cdf3802"><td class="mdescLeft">&#160;</td><td class="mdescRight">info relative a la commande  <a href="class_select_element.html#a33c197f82f292ec36ca6d7da3cdf3802">More...</a><br /></td></tr>
 <tr class="separator:a33c197f82f292ec36ca6d7da3cdf3802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -168,6 +185,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a44fef5b3b4feffbc5bc900d708bd0ac0 inherit pro_attribs_class_commande"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_affichable_on_panel"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_affichable_on_panel')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_affichable_on_panel.html">AffichableOnPanel</a></td></tr>
 <tr class="memitem:ab50ed56aaaf26e995d64ed235387169d inherit pro_attribs_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite_for_u_i.html">SpriteForUI</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#ab50ed56aaaf26e995d64ed235387169d">sprite</a></td></tr>
+<tr class="memdesc:ab50ed56aaaf26e995d64ed235387169d inherit pro_attribs_class_affichable_on_panel"><td class="mdescLeft">&#160;</td><td class="mdescRight">sprite de l'objet  <a href="class_affichable_on_panel.html#ab50ed56aaaf26e995d64ed235387169d">More...</a><br /></td></tr>
 <tr class="separator:ab50ed56aaaf26e995d64ed235387169d inherit pro_attribs_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_attribs_class_commande_square"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_commande_square')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_commande_square.html">CommandeSquare</a></td></tr>
 <tr class="memitem:a633a8e3e1cc6760b943cb7cda929c4e1 inherit pro_static_attribs_class_commande_square"><td class="memItemLeft" align="right" valign="top">const static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande_square.html#a633a8e3e1cc6760b943cb7cda929c4e1">HEIGHT</a> = 36</td></tr>
@@ -175,7 +193,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a15f5223ad515a919a236f919e3914a05 inherit pro_static_attribs_class_commande_square"><td class="memItemLeft" align="right" valign="top">const static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande_square.html#a15f5223ad515a919a236f919e3914a05">WIIDTH</a> = 36</td></tr>
 <tr class="separator:a15f5223ad515a919a236f919e3914a05 inherit pro_static_attribs_class_commande_square"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Permet de l'option de choisir un element specifique sur une case. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae8cfc27a18fd6edd018bdc13f73b266e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae8cfc27a18fd6edd018bdc13f73b266e">&#9670;&nbsp;</a></span>SelectElement()</h2>
 
@@ -192,11 +212,19 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>constructeur </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">casePourAction</td><td>case sur laquelle on veut selectionner un element </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad5ebf94268e25f4912f86701306ff13f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5ebf94268e25f4912f86701306ff13f">&#9670;&nbsp;</a></span>execute()</h2>
+<a id="a4dc8e72721b16e5656825d1820a9932c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dc8e72721b16e5656825d1820a9932c">&#9670;&nbsp;</a></span>execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,7 +241,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -243,6 +271,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>case sur laquelle on veut selectionner un element </p>
+
 </div>
 </div>
 <a id="a33c197f82f292ec36ca6d7da3cdf3802"></a>
@@ -265,6 +295,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>info relative a la commande </p>
+
 </div>
 </div>
 <a id="ac230801108d63d7979d519d3444569a3"></a>
@@ -286,6 +318,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>nom de la texture de la commande </p>
 
 </div>
 </div>

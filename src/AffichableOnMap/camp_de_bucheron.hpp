@@ -5,6 +5,10 @@
 #include "batiment.hpp"
 #include "interface_cree_ressource.hpp"
 
+/**
+ * \class Camp_de_bucheron
+ * \brief Camp_de_bucheron est un Batiment qui permet de produire du bois
+*/
 class Camp_de_bucheron : public Batiment , public InterfaceCreeRessource {
     private :
         static const int NOMBRE_ACTION_MAX_ORIGINE=1;

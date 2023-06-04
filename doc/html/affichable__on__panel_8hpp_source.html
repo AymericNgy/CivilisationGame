@@ -99,61 +99,58 @@ $(document).ready(function(){initNavTree('affichable__on__panel_8hpp_source.html
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">class </span><a class="code" href="class_pixel.html">Pixel</a>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span><a class="code" href="class_sprite_for_u_i.html">SpriteForUI</a>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// classe qui permet a une classe d&#39;etre affichable sur la map</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// elle gere le deplacement sur la map du jeu de l&#39;objet</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// on utilise des pointeurs pour pouvoire faire des delete quand on veut detruire l&#39;objet</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_affichable_on_panel.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_affichable_on_panel.html">AffichableOnPanel</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_affichable_on_panel.html#ab50ed56aaaf26e995d64ed235387169d">   24</a></span>&#160;        <a class="code" href="class_sprite_for_u_i.html">SpriteForUI</a> *<a class="code" href="class_affichable_on_panel.html#ab50ed56aaaf26e995d64ed235387169d">sprite</a>; <span class="comment">// [?] utilise un pointeur sinon probleme pour les includes, permet d&#39;utiliser class SpriteForUI; =&gt; merci le compilateur C++</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">//std::set&lt;CommandeAffichableOnMap_ptr&gt; actionsPossible; DEPRACATED =&gt; beaucoup plus logiqu de creer a chaque fois</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_affichable_on_panel.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_affichable_on_panel.html">AffichableOnPanel</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="class_affichable_on_panel.html#a3a3207c67a27f50a5b3afa2c5677f7ba">getTextureFileName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">// ---ATTRIBUTS---</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_affichable_on_panel.html#ab50ed56aaaf26e995d64ed235387169d">   31</a></span>&#160;<span class="comment"></span>        <a class="code" href="class_sprite_for_u_i.html">SpriteForUI</a> *<a class="code" href="class_affichable_on_panel.html#ab50ed56aaaf26e995d64ed235387169d">sprite</a>; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_affichable_on_panel.html#af89235f90b04732fc82c104c0a029a05">setPosition</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j); </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_pixel.html">Pixel</a> <a class="code" href="class_affichable_on_panel.html#a2d8f44bce163833bb5cc500a306a1a2d">getPosition</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_affichable_on_panel.html#a909a1d2a01adba8c442368a8f6c7d5f6">AffichableOnPanel</a>(<a class="code" href="class_pixel.html">Pixel</a> position, <span class="keywordtype">int</span> couche, std::string textureName);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="class_affichable_on_panel.html#a4fb60d81f5e20aa0137c7d6fdeff4cf7">~AffichableOnPanel</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_affichable_on_panel.html#a08b987fc95df0860398eb4b06ecd5ee9">setTextures</a>(std::string textureName);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">// teste si le pixel de coordonnes (x,y) fait partie du sprite</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_affichable_on_panel.html#a02815892bcdb39f354ebec14d4d9c882">pixelIsOn</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">virtual</span> std::string <a class="code" href="class_affichable_on_panel.html#a3a3207c67a27f50a5b3afa2c5677f7ba">getTextureFileName</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_affichable_on_panel.html#af89235f90b04732fc82c104c0a029a05">setPosition</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j); </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="affichable__on__panel_8hpp.html#a659fc17be5da988ed9f57403b3586131">   52</a></span>&#160;<span class="keyword">typedef</span> std::shared_ptr&lt;AffichableOnPanel&gt; <a class="code" href="affichable__on__panel_8hpp.html#a659fc17be5da988ed9f57403b3586131">AffichableOnPanel_ptr</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aaffichable__on__panel_8hpp_html_a659fc17be5da988ed9f57403b3586131"><div class="ttname"><a href="affichable__on__panel_8hpp.html#a659fc17be5da988ed9f57403b3586131">AffichableOnPanel_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; AffichableOnPanel &gt; AffichableOnPanel_ptr</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.hpp:52</div></div>
-<div class="ttc" id="aclass_affichable_on_panel_html"><div class="ttname"><a href="class_affichable_on_panel.html">AffichableOnPanel</a></div><div class="ttdef"><b>Definition:</b> affichable_on_panel.hpp:19</div></div>
-<div class="ttc" id="aclass_affichable_on_panel_html_a02815892bcdb39f354ebec14d4d9c882"><div class="ttname"><a href="class_affichable_on_panel.html#a02815892bcdb39f354ebec14d4d9c882">AffichableOnPanel::pixelIsOn</a></div><div class="ttdeci">bool pixelIsOn(int x, int y) const</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.cpp:37</div></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="class_pixel.html">Pixel</a> <a class="code" href="class_affichable_on_panel.html#a2d8f44bce163833bb5cc500a306a1a2d">getPosition</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_affichable_on_panel.html#a909a1d2a01adba8c442368a8f6c7d5f6">AffichableOnPanel</a>(<a class="code" href="class_pixel.html">Pixel</a> position, <span class="keywordtype">int</span> couche, std::string textureName);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <a class="code" href="class_affichable_on_panel.html#a4fb60d81f5e20aa0137c7d6fdeff4cf7">~AffichableOnPanel</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_affichable_on_panel.html#a08b987fc95df0860398eb4b06ecd5ee9">setTextures</a>(std::string textureName);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_affichable_on_panel.html#a02815892bcdb39f354ebec14d4d9c882">pixelIsOn</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="affichable__on__panel_8hpp.html#a659fc17be5da988ed9f57403b3586131">   73</a></span>&#160;<span class="keyword">typedef</span> std::shared_ptr&lt;AffichableOnPanel&gt; <a class="code" href="affichable__on__panel_8hpp.html#a659fc17be5da988ed9f57403b3586131">AffichableOnPanel_ptr</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aaffichable__on__panel_8hpp_html_a659fc17be5da988ed9f57403b3586131"><div class="ttname"><a href="affichable__on__panel_8hpp.html#a659fc17be5da988ed9f57403b3586131">AffichableOnPanel_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; AffichableOnPanel &gt; AffichableOnPanel_ptr</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.hpp:73</div></div>
+<div class="ttc" id="aclass_affichable_on_panel_html"><div class="ttname"><a href="class_affichable_on_panel.html">AffichableOnPanel</a></div><div class="ttdoc">Classe abstraite qui permet a une classe d'etre affichable de facon fixe sur le panel elle gere le de...</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.hpp:23</div></div>
+<div class="ttc" id="aclass_affichable_on_panel_html_a02815892bcdb39f354ebec14d4d9c882"><div class="ttname"><a href="class_affichable_on_panel.html#a02815892bcdb39f354ebec14d4d9c882">AffichableOnPanel::pixelIsOn</a></div><div class="ttdeci">bool pixelIsOn(int x, int y) const</div><div class="ttdoc">teste si le pixel de coordonnes (x,y) fait partie du sprite</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.cpp:37</div></div>
 <div class="ttc" id="aclass_affichable_on_panel_html_a08b987fc95df0860398eb4b06ecd5ee9"><div class="ttname"><a href="class_affichable_on_panel.html#a08b987fc95df0860398eb4b06ecd5ee9">AffichableOnPanel::setTextures</a></div><div class="ttdeci">void setTextures(std::string textureName)</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.cpp:33</div></div>
 <div class="ttc" id="aclass_affichable_on_panel_html_a2d8f44bce163833bb5cc500a306a1a2d"><div class="ttname"><a href="class_affichable_on_panel.html#a2d8f44bce163833bb5cc500a306a1a2d">AffichableOnPanel::getPosition</a></div><div class="ttdeci">virtual Pixel getPosition() const</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.cpp:10</div></div>
-<div class="ttc" id="aclass_affichable_on_panel_html_a3a3207c67a27f50a5b3afa2c5677f7ba"><div class="ttname"><a href="class_affichable_on_panel.html#a3a3207c67a27f50a5b3afa2c5677f7ba">AffichableOnPanel::getTextureFileName</a></div><div class="ttdeci">virtual std::string getTextureFileName() const</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.cpp:29</div></div>
+<div class="ttc" id="aclass_affichable_on_panel_html_a3a3207c67a27f50a5b3afa2c5677f7ba"><div class="ttname"><a href="class_affichable_on_panel.html#a3a3207c67a27f50a5b3afa2c5677f7ba">AffichableOnPanel::getTextureFileName</a></div><div class="ttdeci">virtual std::string getTextureFileName() const</div><div class="ttdoc">reucperer la texture du sprite</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.cpp:29</div></div>
 <div class="ttc" id="aclass_affichable_on_panel_html_a4fb60d81f5e20aa0137c7d6fdeff4cf7"><div class="ttname"><a href="class_affichable_on_panel.html#a4fb60d81f5e20aa0137c7d6fdeff4cf7">AffichableOnPanel::~AffichableOnPanel</a></div><div class="ttdeci">~AffichableOnPanel()</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.cpp:25</div></div>
-<div class="ttc" id="aclass_affichable_on_panel_html_a909a1d2a01adba8c442368a8f6c7d5f6"><div class="ttname"><a href="class_affichable_on_panel.html#a909a1d2a01adba8c442368a8f6c7d5f6">AffichableOnPanel::AffichableOnPanel</a></div><div class="ttdeci">AffichableOnPanel(Pixel position, int couche, std::string textureName)</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.cpp:19</div></div>
-<div class="ttc" id="aclass_affichable_on_panel_html_ab50ed56aaaf26e995d64ed235387169d"><div class="ttname"><a href="class_affichable_on_panel.html#ab50ed56aaaf26e995d64ed235387169d">AffichableOnPanel::sprite</a></div><div class="ttdeci">SpriteForUI * sprite</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.hpp:24</div></div>
-<div class="ttc" id="aclass_affichable_on_panel_html_af89235f90b04732fc82c104c0a029a05"><div class="ttname"><a href="class_affichable_on_panel.html#af89235f90b04732fc82c104c0a029a05">AffichableOnPanel::setPosition</a></div><div class="ttdeci">virtual void setPosition(int i, int j)</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.cpp:6</div></div>
+<div class="ttc" id="aclass_affichable_on_panel_html_a909a1d2a01adba8c442368a8f6c7d5f6"><div class="ttname"><a href="class_affichable_on_panel.html#a909a1d2a01adba8c442368a8f6c7d5f6">AffichableOnPanel::AffichableOnPanel</a></div><div class="ttdeci">AffichableOnPanel(Pixel position, int couche, std::string textureName)</div><div class="ttdoc">constructeur</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.cpp:19</div></div>
+<div class="ttc" id="aclass_affichable_on_panel_html_ab50ed56aaaf26e995d64ed235387169d"><div class="ttname"><a href="class_affichable_on_panel.html#ab50ed56aaaf26e995d64ed235387169d">AffichableOnPanel::sprite</a></div><div class="ttdeci">SpriteForUI * sprite</div><div class="ttdoc">sprite de l'objet</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.hpp:31</div></div>
+<div class="ttc" id="aclass_affichable_on_panel_html_af89235f90b04732fc82c104c0a029a05"><div class="ttname"><a href="class_affichable_on_panel.html#af89235f90b04732fc82c104c0a029a05">AffichableOnPanel::setPosition</a></div><div class="ttdeci">virtual void setPosition(int i, int j)</div><div class="ttdoc">deinir la position du sprite</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.cpp:6</div></div>
 <div class="ttc" id="aclass_jeu_html"><div class="ttname"><a href="class_jeu.html">Jeu</a></div><div class="ttdoc">Permet de lancer une partie.  Permet d'acceder au joueur actif, au plateau et au hud.</div><div class="ttdef"><b>Definition:</b> jeu.hpp:28</div></div>
 <div class="ttc" id="aclass_pixel_html"><div class="ttname"><a href="class_pixel.html">Pixel</a></div><div class="ttdoc">position d'un pixel sur l'ecran</div><div class="ttdef"><b>Definition:</b> UserInterface.hpp:45</div></div>
-<div class="ttc" id="aclass_sprite_for_u_i_html"><div class="ttname"><a href="class_sprite_for_u_i.html">SpriteForUI</a></div><div class="ttdef"><b>Definition:</b> SpriteForUI.hpp:21</div></div>
+<div class="ttc" id="aclass_sprite_for_u_i_html"><div class="ttname"><a href="class_sprite_for_u_i.html">SpriteForUI</a></div><div class="ttdoc">Classe qui permet de créer un sprite pour l'interface utilisateur  comme implemente DrawableForUI,...</div><div class="ttdef"><b>Definition:</b> SpriteForUI.hpp:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -92,40 +92,39 @@ $(document).ready(function(){initNavTree('terrain_8hpp_source.html',''); initRes
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../UserInterface/affichable_on_map.hpp&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_terrain.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_terrain.html">Terrain</a> : <span class="keyword">public</span> <a class="code" href="class_affichable_on_map.html">AffichableOnMap</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_terrain.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_terrain.html">Terrain</a> : <span class="keyword">public</span> <a class="code" href="class_affichable_on_map.html">AffichableOnMap</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_terrain.html#a08dbd8478a32915a15ccac0ee55e0619">   18</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_terrain.html#a08dbd8478a32915a15ccac0ee55e0619">TEXTURE_NAME</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_terrain.html#a93b8846d1398c80636f81393af3575f1">   20</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_terrain.html#a93b8846d1398c80636f81393af3575f1">COUCHE</a> = 1;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_terrain.html#a7124388ccec531b7ed80509ee5a39b32">   21</a></span>&#160;        <a class="code" href="class_terrain.html#a7124388ccec531b7ed80509ee5a39b32">Terrain</a>(<a class="code" href="class_plateau.html">Plateau</a> &amp;<a class="code" href="class_affichable_on_map.html#a56015a110320e183c96a126eca9c5def">plateau</a>, <a class="code" href="class_case_position.html">CasePosition</a> casePosition) : <a class="code" href="class_affichable_on_map.html">AffichableOnMap</a>(<a class="code" href="class_affichable_on_map.html#a56015a110320e183c96a126eca9c5def">plateau</a>,casePosition,<a class="code" href="class_terrain.html#a93b8846d1398c80636f81393af3575f1">COUCHE</a>,<a class="code" href="class_terrain.html#a08dbd8478a32915a15ccac0ee55e0619">TEXTURE_NAME</a>) {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        };</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_terrain.html#a08dbd8478a32915a15ccac0ee55e0619">   21</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_terrain.html#a08dbd8478a32915a15ccac0ee55e0619">TEXTURE_NAME</a>;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_terrain.html#a93b8846d1398c80636f81393af3575f1">   23</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="class_terrain.html#a93b8846d1398c80636f81393af3575f1">COUCHE</a> = 1;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_terrain.html#a7124388ccec531b7ed80509ee5a39b32">   24</a></span>&#160;        <a class="code" href="class_terrain.html#a7124388ccec531b7ed80509ee5a39b32">Terrain</a>(<a class="code" href="class_plateau.html">Plateau</a> &amp;<a class="code" href="class_affichable_on_map.html#a56015a110320e183c96a126eca9c5def">plateau</a>, <a class="code" href="class_case_position.html">CasePosition</a> casePosition) : <a class="code" href="class_affichable_on_map.html">AffichableOnMap</a>(<a class="code" href="class_affichable_on_map.html#a56015a110320e183c96a126eca9c5def">plateau</a>,casePosition,<a class="code" href="class_terrain.html#a93b8846d1398c80636f81393af3575f1">COUCHE</a>,<a class="code" href="class_terrain.html#a08dbd8478a32915a15ccac0ee55e0619">TEXTURE_NAME</a>) {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        };</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_affichable_on_map_html"><div class="ttname"><a href="class_affichable_on_map.html">AffichableOnMap</a></div><div class="ttdef"><b>Definition:</b> affichable_on_map.hpp:21</div></div>
-<div class="ttc" id="aclass_affichable_on_map_html_a56015a110320e183c96a126eca9c5def"><div class="ttname"><a href="class_affichable_on_map.html#a56015a110320e183c96a126eca9c5def">AffichableOnMap::plateau</a></div><div class="ttdeci">Plateau * plateau</div><div class="ttdef"><b>Definition:</b> affichable_on_map.hpp:25</div></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_affichable_on_map_html"><div class="ttname"><a href="class_affichable_on_map.html">AffichableOnMap</a></div><div class="ttdoc">Classe abstraite qui permet a une classe d'etre affichable sur la map elle gere le deplacement sur la...</div><div class="ttdef"><b>Definition:</b> affichable_on_map.hpp:25</div></div>
+<div class="ttc" id="aclass_affichable_on_map_html_a56015a110320e183c96a126eca9c5def"><div class="ttname"><a href="class_affichable_on_map.html#a56015a110320e183c96a126eca9c5def">AffichableOnMap::plateau</a></div><div class="ttdeci">Plateau * plateau</div><div class="ttdoc">pointeur vers le plateau</div><div class="ttdef"><b>Definition:</b> affichable_on_map.hpp:32</div></div>
 <div class="ttc" id="aclass_case_position_html"><div class="ttname"><a href="class_case_position.html">CasePosition</a></div><div class="ttdoc">position d'une case sur le plateau</div><div class="ttdef"><b>Definition:</b> case.hpp:25</div></div>
 <div class="ttc" id="aclass_plateau_html"><div class="ttname"><a href="class_plateau.html">Plateau</a></div><div class="ttdoc">permet d'avoir des INFOS sur les elements presents sur le plateau /!\ Deplacement sur plateau gere pa...</div><div class="ttdef"><b>Definition:</b> plateau.hpp:26</div></div>
-<div class="ttc" id="aclass_terrain_html"><div class="ttname"><a href="class_terrain.html">Terrain</a></div><div class="ttdef"><b>Definition:</b> terrain.hpp:9</div></div>
-<div class="ttc" id="aclass_terrain_html_a08dbd8478a32915a15ccac0ee55e0619"><div class="ttname"><a href="class_terrain.html#a08dbd8478a32915a15ccac0ee55e0619">Terrain::TEXTURE_NAME</a></div><div class="ttdeci">static const std::string TEXTURE_NAME</div><div class="ttdef"><b>Definition:</b> terrain.hpp:18</div></div>
-<div class="ttc" id="aclass_terrain_html_a7124388ccec531b7ed80509ee5a39b32"><div class="ttname"><a href="class_terrain.html#a7124388ccec531b7ed80509ee5a39b32">Terrain::Terrain</a></div><div class="ttdeci">Terrain(Plateau &amp;plateau, CasePosition casePosition)</div><div class="ttdef"><b>Definition:</b> terrain.hpp:21</div></div>
-<div class="ttc" id="aclass_terrain_html_a93b8846d1398c80636f81393af3575f1"><div class="ttname"><a href="class_terrain.html#a93b8846d1398c80636f81393af3575f1">Terrain::COUCHE</a></div><div class="ttdeci">static const int COUCHE</div><div class="ttdef"><b>Definition:</b> terrain.hpp:20</div></div>
+<div class="ttc" id="aclass_terrain_html"><div class="ttname"><a href="class_terrain.html">Terrain</a></div><div class="ttdoc">terrain sur chaque case du plateau</div><div class="ttdef"><b>Definition:</b> terrain.hpp:12</div></div>
+<div class="ttc" id="aclass_terrain_html_a08dbd8478a32915a15ccac0ee55e0619"><div class="ttname"><a href="class_terrain.html#a08dbd8478a32915a15ccac0ee55e0619">Terrain::TEXTURE_NAME</a></div><div class="ttdeci">static const std::string TEXTURE_NAME</div><div class="ttdef"><b>Definition:</b> terrain.hpp:21</div></div>
+<div class="ttc" id="aclass_terrain_html_a7124388ccec531b7ed80509ee5a39b32"><div class="ttname"><a href="class_terrain.html#a7124388ccec531b7ed80509ee5a39b32">Terrain::Terrain</a></div><div class="ttdeci">Terrain(Plateau &amp;plateau, CasePosition casePosition)</div><div class="ttdef"><b>Definition:</b> terrain.hpp:24</div></div>
+<div class="ttc" id="aclass_terrain_html_a93b8846d1398c80636f81393af3575f1"><div class="ttname"><a href="class_terrain.html#a93b8846d1398c80636f81393af3575f1">Terrain::COUCHE</a></div><div class="ttdeci">static const int COUCHE</div><div class="ttdef"><b>Definition:</b> terrain.hpp:23</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

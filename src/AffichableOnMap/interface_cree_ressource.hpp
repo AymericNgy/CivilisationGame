@@ -4,8 +4,13 @@
 
 class ElementJoueur;
 
-// A implementer sur un ElementJoueur si il cree des ressources a chaque tour
-// Ajouter dans nouveauTour() InterfaceCreeRessource::creationRessource()
+
+/**
+ * \class InterfaceCreeRessource
+ * \brief A implementer sur un ElementJoueur si il cree des ressources a chaque tour \n
+ * Ajouter dans nouveauTour() InterfaceCreeRessource::creationRessource()
+ */
+
 class InterfaceCreeRessource {
 
     public :

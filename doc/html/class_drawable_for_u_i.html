@@ -91,6 +91,11 @@ $(document).ready(function(){initNavTree('class_drawable_for_u_i.html',''); init
 </div><!--header-->
 <div class="contents">
 
+<p>Classe abstraite pour cree des objets affichables sur la fenetre de jeu, <br  />
+il peuvent suivre les mouvements de la camera <br  />
+<a class="el" href="class_drawable_for_u_i.html#a4b2990591d68f98ec0247d9a90fa5808" title="Dessine le sprite sur la fenetre de jeu fonction a redefinir dans des classe enfants qui heritent de ...">drawOn()</a> et <a class="el" href="class_drawable_for_u_i.html#a8d8075467f996b721f673d9e44e96859" title="Met a jour la position du sprite sur la fenetre de jeu fonction a redefinir dans des classe enfants q...">setPositionUI()</a> a redefinir dans des classe enfants qui heritent aussi de classes qui heritent de sf::Drawable et sf::Transformable (Shape,Sprite,text)  
+ <a href="class_drawable_for_u_i.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="drawable__for__ui_8hpp_source.html">drawable_for_ui.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DrawableForUI:</div>
@@ -106,6 +111,8 @@ Collaboration diagram for DrawableForUI:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae32720857b356966afff3e3929fccb2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#ae32720857b356966afff3e3929fccb2e">DrawableForUI</a> (int <a class="el" href="class_drawable_for_u_i.html#a49f806f414ca7d8b089c58bad8bbb345">couche</a>, bool <a class="el" href="class_drawable_for_u_i.html#a44cf98ff6c8e80721a3fd5a4930921bb">moveWithCam</a>)</td></tr>
+<tr class="memdesc:ae32720857b356966afff3e3929fccb2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_drawable_for_u_i.html" title="Classe abstraite pour cree des objets affichables sur la fenetre de jeu,  il peuvent suivre les mouve...">DrawableForUI</a> <br  />
+cree un drawable en position de case 0 0 sur le plateau.  <a href="class_drawable_for_u_i.html#ae32720857b356966afff3e3929fccb2e">More...</a><br /></td></tr>
 <tr class="separator:ae32720857b356966afff3e3929fccb2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a6fb5d70cdb67c75ea26ec49df206a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a4a6fb5d70cdb67c75ea26ec49df206a0">~DrawableForUI</a> ()</td></tr>
 <tr class="separator:a4a6fb5d70cdb67c75ea26ec49df206a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -114,35 +121,53 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6c5725988c11e6ec9f0f818aa2463b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_drawable_for_u_i.html">DrawableForUI</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#ae6c5725988c11e6ec9f0f818aa2463b7">operator=</a> (<a class="el" href="class_drawable_for_u_i.html">DrawableForUI</a> &amp;other)=delete</td></tr>
 <tr class="separator:ae6c5725988c11e6ec9f0f818aa2463b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b2990591d68f98ec0247d9a90fa5808"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a4b2990591d68f98ec0247d9a90fa5808">drawOn</a> (sf::RenderWindow &amp;window)=0</td></tr>
+<tr class="memdesc:a4b2990591d68f98ec0247d9a90fa5808"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine le sprite sur la fenetre de jeu fonction a redefinir dans des classe enfants qui heritent de cette classe et qui heritent de sf::Drawable.  <a href="class_drawable_for_u_i.html#a4b2990591d68f98ec0247d9a90fa5808">More...</a><br /></td></tr>
 <tr class="separator:a4b2990591d68f98ec0247d9a90fa5808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d8075467f996b721f673d9e44e96859"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a8d8075467f996b721f673d9e44e96859">setPositionUI</a> (const sf::Vector2f &amp;position)=0</td></tr>
+<tr class="memdesc:a8d8075467f996b721f673d9e44e96859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met a jour la position du sprite sur la fenetre de jeu fonction a redefinir dans des classe enfants qui heritent de cette classe et qui heritent de sf::Transformable.  <a href="class_drawable_for_u_i.html#a8d8075467f996b721f673d9e44e96859">More...</a><br /></td></tr>
 <tr class="separator:a8d8075467f996b721f673d9e44e96859"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0b25a6842a91d45d9ae0ff37cfe367b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_case_position.html">CasePosition</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#aa0b25a6842a91d45d9ae0ff37cfe367b">getCasePosition</a> () const</td></tr>
+<tr class="memdesc:aa0b25a6842a91d45d9ae0ff37cfe367b"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie la position du drawable sur le plateau  <a href="class_drawable_for_u_i.html#aa0b25a6842a91d45d9ae0ff37cfe367b">More...</a><br /></td></tr>
 <tr class="separator:aa0b25a6842a91d45d9ae0ff37cfe367b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b2196afd86f659c905acfef30e3cc73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a7b2196afd86f659c905acfef30e3cc73">setCasePosition</a> (<a class="el" href="class_case_position.html">CasePosition</a> <a class="el" href="class_drawable_for_u_i.html#a254905313f1a71beccfb4dca954403fb">casePosition</a>)</td></tr>
+<tr class="memdesc:a7b2196afd86f659c905acfef30e3cc73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met a jour la position du sprite sur le plateau.  <a href="class_drawable_for_u_i.html#a7b2196afd86f659c905acfef30e3cc73">More...</a><br /></td></tr>
 <tr class="separator:a7b2196afd86f659c905acfef30e3cc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b2e8f14b751052110a014c91e00e8c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a3b2e8f14b751052110a014c91e00e8c8">updateFromCam</a> ()</td></tr>
+<tr class="memdesc:a3b2e8f14b751052110a014c91e00e8c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet de mettre a jour le sprite en fonction de la position de la cam et de sa position sur le cadrillage <br  />
+fonctionnelle que si moveWithCam=true  <a href="class_drawable_for_u_i.html#a3b2e8f14b751052110a014c91e00e8c8">More...</a><br /></td></tr>
 <tr class="separator:a3b2e8f14b751052110a014c91e00e8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2940ea2563282e2814a9d810ec92dd1f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a2940ea2563282e2814a9d810ec92dd1f">getCouche</a> () const</td></tr>
+<tr class="memdesc:a2940ea2563282e2814a9d810ec92dd1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie la couche d'affichage  <a href="class_drawable_for_u_i.html#a2940ea2563282e2814a9d810ec92dd1f">More...</a><br /></td></tr>
 <tr class="separator:a2940ea2563282e2814a9d810ec92dd1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a49f806f414ca7d8b089c58bad8bbb345"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a49f806f414ca7d8b089c58bad8bbb345">couche</a></td></tr>
+<tr class="memdesc:a49f806f414ca7d8b089c58bad8bbb345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Couche d'affichage <br  />
+ Plus couche est grand plus le sprite est dessiner au dessus des autres <br  />
+doit etre inferieur a UserInterface::NOMBRE_COUCHE_SPRITES.  <a href="class_drawable_for_u_i.html#a49f806f414ca7d8b089c58bad8bbb345">More...</a><br /></td></tr>
 <tr class="separator:a49f806f414ca7d8b089c58bad8bbb345"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a254905313f1a71beccfb4dca954403fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_case_position.html">CasePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a254905313f1a71beccfb4dca954403fb">casePosition</a></td></tr>
-<tr class="separator:a254905313f1a71beccfb4dca954403fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44cf98ff6c8e80721a3fd5a4930921bb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a44cf98ff6c8e80721a3fd5a4930921bb">moveWithCam</a></td></tr>
+<tr class="memdesc:a44cf98ff6c8e80721a3fd5a4930921bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Si true, le sprite se deplacera avec la camera.  <a href="class_drawable_for_u_i.html#a44cf98ff6c8e80721a3fd5a4930921bb">More...</a><br /></td></tr>
 <tr class="separator:a44cf98ff6c8e80721a3fd5a4930921bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254905313f1a71beccfb4dca954403fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_case_position.html">CasePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a254905313f1a71beccfb4dca954403fb">casePosition</a></td></tr>
+<tr class="memdesc:a254905313f1a71beccfb4dca954403fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">position sur la case utile que si sprite est sur une case ce sont les  <a href="class_drawable_for_u_i.html#a254905313f1a71beccfb4dca954403fb">More...</a><br /></td></tr>
+<tr class="separator:a254905313f1a71beccfb4dca954403fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:adca550914e2c09c7c1487b92894febeb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#adca550914e2c09c7c1487b92894febeb">addToUI</a> ()</td></tr>
+<tr class="memdesc:adca550914e2c09c7c1487b92894febeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute le sprite a l'interface utilisateur.  <a href="class_drawable_for_u_i.html#adca550914e2c09c7c1487b92894febeb">More...</a><br /></td></tr>
 <tr class="separator:adca550914e2c09c7c1487b92894febeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5671dd44ac44c171aa135ec8d18d8eed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a5671dd44ac44c171aa135ec8d18d8eed">removeFromUI</a> ()</td></tr>
+<tr class="memdesc:a5671dd44ac44c171aa135ec8d18d8eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retire le sprite de l'interface utilisateur.  <a href="class_drawable_for_u_i.html#a5671dd44ac44c171aa135ec8d18d8eed">More...</a><br /></td></tr>
 <tr class="separator:a5671dd44ac44c171aa135ec8d18d8eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Classe abstraite pour cree des objets affichables sur la fenetre de jeu, <br  />
+il peuvent suivre les mouvements de la camera <br  />
+<a class="el" href="class_drawable_for_u_i.html#a4b2990591d68f98ec0247d9a90fa5808" title="Dessine le sprite sur la fenetre de jeu fonction a redefinir dans des classe enfants qui heritent de ...">drawOn()</a> et <a class="el" href="class_drawable_for_u_i.html#a8d8075467f996b721f673d9e44e96859" title="Met a jour la position du sprite sur la fenetre de jeu fonction a redefinir dans des classe enfants q...">setPositionUI()</a> a redefinir dans des classe enfants qui heritent aussi de classes qui heritent de sf::Drawable et sf::Transformable (Shape,Sprite,text) </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae32720857b356966afff3e3929fccb2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae32720857b356966afff3e3929fccb2e">&#9670;&nbsp;</a></span>DrawableForUI() <span class="overload">[1/2]</span></h2>
 
@@ -168,6 +193,9 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructeur de <a class="el" href="class_drawable_for_u_i.html" title="Classe abstraite pour cree des objets affichables sur la fenetre de jeu,  il peuvent suivre les mouve...">DrawableForUI</a> <br  />
+cree un drawable en position de case 0 0 sur le plateau. </p>
 
 </div>
 </div>
@@ -238,6 +266,8 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Ajoute le sprite a l'interface utilisateur. </p>
+
 </div>
 </div>
 <a id="a4b2990591d68f98ec0247d9a90fa5808"></a>
@@ -264,7 +294,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_text_for_u_i.html#a7230a33f61e0917eae0e0c785cfa3fd6">TextForUI</a>, <a class="el" href="class_sprite_for_u_i.html#af3176c11a83eeea22e6a03afe0d86124">SpriteForUI</a>, and <a class="el" href="class_rectangle_for_u_i.html#ab04a6362cf243793f7963374e9615ee8">RectangleForUI</a>.</p>
+<p>Dessine le sprite sur la fenetre de jeu fonction a redefinir dans des classe enfants qui heritent de cette classe et qui heritent de sf::Drawable. </p>
+
+<p>Implemented in <a class="el" href="class_text_for_u_i.html#ae6bd059758239eb7ee8bf025027eecad">TextForUI</a>, <a class="el" href="class_sprite_for_u_i.html#a1b2aef95d766c44608b11d9d5bbbfacb">SpriteForUI</a>, and <a class="el" href="class_rectangle_for_u_i.html#a320c1bb23f85e8633932c74a20dcb5a9">RectangleForUI</a>.</p>
 
 </div>
 </div>
@@ -283,6 +315,8 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>renvoie la position du drawable sur le plateau </p>
+
 </div>
 </div>
 <a id="a2940ea2563282e2814a9d810ec92dd1f"></a>
@@ -299,6 +333,8 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>renvoie la couche d'affichage </p>
 
 </div>
 </div>
@@ -351,6 +387,8 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Retire le sprite de l'interface utilisateur. </p>
+
 </div>
 </div>
 <a id="a7b2196afd86f659c905acfef30e3cc73"></a>
@@ -368,6 +406,8 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Met a jour la position du sprite sur le plateau. </p>
 
 </div>
 </div>
@@ -395,7 +435,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="class_text_for_u_i.html#a4bc888cbba5e391668f6a34f52762801">TextForUI</a>, <a class="el" href="class_sprite_for_u_i.html#a7cb1fbe262a6d571faaeb118afb91125">SpriteForUI</a>, and <a class="el" href="class_rectangle_for_u_i.html#a1acceda57d878ec7edb400d34b394789">RectangleForUI</a>.</p>
+<p>Met a jour la position du sprite sur la fenetre de jeu fonction a redefinir dans des classe enfants qui heritent de cette classe et qui heritent de sf::Transformable. </p>
+
+<p>Implemented in <a class="el" href="class_text_for_u_i.html#ae9191302155f277b2acbe307d8eaec8e">TextForUI</a>, <a class="el" href="class_sprite_for_u_i.html#a2eb1575f16d5d93a9297908d9239077d">SpriteForUI</a>, and <a class="el" href="class_rectangle_for_u_i.html#ad61ead00df6e35605ac694892c5cd9ea">RectangleForUI</a>.</p>
 
 </div>
 </div>
@@ -413,6 +455,9 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>permet de mettre a jour le sprite en fonction de la position de la cam et de sa position sur le cadrillage <br  />
+fonctionnelle que si moveWithCam=true </p>
 
 </div>
 </div>
@@ -437,6 +482,9 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>position sur la case utile que si sprite est sur une case ce sont les </p>
+<dl class="section see"><dt>See also</dt><dd>AffichabeOnMap qui implement des sprites sur des cases </dd></dl>
+
 </div>
 </div>
 <a id="a49f806f414ca7d8b089c58bad8bbb345"></a>
@@ -459,6 +507,10 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Couche d'affichage <br  />
+ Plus couche est grand plus le sprite est dessiner au dessus des autres <br  />
+doit etre inferieur a UserInterface::NOMBRE_COUCHE_SPRITES. </p>
+
 </div>
 </div>
 <a id="a44cf98ff6c8e80721a3fd5a4930921bb"></a>
@@ -480,6 +532,8 @@ Private Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Si true, le sprite se deplacera avec la camera. </p>
 
 </div>
 </div>

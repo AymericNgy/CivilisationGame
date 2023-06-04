@@ -12,7 +12,10 @@ class ElementJoueur;
 
 typedef std::shared_ptr<std::list<CommandeSquare*>> ListPtrCommandeSquare_ptr;
 
-
+/**
+ * \class Dashboard
+ * \brief classe qui permet d'afficher les informations sur les élement des joueurs et les commandes qu'il peut faire 
+*/
 class Dashboard : public AffichableOnPanel {
     public :
             // ---CONSTANTES---
@@ -90,7 +93,10 @@ class Dashboard : public AffichableOnPanel {
         
 
 
-        // /!\ a ne faire que dans le constructeur
+
+        /**
+         * \brief /!\ a ne faire que dans le constructeur \n
+        */
         void initInfo();
 
 
@@ -113,27 +119,42 @@ class Dashboard : public AffichableOnPanel {
 
 
 
-        // va placer au bonne endroit et detruire les anciennes
-        // ne supprime pas les infos sur le dashboard
-        // /!\ se charge de detruire les commandes envoyées
+
+        /**
+         * \brief va placer au bonne endroit et detruire les anciennes \n
+         * ne supprime pas les infos sur le dashboard \n
+         * /!\ se charge de detruire les commandes envoyées \n
+        */
         void pushCommandeSquare(ListPtrCommandeSquare_ptr commandes); 
 
         void pushInfoElement(ElementJoueur *ElementJoueurPourInfo);
 
-        // /!\ se charge de detruire les commandes envoyées ne pas reutiliser les commandes
+
+        /**
+         * \brief se charge de detruire les commandes envoyées ne pas reutiliser les commandes \n
+        */
         void pushCommandes(ListPtrCommandeSquare_ptr commandes, std::string info);
 
-        //detruit les comandeSquare contenu dans commandesSquare (avec delete)
+
+        /**
+         * \brief detruit les comandeSquare contenu dans commandesSquare (avec delete) \n
+        */
         void cleanCommandeSquare();
 
 
         void updateInfoElement();
 
-        // /!\ va detruire la commande avec delete
-        // utile pour que les commandes puissent se retirer a la fin de leur execute()
+
+        /**
+         * \brief va detruire la commande avec delete \n
+         * utile pour que les commandes puissent se retirer a la fin de leur execute() \n
+        */
         void removeCommande(CommandeSquare* commande);
 
-        // eneleve toute les infos et commandes du Hud
+
+        /**
+         * \brief eneleve toute les infos et commandes du Hud \n
+        */
         void clearAll();
 
 

@@ -16,23 +16,37 @@
 class ElementJoueur;
 
 
-// [!] probleme si constructeur des classes derivees d'ElementJoueur ne sont pas les memes que ceux d'ElementJoueur
-// [!] alternative : utiliser une copie d'un element passe en argument
 
-// permet de construire un certain type d'ElementJoueur
-// /!\ T doit etre un ElementJoueur ou heriter de cette classe
-// /!\ S'ASSURER que elementPourAction passe en argument constructeur n'est pas detruit tant que
-// /!\ l'instance de SelectSpecificElement existe 
+
+/**
+ * \class CreerElement
+ * 
+ * \brief permet de construire un certain type d'ElementJoueur
+ * /!\ T doit etre un ElementJoueur ou heriter de cette classe
+ * /!\ S'ASSURER que elementPourAction passe en argument constructeur n'est pas detruit tant que
+ * l'instance de SelectSpecificElement existe
+*/
 template<typename T>
 class CreerElement : public CommandeSquare {
     private :
         CasePosition position;
         Joueur_ptr joueurProprietaire;
-        ElementJoueur *elementCreateur; // element qui cree l'element, permet de decrease son nombre d'action, mettre nullptr si aucun element ne cree l'element
+
+        /**
+         * \brief element qui cree l'element, permet de decrease son nombre d'action \n
+         * Mettre nullptr si aucun element ne cree l'element
+        */
+        ElementJoueur *elementCreateur; 
 
 
 
     public : 
+        /**
+         * \brief constructeur
+         * \param position position de creation
+         * \param joueurProprietaire joueur qui sera proprietaire de l'element cree
+         * \param elementPourAction element qui cree l'element, permet de decrease son nombre d'action, mettre nullptr si aucun element ne cree l'element
+        */
         CreerElement(CasePosition position,Joueur_ptr joueurProprietaire,ElementJoueur *elementPourAction);
 
         
@@ -42,10 +56,14 @@ class CreerElement : public CommandeSquare {
 };
 
 
-// permet de creer un ElemenJoueur de type T (T doit etre un ElementJoueur ou heriter de cette classe)
-// position -> position de creation
-// joueurProprietaire -> joueur qui sera proprietaire de l'element cree
-// elementCreateur -> element qui cree l'element, permet de decrease son nombre d'action, mettre nullptr si aucun element ne cree l'element
+
+/**
+ * \brief constructeur \n
+ * permet de creer un ElemenJoueur de type T (T doit etre un ElementJoueur ou heriter de cette classe)
+ * \param position position de creation
+ * \param joueurProprietaire joueur qui sera proprietaire de l'element cree
+ * \param elementCreateur element qui cree l'element, permet de decrease son nombre d'action, mettre nullptr si aucun element ne cree l'element
+*/
 template<typename T>
 CreerElement<T>::CreerElement(CasePosition position,Joueur_ptr joueurProprietaire, ElementJoueur *elementCreateur) : position(position),  joueurProprietaire(joueurProprietaire),CommandeSquare(UserInterface::TRANSPARENCY_TEXTURE_NAME, "",0,0,0) {
     
@@ -77,8 +95,12 @@ CreerElement<T>::CreerElement(CasePosition position,Joueur_ptr joueurProprietair
 
 
 
-// execute la creation si assez de resource et assez d'action s'il y a une instance creatrice
-// si il n'y a pas d'instance creatrice recharge la case selectionne dans le hud
+
+
+/**
+ * \brief execute la creation si assez de resource et assez d'action s'il y a une instance creatrice \n
+ * si il n'y a pas d'instance creatrice recharge la case selectionne dans le hud
+*/
 template<typename T>
 void CreerElement<T>::execute() {
     // pas tres elegant -> utilise une instance de T pour des affectations

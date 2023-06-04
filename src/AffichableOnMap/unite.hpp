@@ -5,7 +5,11 @@
 #include "element_joueur.hpp"
 #include "interface_se_deplacer.hpp"
 
-
+/**
+ * \class Unite
+ * \brief classe abstraite representant une unite \n
+ * element joueur qui peut se deplacer
+*/
 class Unite : public ElementJoueur, public InterfaceSeDeplacer{
     protected :
         const static int COUCHE = 18;

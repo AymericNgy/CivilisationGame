@@ -8,7 +8,7 @@ class Camp_de_bucheron;
 
 /**
  * \class RobotTronconneuse
- * \brief Permet d'evoluer au niveau 2 de production de bois du camp de bucheron
+ * \brief Permet d'evoluer au niveau 3 de production de bois du camp de bucheron
 */
 class RobotTronconneuse : public CommandeSquare {
     private :

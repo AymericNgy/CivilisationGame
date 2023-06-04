@@ -8,7 +8,10 @@
 #include "interface_attaquer.hpp"
 
 
-
+/**
+ * \class Mage
+ * \brief Unite qui peut attaquer
+*/
 class Mage : public Unite , public InterfaceAttaquer{
     private :
 

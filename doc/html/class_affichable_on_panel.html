@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('class_affichable_on_panel.html',''); i
 </div><!--header-->
 <div class="contents">
 
+<p>Classe abstraite qui permet a une classe d'etre affichable de facon fixe sur le panel elle gere le deplacement sur le panel du jeu de l'objet on utilise des pointeurs pour pouvoire faire des delete quand on veut detruire l'objet.  
+ <a href="class_affichable_on_panel.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="affichable__on__panel_8hpp_source.html">affichable_on_panel.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for AffichableOnPanel:</div>
@@ -105,26 +108,33 @@ Collaboration diagram for AffichableOnPanel:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a3207c67a27f50a5b3afa2c5677f7ba"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a3a3207c67a27f50a5b3afa2c5677f7ba">getTextureFileName</a> () const</td></tr>
+<tr class="memdesc:a3a3207c67a27f50a5b3afa2c5677f7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">reucperer la texture du sprite  <a href="class_affichable_on_panel.html#a3a3207c67a27f50a5b3afa2c5677f7ba">More...</a><br /></td></tr>
 <tr class="separator:a3a3207c67a27f50a5b3afa2c5677f7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af89235f90b04732fc82c104c0a029a05"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#af89235f90b04732fc82c104c0a029a05">setPosition</a> (int i, int j)</td></tr>
+<tr class="memdesc:af89235f90b04732fc82c104c0a029a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">deinir la position du sprite  <a href="class_affichable_on_panel.html#af89235f90b04732fc82c104c0a029a05">More...</a><br /></td></tr>
 <tr class="separator:af89235f90b04732fc82c104c0a029a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d8f44bce163833bb5cc500a306a1a2d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_pixel.html">Pixel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a2d8f44bce163833bb5cc500a306a1a2d">getPosition</a> () const</td></tr>
 <tr class="separator:a2d8f44bce163833bb5cc500a306a1a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a909a1d2a01adba8c442368a8f6c7d5f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a909a1d2a01adba8c442368a8f6c7d5f6">AffichableOnPanel</a> (<a class="el" href="class_pixel.html">Pixel</a> position, int couche, std::string textureName)</td></tr>
+<tr class="memdesc:a909a1d2a01adba8c442368a8f6c7d5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructeur  <a href="class_affichable_on_panel.html#a909a1d2a01adba8c442368a8f6c7d5f6">More...</a><br /></td></tr>
 <tr class="separator:a909a1d2a01adba8c442368a8f6c7d5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fb60d81f5e20aa0137c7d6fdeff4cf7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a4fb60d81f5e20aa0137c7d6fdeff4cf7">~AffichableOnPanel</a> ()</td></tr>
 <tr class="separator:a4fb60d81f5e20aa0137c7d6fdeff4cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08b987fc95df0860398eb4b06ecd5ee9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a08b987fc95df0860398eb4b06ecd5ee9">setTextures</a> (std::string textureName)</td></tr>
 <tr class="separator:a08b987fc95df0860398eb4b06ecd5ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02815892bcdb39f354ebec14d4d9c882"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a02815892bcdb39f354ebec14d4d9c882">pixelIsOn</a> (int x, int y) const</td></tr>
+<tr class="memdesc:a02815892bcdb39f354ebec14d4d9c882"><td class="mdescLeft">&#160;</td><td class="mdescRight">teste si le pixel de coordonnes (x,y) fait partie du sprite  <a href="class_affichable_on_panel.html#a02815892bcdb39f354ebec14d4d9c882">More...</a><br /></td></tr>
 <tr class="separator:a02815892bcdb39f354ebec14d4d9c882"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:ab50ed56aaaf26e995d64ed235387169d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite_for_u_i.html">SpriteForUI</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#ab50ed56aaaf26e995d64ed235387169d">sprite</a></td></tr>
+<tr class="memdesc:ab50ed56aaaf26e995d64ed235387169d"><td class="mdescLeft">&#160;</td><td class="mdescRight">sprite de l'objet  <a href="class_affichable_on_panel.html#ab50ed56aaaf26e995d64ed235387169d">More...</a><br /></td></tr>
 <tr class="separator:ab50ed56aaaf26e995d64ed235387169d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Classe abstraite qui permet a une classe d'etre affichable de facon fixe sur le panel elle gere le deplacement sur le panel du jeu de l'objet on utilise des pointeurs pour pouvoire faire des delete quand on veut detruire l'objet. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a909a1d2a01adba8c442368a8f6c7d5f6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a909a1d2a01adba8c442368a8f6c7d5f6">&#9670;&nbsp;</a></span>AffichableOnPanel()</h2>
 
@@ -156,6 +166,16 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>constructeur </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>position du sprite </td></tr>
+    <tr><td class="paramname">couche</td><td>couche du sprite </td></tr>
+    <tr><td class="paramname">textureName</td><td>nom de la texture du sprite </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -225,6 +245,8 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>reucperer la texture du sprite </p>
+
 </div>
 </div>
 <a id="a02815892bcdb39f354ebec14d4d9c882"></a>
@@ -252,6 +274,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>teste si le pixel de coordonnes (x,y) fait partie du sprite </p>
 
 </div>
 </div>
@@ -288,6 +312,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>deinir la position du sprite </p>
 
 </div>
 </div>
@@ -329,6 +355,8 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>sprite de l'objet </p>
 
 </div>
 </div>

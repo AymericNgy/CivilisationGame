@@ -93,41 +93,45 @@ $(document).ready(function(){initNavTree('select__element_8hpp_source.html','');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">class </span><a class="code" href="class_case.html">Case</a> ;</div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="select__element_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">    7</a></span>&#160;<span class="keyword">typedef</span> std::shared_ptr&lt;Case&gt; <a class="code" href="select__element_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a>;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// permet de choisir l&#39;option de choisir un element specifique sur une case</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_select_element.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_select_element.html">SelectElement</a> : <span class="keyword">public</span> <a class="code" href="class_commande_square.html">CommandeSquare</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    private :</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_select_element.html#ac230801108d63d7979d519d3444569a3">   12</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_select_element.html#ac230801108d63d7979d519d3444569a3">TEXTURE_NAME</a>;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_select_element.html#a33c197f82f292ec36ca6d7da3cdf3802">   13</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_select_element.html#a33c197f82f292ec36ca6d7da3cdf3802">INFO</a> ;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_select_element.html#a2166c796171a13b11996a23dfa7ff8aa">   14</a></span>&#160;        <a class="code" href="case_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a> <a class="code" href="class_select_element.html#a2166c796171a13b11996a23dfa7ff8aa">casePourAction</a>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    public : </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_select_element.html#ae8cfc27a18fd6edd018bdc13f73b266e">SelectElement</a>(<a class="code" href="case_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a> <a class="code" href="class_select_element.html#a2166c796171a13b11996a23dfa7ff8aa">casePourAction</a>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_select_element.html#ad5ebf94268e25f4912f86701306ff13f">execute</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_select_element.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_select_element.html">SelectElement</a> : <span class="keyword">public</span> <a class="code" href="class_commande_square.html">CommandeSquare</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    private :</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_select_element.html#ac230801108d63d7979d519d3444569a3">   20</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_select_element.html#ac230801108d63d7979d519d3444569a3">TEXTURE_NAME</a>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_select_element.html#a33c197f82f292ec36ca6d7da3cdf3802">   25</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_select_element.html#a33c197f82f292ec36ca6d7da3cdf3802">INFO</a> ;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_select_element.html#a2166c796171a13b11996a23dfa7ff8aa">   30</a></span>&#160;        <a class="code" href="case_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a> <a class="code" href="class_select_element.html#a2166c796171a13b11996a23dfa7ff8aa">casePourAction</a>;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    public : </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="class_select_element.html#ae8cfc27a18fd6edd018bdc13f73b266e">SelectElement</a>(<a class="code" href="case_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a> <a class="code" href="class_select_element.html#a2166c796171a13b11996a23dfa7ff8aa">casePourAction</a>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_select_element.html#a4dc8e72721b16e5656825d1820a9932c">execute</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="acase_8hpp_html_a141cfb91a12b847e7d4b8d8c9c2d8673"><div class="ttname"><a href="case_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; Case &gt; Case_ptr</div><div class="ttdef"><b>Definition:</b> case.hpp:191</div></div>
 <div class="ttc" id="aclass_case_html"><div class="ttname"><a href="class_case.html">Case</a></div><div class="ttdoc">Case du plateau  Permet de savoir ce qu'il y a sur la case (AffichableOnMap), et qui est le proprieta...</div><div class="ttdef"><b>Definition:</b> case.hpp:56</div></div>
-<div class="ttc" id="aclass_commande_square_html"><div class="ttname"><a href="class_commande_square.html">CommandeSquare</a></div><div class="ttdef"><b>Definition:</b> commande_square.hpp:16</div></div>
-<div class="ttc" id="aclass_select_element_html"><div class="ttname"><a href="class_select_element.html">SelectElement</a></div><div class="ttdef"><b>Definition:</b> select_element.hpp:10</div></div>
-<div class="ttc" id="aclass_select_element_html_a2166c796171a13b11996a23dfa7ff8aa"><div class="ttname"><a href="class_select_element.html#a2166c796171a13b11996a23dfa7ff8aa">SelectElement::casePourAction</a></div><div class="ttdeci">Case_ptr casePourAction</div><div class="ttdef"><b>Definition:</b> select_element.hpp:14</div></div>
-<div class="ttc" id="aclass_select_element_html_a33c197f82f292ec36ca6d7da3cdf3802"><div class="ttname"><a href="class_select_element.html#a33c197f82f292ec36ca6d7da3cdf3802">SelectElement::INFO</a></div><div class="ttdeci">static const std::string INFO</div><div class="ttdef"><b>Definition:</b> select_element.hpp:13</div></div>
-<div class="ttc" id="aclass_select_element_html_ac230801108d63d7979d519d3444569a3"><div class="ttname"><a href="class_select_element.html#ac230801108d63d7979d519d3444569a3">SelectElement::TEXTURE_NAME</a></div><div class="ttdeci">static const std::string TEXTURE_NAME</div><div class="ttdef"><b>Definition:</b> select_element.hpp:12</div></div>
-<div class="ttc" id="aclass_select_element_html_ad5ebf94268e25f4912f86701306ff13f"><div class="ttname"><a href="class_select_element.html#ad5ebf94268e25f4912f86701306ff13f">SelectElement::execute</a></div><div class="ttdeci">void execute()</div><div class="ttdef"><b>Definition:</b> select_element.cpp:17</div></div>
-<div class="ttc" id="aclass_select_element_html_ae8cfc27a18fd6edd018bdc13f73b266e"><div class="ttname"><a href="class_select_element.html#ae8cfc27a18fd6edd018bdc13f73b266e">SelectElement::SelectElement</a></div><div class="ttdeci">SelectElement(Case_ptr casePourAction)</div><div class="ttdef"><b>Definition:</b> select_element.cpp:11</div></div>
+<div class="ttc" id="aclass_commande_square_html"><div class="ttname"><a href="class_commande_square.html">CommandeSquare</a></div><div class="ttdoc">commande qu'on peut rajouter en bas à gauche du Dahsboard et qui sont carrees le dashBoard va se char...</div><div class="ttdef"><b>Definition:</b> commande_square.hpp:20</div></div>
+<div class="ttc" id="aclass_select_element_html"><div class="ttname"><a href="class_select_element.html">SelectElement</a></div><div class="ttdoc">Permet de l'option de choisir un element specifique sur une case.</div><div class="ttdef"><b>Definition:</b> select_element.hpp:15</div></div>
+<div class="ttc" id="aclass_select_element_html_a2166c796171a13b11996a23dfa7ff8aa"><div class="ttname"><a href="class_select_element.html#a2166c796171a13b11996a23dfa7ff8aa">SelectElement::casePourAction</a></div><div class="ttdeci">Case_ptr casePourAction</div><div class="ttdoc">case sur laquelle on veut selectionner un element</div><div class="ttdef"><b>Definition:</b> select_element.hpp:30</div></div>
+<div class="ttc" id="aclass_select_element_html_a33c197f82f292ec36ca6d7da3cdf3802"><div class="ttname"><a href="class_select_element.html#a33c197f82f292ec36ca6d7da3cdf3802">SelectElement::INFO</a></div><div class="ttdeci">static const std::string INFO</div><div class="ttdoc">info relative a la commande</div><div class="ttdef"><b>Definition:</b> select_element.hpp:25</div></div>
+<div class="ttc" id="aclass_select_element_html_a4dc8e72721b16e5656825d1820a9932c"><div class="ttname"><a href="class_select_element.html#a4dc8e72721b16e5656825d1820a9932c">SelectElement::execute</a></div><div class="ttdeci">void execute() override</div><div class="ttdef"><b>Definition:</b> select_element.cpp:17</div></div>
+<div class="ttc" id="aclass_select_element_html_ac230801108d63d7979d519d3444569a3"><div class="ttname"><a href="class_select_element.html#ac230801108d63d7979d519d3444569a3">SelectElement::TEXTURE_NAME</a></div><div class="ttdeci">static const std::string TEXTURE_NAME</div><div class="ttdoc">nom de la texture de la commande</div><div class="ttdef"><b>Definition:</b> select_element.hpp:20</div></div>
+<div class="ttc" id="aclass_select_element_html_ae8cfc27a18fd6edd018bdc13f73b266e"><div class="ttname"><a href="class_select_element.html#ae8cfc27a18fd6edd018bdc13f73b266e">SelectElement::SelectElement</a></div><div class="ttdeci">SelectElement(Case_ptr casePourAction)</div><div class="ttdoc">constructeur</div><div class="ttdef"><b>Definition:</b> select_element.cpp:11</div></div>
 <div class="ttc" id="acommande__square_8hpp_html"><div class="ttname"><a href="commande__square_8hpp.html">commande_square.hpp</a></div></div>
 <div class="ttc" id="aselect__element_8hpp_html_a141cfb91a12b847e7d4b8d8c9c2d8673"><div class="ttname"><a href="select__element_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a></div><div class="ttdeci">std::shared_ptr&lt; Case &gt; Case_ptr</div><div class="ttdef"><b>Definition:</b> select_element.hpp:6</div></div>
 </div><!-- fragment --></div><!-- contents -->

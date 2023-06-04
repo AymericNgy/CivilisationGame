@@ -6,7 +6,10 @@
 
 
 
-
+/**
+ * \class NextPlayerArrow
+ * \brief permet de passer au joueur suivant
+*/
 class NextPlayerArrow : public Commande {
     private:
         static const int WIDTH = 220;
@@ -23,7 +26,7 @@ class NextPlayerArrow : public Commande {
     public:
         NextPlayerArrow();
 
-        void execute();
+        void execute() override;
 
 
 

@@ -95,43 +95,44 @@ $(document).ready(function(){initNavTree('se__deplacer_8hpp_source.html',''); in
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_interface_se_deplacer.html">InterfaceSeDeplacer</a>;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// permet de deplacer une instance de InterfaceSeDeplacer</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// /!\ S&#39;ASSURER que elementPourAction passe en argument constructeur n&#39;est pas detruit tant que</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// /!\ l&#39;instance de InterfaceSeDeplacer existe </span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_se_deplacer.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_se_deplacer.html">SeDeplacer</a> : <span class="keyword">public</span> <a class="code" href="class_commande_square.html">CommandeSquare</a> {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    private :</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_se_deplacer.html#a830908b97686ba796443695f02f62a3f">   16</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_se_deplacer.html#a830908b97686ba796443695f02f62a3f">TEXTURE_NAME</a>;</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_se_deplacer.html#a24159034437179de0f29a591ce15ae2c">   17</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_se_deplacer.html#a24159034437179de0f29a591ce15ae2c">INFO</a> ;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_se_deplacer.html#a73749c012b9cb0a93fd98f57bdbb913c">   18</a></span>&#160;        <a class="code" href="class_interface_se_deplacer.html">InterfaceSeDeplacer</a> *<a class="code" href="class_se_deplacer.html#a73749c012b9cb0a93fd98f57bdbb913c">elementPourAction</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    public :</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="class_se_deplacer.html#af2b7bdaac1e6586ecd5590e5fabc36a1">SeDeplacer</a>(<a class="code" href="class_interface_se_deplacer.html">InterfaceSeDeplacer</a> *<a class="code" href="class_se_deplacer.html#a73749c012b9cb0a93fd98f57bdbb913c">elementPourAction</a>);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_se_deplacer.html#a14086b816cd15f0a24707d87926f4320">execute</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_se_deplacer.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_se_deplacer.html">SeDeplacer</a> : <span class="keyword">public</span> <a class="code" href="class_commande_square.html">CommandeSquare</a> {</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    private :</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_se_deplacer.html#a830908b97686ba796443695f02f62a3f">   20</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_se_deplacer.html#a830908b97686ba796443695f02f62a3f">TEXTURE_NAME</a>;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_se_deplacer.html#a24159034437179de0f29a591ce15ae2c">   21</a></span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> std::string <a class="code" href="class_se_deplacer.html#a24159034437179de0f29a591ce15ae2c">INFO</a> ;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_se_deplacer.html#a73749c012b9cb0a93fd98f57bdbb913c">   25</a></span>&#160;        <a class="code" href="class_interface_se_deplacer.html">InterfaceSeDeplacer</a> *<a class="code" href="class_se_deplacer.html#a73749c012b9cb0a93fd98f57bdbb913c">elementPourAction</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    public :</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="class_se_deplacer.html#af2b7bdaac1e6586ecd5590e5fabc36a1">SeDeplacer</a>(<a class="code" href="class_interface_se_deplacer.html">InterfaceSeDeplacer</a> *<a class="code" href="class_se_deplacer.html#a73749c012b9cb0a93fd98f57bdbb913c">elementPourAction</a>);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_se_deplacer.html#a28ebad6e3491a9c6b9742d8acde94057">execute</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_commande_square_html"><div class="ttname"><a href="class_commande_square.html">CommandeSquare</a></div><div class="ttdef"><b>Definition:</b> commande_square.hpp:16</div></div>
-<div class="ttc" id="aclass_interface_se_deplacer_html"><div class="ttname"><a href="class_interface_se_deplacer.html">InterfaceSeDeplacer</a></div><div class="ttdef"><b>Definition:</b> interface_se_deplacer.hpp:10</div></div>
-<div class="ttc" id="aclass_se_deplacer_html"><div class="ttname"><a href="class_se_deplacer.html">SeDeplacer</a></div><div class="ttdef"><b>Definition:</b> se_deplacer.hpp:14</div></div>
-<div class="ttc" id="aclass_se_deplacer_html_a14086b816cd15f0a24707d87926f4320"><div class="ttname"><a href="class_se_deplacer.html#a14086b816cd15f0a24707d87926f4320">SeDeplacer::execute</a></div><div class="ttdeci">void execute()</div><div class="ttdef"><b>Definition:</b> se_deplacer.cpp:11</div></div>
-<div class="ttc" id="aclass_se_deplacer_html_a24159034437179de0f29a591ce15ae2c"><div class="ttname"><a href="class_se_deplacer.html#a24159034437179de0f29a591ce15ae2c">SeDeplacer::INFO</a></div><div class="ttdeci">static const std::string INFO</div><div class="ttdef"><b>Definition:</b> se_deplacer.hpp:17</div></div>
-<div class="ttc" id="aclass_se_deplacer_html_a73749c012b9cb0a93fd98f57bdbb913c"><div class="ttname"><a href="class_se_deplacer.html#a73749c012b9cb0a93fd98f57bdbb913c">SeDeplacer::elementPourAction</a></div><div class="ttdeci">InterfaceSeDeplacer * elementPourAction</div><div class="ttdef"><b>Definition:</b> se_deplacer.hpp:18</div></div>
-<div class="ttc" id="aclass_se_deplacer_html_a830908b97686ba796443695f02f62a3f"><div class="ttname"><a href="class_se_deplacer.html#a830908b97686ba796443695f02f62a3f">SeDeplacer::TEXTURE_NAME</a></div><div class="ttdeci">static const std::string TEXTURE_NAME</div><div class="ttdef"><b>Definition:</b> se_deplacer.hpp:16</div></div>
-<div class="ttc" id="aclass_se_deplacer_html_af2b7bdaac1e6586ecd5590e5fabc36a1"><div class="ttname"><a href="class_se_deplacer.html#af2b7bdaac1e6586ecd5590e5fabc36a1">SeDeplacer::SeDeplacer</a></div><div class="ttdeci">SeDeplacer(InterfaceSeDeplacer *elementPourAction)</div><div class="ttdef"><b>Definition:</b> se_deplacer.cpp:7</div></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_commande_square_html"><div class="ttname"><a href="class_commande_square.html">CommandeSquare</a></div><div class="ttdoc">commande qu'on peut rajouter en bas à gauche du Dahsboard et qui sont carrees le dashBoard va se char...</div><div class="ttdef"><b>Definition:</b> commande_square.hpp:20</div></div>
+<div class="ttc" id="aclass_interface_se_deplacer_html"><div class="ttname"><a href="class_interface_se_deplacer.html">InterfaceSeDeplacer</a></div><div class="ttdoc">A implementer sur un ElementJoueur si il peut se deplacer  Ajouter commande ChoixSeDeplacer a la list...</div><div class="ttdef"><b>Definition:</b> interface_se_deplacer.hpp:15</div></div>
+<div class="ttc" id="aclass_se_deplacer_html"><div class="ttname"><a href="class_se_deplacer.html">SeDeplacer</a></div><div class="ttdoc">Permet de deplacer une instance de InterfaceSeDeplacer  /!\ S'ASSURER que elementPourAction passe en ...</div><div class="ttdef"><b>Definition:</b> se_deplacer.hpp:18</div></div>
+<div class="ttc" id="aclass_se_deplacer_html_a24159034437179de0f29a591ce15ae2c"><div class="ttname"><a href="class_se_deplacer.html#a24159034437179de0f29a591ce15ae2c">SeDeplacer::INFO</a></div><div class="ttdeci">static const std::string INFO</div><div class="ttdef"><b>Definition:</b> se_deplacer.hpp:21</div></div>
+<div class="ttc" id="aclass_se_deplacer_html_a28ebad6e3491a9c6b9742d8acde94057"><div class="ttname"><a href="class_se_deplacer.html#a28ebad6e3491a9c6b9742d8acde94057">SeDeplacer::execute</a></div><div class="ttdeci">void execute() override</div><div class="ttdef"><b>Definition:</b> se_deplacer.cpp:11</div></div>
+<div class="ttc" id="aclass_se_deplacer_html_a73749c012b9cb0a93fd98f57bdbb913c"><div class="ttname"><a href="class_se_deplacer.html#a73749c012b9cb0a93fd98f57bdbb913c">SeDeplacer::elementPourAction</a></div><div class="ttdeci">InterfaceSeDeplacer * elementPourAction</div><div class="ttdoc">element qui sera deplace si l'on clique sur la commande</div><div class="ttdef"><b>Definition:</b> se_deplacer.hpp:25</div></div>
+<div class="ttc" id="aclass_se_deplacer_html_a830908b97686ba796443695f02f62a3f"><div class="ttname"><a href="class_se_deplacer.html#a830908b97686ba796443695f02f62a3f">SeDeplacer::TEXTURE_NAME</a></div><div class="ttdeci">static const std::string TEXTURE_NAME</div><div class="ttdef"><b>Definition:</b> se_deplacer.hpp:20</div></div>
+<div class="ttc" id="aclass_se_deplacer_html_af2b7bdaac1e6586ecd5590e5fabc36a1"><div class="ttname"><a href="class_se_deplacer.html#af2b7bdaac1e6586ecd5590e5fabc36a1">SeDeplacer::SeDeplacer</a></div><div class="ttdeci">SeDeplacer(InterfaceSeDeplacer *elementPourAction)</div><div class="ttdoc">constructeur  /!\ S'ASSURER que elementPourAction passe en argument du constructeur n'est pas detruit...</div><div class="ttdef"><b>Definition:</b> se_deplacer.cpp:7</div></div>
 <div class="ttc" id="acommande__square_8hpp_html"><div class="ttname"><a href="commande__square_8hpp.html">commande_square.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -7,7 +7,11 @@
 
 
 
-
+/**
+ * \class Chateau
+ * \brief Batiment qui peut attaquer
+ * et construire l'unite d'elite
+*/
 class Chateau : public Batiment , public InterfaceAttaquer{
     private :
         static const int NOMBRE_ACTION_MAX_ORIGINE=2;

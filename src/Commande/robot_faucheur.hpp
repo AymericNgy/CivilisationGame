@@ -5,7 +5,12 @@
 
 class Moulin;
 
-// permet d'evoluer au niveau 2 de production d'or la mine
+
+
+/**
+ * \class RobotFaucheur
+ * permet d'evoluer au niveau 3 de produtuction de nourriture du Moulin
+ */
 class RobotFaucheur : public CommandeSquare {
     private :
         static const std::string TEXTURE_NAME;

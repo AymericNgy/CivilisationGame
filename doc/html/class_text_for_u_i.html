@@ -90,6 +90,10 @@ $(document).ready(function(){initNavTree('class_text_for_u_i.html',''); initResi
 </div><!--header-->
 <div class="contents">
 
+<p>Classe qui permet de créer un texte pour l'interface utilisateur <br  />
+comme implemente <a class="el" href="class_drawable_for_u_i.html" title="Classe abstraite pour cree des objets affichables sur la fenetre de jeu,  il peuvent suivre les mouve...">DrawableForUI</a>, il s'ajoute automatiquement a l'interface utilisateur.  
+ <a href="class_text_for_u_i.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="text__for__ui_8hpp_source.html">text_for_ui.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for TextForUI:</div>
@@ -105,15 +109,21 @@ Collaboration diagram for TextForUI:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aaeac5aa6fdbd6c397bca6a2ff9c65dc5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_for_u_i.html#aaeac5aa6fdbd6c397bca6a2ff9c65dc5">TextForUI</a> (int <a class="el" href="class_drawable_for_u_i.html#a49f806f414ca7d8b089c58bad8bbb345">couche</a>, bool <a class="el" href="class_drawable_for_u_i.html#a44cf98ff6c8e80721a3fd5a4930921bb">moveWithCam</a>, const sf::String &amp;string, const sf::Font &amp;font)</td></tr>
+<tr class="memdesc:aaeac5aa6fdbd6c397bca6a2ff9c65dc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_text_for_u_i.html" title="Classe qui permet de créer un texte pour l&#39;interface utilisateur  comme implemente DrawableForUI,...">TextForUI</a>.  <a href="class_text_for_u_i.html#aaeac5aa6fdbd6c397bca6a2ff9c65dc5">More...</a><br /></td></tr>
 <tr class="separator:aaeac5aa6fdbd6c397bca6a2ff9c65dc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1a05fa1478a9c83d487d6f3c73acdbe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_for_u_i.html#ab1a05fa1478a9c83d487d6f3c73acdbe">TextForUI</a> (int <a class="el" href="class_drawable_for_u_i.html#a49f806f414ca7d8b089c58bad8bbb345">couche</a>, bool <a class="el" href="class_drawable_for_u_i.html#a44cf98ff6c8e80721a3fd5a4930921bb">moveWithCam</a>, const sf::String &amp;string)</td></tr>
+<tr class="memdesc:ab1a05fa1478a9c83d487d6f3c73acdbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_text_for_u_i.html" title="Classe qui permet de créer un texte pour l&#39;interface utilisateur  comme implemente DrawableForUI,...">TextForUI</a>.  <a href="class_text_for_u_i.html#ab1a05fa1478a9c83d487d6f3c73acdbe">More...</a><br /></td></tr>
 <tr class="separator:ab1a05fa1478a9c83d487d6f3c73acdbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7230a33f61e0917eae0e0c785cfa3fd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_for_u_i.html#a7230a33f61e0917eae0e0c785cfa3fd6">drawOn</a> (sf::RenderWindow &amp;window)</td></tr>
-<tr class="separator:a7230a33f61e0917eae0e0c785cfa3fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bc888cbba5e391668f6a34f52762801"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_for_u_i.html#a4bc888cbba5e391668f6a34f52762801">setPositionUI</a> (const sf::Vector2f &amp;position)</td></tr>
-<tr class="separator:a4bc888cbba5e391668f6a34f52762801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6bd059758239eb7ee8bf025027eecad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_for_u_i.html#ae6bd059758239eb7ee8bf025027eecad">drawOn</a> (sf::RenderWindow &amp;window) override</td></tr>
+<tr class="memdesc:ae6bd059758239eb7ee8bf025027eecad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dessine le sprite sur la fenetre de jeu fonction a redefinir dans des classe enfants qui heritent de cette classe et qui heritent de sf::Drawable.  <a href="class_text_for_u_i.html#ae6bd059758239eb7ee8bf025027eecad">More...</a><br /></td></tr>
+<tr class="separator:ae6bd059758239eb7ee8bf025027eecad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9191302155f277b2acbe307d8eaec8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_for_u_i.html#ae9191302155f277b2acbe307d8eaec8e">setPositionUI</a> (const sf::Vector2f &amp;position) override</td></tr>
+<tr class="memdesc:ae9191302155f277b2acbe307d8eaec8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">identique a setPosition  <a href="class_text_for_u_i.html#ae9191302155f277b2acbe307d8eaec8e">More...</a><br /></td></tr>
+<tr class="separator:ae9191302155f277b2acbe307d8eaec8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_drawable_for_u_i"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_drawable_for_u_i')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_drawable_for_u_i.html">DrawableForUI</a></td></tr>
 <tr class="memitem:ae32720857b356966afff3e3929fccb2e inherit pub_methods_class_drawable_for_u_i"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#ae32720857b356966afff3e3929fccb2e">DrawableForUI</a> (int <a class="el" href="class_drawable_for_u_i.html#a49f806f414ca7d8b089c58bad8bbb345">couche</a>, bool <a class="el" href="class_drawable_for_u_i.html#a44cf98ff6c8e80721a3fd5a4930921bb">moveWithCam</a>)</td></tr>
+<tr class="memdesc:ae32720857b356966afff3e3929fccb2e inherit pub_methods_class_drawable_for_u_i"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de <a class="el" href="class_drawable_for_u_i.html" title="Classe abstraite pour cree des objets affichables sur la fenetre de jeu,  il peuvent suivre les mouve...">DrawableForUI</a> <br  />
+cree un drawable en position de case 0 0 sur le plateau.  <a href="class_drawable_for_u_i.html#ae32720857b356966afff3e3929fccb2e">More...</a><br /></td></tr>
 <tr class="separator:ae32720857b356966afff3e3929fccb2e inherit pub_methods_class_drawable_for_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a6fb5d70cdb67c75ea26ec49df206a0 inherit pub_methods_class_drawable_for_u_i"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a4a6fb5d70cdb67c75ea26ec49df206a0">~DrawableForUI</a> ()</td></tr>
 <tr class="separator:a4a6fb5d70cdb67c75ea26ec49df206a0 inherit pub_methods_class_drawable_for_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,30 +132,44 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6c5725988c11e6ec9f0f818aa2463b7 inherit pub_methods_class_drawable_for_u_i"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_drawable_for_u_i.html">DrawableForUI</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#ae6c5725988c11e6ec9f0f818aa2463b7">operator=</a> (<a class="el" href="class_drawable_for_u_i.html">DrawableForUI</a> &amp;other)=delete</td></tr>
 <tr class="separator:ae6c5725988c11e6ec9f0f818aa2463b7 inherit pub_methods_class_drawable_for_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0b25a6842a91d45d9ae0ff37cfe367b inherit pub_methods_class_drawable_for_u_i"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_case_position.html">CasePosition</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#aa0b25a6842a91d45d9ae0ff37cfe367b">getCasePosition</a> () const</td></tr>
+<tr class="memdesc:aa0b25a6842a91d45d9ae0ff37cfe367b inherit pub_methods_class_drawable_for_u_i"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie la position du drawable sur le plateau  <a href="class_drawable_for_u_i.html#aa0b25a6842a91d45d9ae0ff37cfe367b">More...</a><br /></td></tr>
 <tr class="separator:aa0b25a6842a91d45d9ae0ff37cfe367b inherit pub_methods_class_drawable_for_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b2196afd86f659c905acfef30e3cc73 inherit pub_methods_class_drawable_for_u_i"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a7b2196afd86f659c905acfef30e3cc73">setCasePosition</a> (<a class="el" href="class_case_position.html">CasePosition</a> <a class="el" href="class_drawable_for_u_i.html#a254905313f1a71beccfb4dca954403fb">casePosition</a>)</td></tr>
+<tr class="memdesc:a7b2196afd86f659c905acfef30e3cc73 inherit pub_methods_class_drawable_for_u_i"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met a jour la position du sprite sur le plateau.  <a href="class_drawable_for_u_i.html#a7b2196afd86f659c905acfef30e3cc73">More...</a><br /></td></tr>
 <tr class="separator:a7b2196afd86f659c905acfef30e3cc73 inherit pub_methods_class_drawable_for_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b2e8f14b751052110a014c91e00e8c8 inherit pub_methods_class_drawable_for_u_i"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a3b2e8f14b751052110a014c91e00e8c8">updateFromCam</a> ()</td></tr>
+<tr class="memdesc:a3b2e8f14b751052110a014c91e00e8c8 inherit pub_methods_class_drawable_for_u_i"><td class="mdescLeft">&#160;</td><td class="mdescRight">permet de mettre a jour le sprite en fonction de la position de la cam et de sa position sur le cadrillage <br  />
+fonctionnelle que si moveWithCam=true  <a href="class_drawable_for_u_i.html#a3b2e8f14b751052110a014c91e00e8c8">More...</a><br /></td></tr>
 <tr class="separator:a3b2e8f14b751052110a014c91e00e8c8 inherit pub_methods_class_drawable_for_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2940ea2563282e2814a9d810ec92dd1f inherit pub_methods_class_drawable_for_u_i"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a2940ea2563282e2814a9d810ec92dd1f">getCouche</a> () const</td></tr>
+<tr class="memdesc:a2940ea2563282e2814a9d810ec92dd1f inherit pub_methods_class_drawable_for_u_i"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie la couche d'affichage  <a href="class_drawable_for_u_i.html#a2940ea2563282e2814a9d810ec92dd1f">More...</a><br /></td></tr>
 <tr class="separator:a2940ea2563282e2814a9d810ec92dd1f inherit pub_methods_class_drawable_for_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:ab39ebaf0ef4023fa58347e15742b7737"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_text_for_u_i.html#ab39ebaf0ef4023fa58347e15742b7737">FONT_NAME</a> = &quot;Classica-Book.ttf&quot;</td></tr>
+<tr class="memdesc:ab39ebaf0ef4023fa58347e15742b7737"><td class="mdescLeft">&#160;</td><td class="mdescRight">Nom de la police de caractere utilisee pour les textes de l'interface utilisateur.  <a href="class_text_for_u_i.html#ab39ebaf0ef4023fa58347e15742b7737">More...</a><br /></td></tr>
 <tr class="separator:ab39ebaf0ef4023fa58347e15742b7737"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_drawable_for_u_i"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_drawable_for_u_i')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_drawable_for_u_i.html">DrawableForUI</a></td></tr>
 <tr class="memitem:a49f806f414ca7d8b089c58bad8bbb345 inherit pro_attribs_class_drawable_for_u_i"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a49f806f414ca7d8b089c58bad8bbb345">couche</a></td></tr>
+<tr class="memdesc:a49f806f414ca7d8b089c58bad8bbb345 inherit pro_attribs_class_drawable_for_u_i"><td class="mdescLeft">&#160;</td><td class="mdescRight">Couche d'affichage <br  />
+ Plus couche est grand plus le sprite est dessiner au dessus des autres <br  />
+doit etre inferieur a UserInterface::NOMBRE_COUCHE_SPRITES.  <a href="class_drawable_for_u_i.html#a49f806f414ca7d8b089c58bad8bbb345">More...</a><br /></td></tr>
 <tr class="separator:a49f806f414ca7d8b089c58bad8bbb345 inherit pro_attribs_class_drawable_for_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a254905313f1a71beccfb4dca954403fb inherit pro_attribs_class_drawable_for_u_i"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_case_position.html">CasePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a254905313f1a71beccfb4dca954403fb">casePosition</a></td></tr>
-<tr class="separator:a254905313f1a71beccfb4dca954403fb inherit pro_attribs_class_drawable_for_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44cf98ff6c8e80721a3fd5a4930921bb inherit pro_attribs_class_drawable_for_u_i"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a44cf98ff6c8e80721a3fd5a4930921bb">moveWithCam</a></td></tr>
+<tr class="memdesc:a44cf98ff6c8e80721a3fd5a4930921bb inherit pro_attribs_class_drawable_for_u_i"><td class="mdescLeft">&#160;</td><td class="mdescRight">Si true, le sprite se deplacera avec la camera.  <a href="class_drawable_for_u_i.html#a44cf98ff6c8e80721a3fd5a4930921bb">More...</a><br /></td></tr>
 <tr class="separator:a44cf98ff6c8e80721a3fd5a4930921bb inherit pro_attribs_class_drawable_for_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a254905313f1a71beccfb4dca954403fb inherit pro_attribs_class_drawable_for_u_i"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_case_position.html">CasePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_drawable_for_u_i.html#a254905313f1a71beccfb4dca954403fb">casePosition</a></td></tr>
+<tr class="memdesc:a254905313f1a71beccfb4dca954403fb inherit pro_attribs_class_drawable_for_u_i"><td class="mdescLeft">&#160;</td><td class="mdescRight">position sur la case utile que si sprite est sur une case ce sont les  <a href="class_drawable_for_u_i.html#a254905313f1a71beccfb4dca954403fb">More...</a><br /></td></tr>
+<tr class="separator:a254905313f1a71beccfb4dca954403fb inherit pro_attribs_class_drawable_for_u_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Classe qui permet de créer un texte pour l'interface utilisateur <br  />
+comme implemente <a class="el" href="class_drawable_for_u_i.html" title="Classe abstraite pour cree des objets affichables sur la fenetre de jeu,  il peuvent suivre les mouve...">DrawableForUI</a>, il s'ajoute automatiquement a l'interface utilisateur. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aaeac5aa6fdbd6c397bca6a2ff9c65dc5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaeac5aa6fdbd6c397bca6a2ff9c65dc5">&#9670;&nbsp;</a></span>TextForUI() <span class="overload">[1/2]</span></h2>
 
@@ -184,6 +208,17 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructeur de <a class="el" href="class_text_for_u_i.html" title="Classe qui permet de créer un texte pour l&#39;interface utilisateur  comme implemente DrawableForUI,...">TextForUI</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">couche</td><td>Couche sur laquelle le texte sera affiche </td></tr>
+    <tr><td class="paramname">moveWithCam</td><td>Si true, le texte se deplacera avec la camera </td></tr>
+    <tr><td class="paramname">string</td><td>Texte a afficher </td></tr>
+    <tr><td class="paramname">font</td><td>Police de caractere a utiliser </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ab1a05fa1478a9c83d487d6f3c73acdbe"></a>
@@ -218,11 +253,21 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Constructeur de <a class="el" href="class_text_for_u_i.html" title="Classe qui permet de créer un texte pour l&#39;interface utilisateur  comme implemente DrawableForUI,...">TextForUI</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">couche</td><td>Couche sur laquelle le texte sera affiche </td></tr>
+    <tr><td class="paramname">moveWithCam</td><td>Si true, le texte se deplacera avec la camera </td></tr>
+    <tr><td class="paramname">string</td><td>Texte a afficher </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7230a33f61e0917eae0e0c785cfa3fd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7230a33f61e0917eae0e0c785cfa3fd6">&#9670;&nbsp;</a></span>drawOn()</h2>
+<a id="ae6bd059758239eb7ee8bf025027eecad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6bd059758239eb7ee8bf025027eecad">&#9670;&nbsp;</a></span>drawOn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -240,17 +285,19 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Dessine le sprite sur la fenetre de jeu fonction a redefinir dans des classe enfants qui heritent de cette classe et qui heritent de sf::Drawable. </p>
 
 <p>Implements <a class="el" href="class_drawable_for_u_i.html#a4b2990591d68f98ec0247d9a90fa5808">DrawableForUI</a>.</p>
 
 </div>
 </div>
-<a id="a4bc888cbba5e391668f6a34f52762801"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bc888cbba5e391668f6a34f52762801">&#9670;&nbsp;</a></span>setPositionUI()</h2>
+<a id="ae9191302155f277b2acbe307d8eaec8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9191302155f277b2acbe307d8eaec8e">&#9670;&nbsp;</a></span>setPositionUI()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,10 +315,12 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>identique a setPosition </p>
 
 <p>Implements <a class="el" href="class_drawable_for_u_i.html#a8d8075467f996b721f673d9e44e96859">DrawableForUI</a>.</p>
 
@@ -297,6 +346,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Nom de la police de caractere utilisee pour les textes de l'interface utilisateur. </p>
 
 </div>
 </div>

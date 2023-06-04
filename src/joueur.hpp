@@ -90,9 +90,9 @@ class Joueur : public std::enable_shared_from_this<Joueur>{
         // --- CONSTANTES ---
 
         // ressources de depart
-        const static int BOIS_DEPART = 10000;
-        const static int NOURRITURE_DEPART = 10000;
-        const static int OR_DEPART = 10000;
+        const static int BOIS_DEPART = 1000;
+        const static int NOURRITURE_DEPART = 800;
+        const static int OR_DEPART = 100;
 
         // ---METHODES---
 

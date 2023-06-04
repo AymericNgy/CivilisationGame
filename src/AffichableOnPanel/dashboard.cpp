@@ -105,7 +105,7 @@ void Dashboard::updateInfoElement() {
     creationRessource->setString("");
 
     if (elementJoueurPourInfo!=nullptr) { // teste si un element est present dans le dashboard pour etre affiche
-        nom_element_info->setString(elementJoueurPourInfo->getName()+" de [DEBUG] "+elementJoueurPourInfo->getJoueurProprietaire()->getName());
+        nom_element_info->setString(elementJoueurPourInfo->getName());
         icon_element_info->setTextures(elementJoueurPourInfo->getIconTextureFileName());
         vie_element_info->setString("Pv : " + std::to_string(elementJoueurPourInfo->getPv()) +"/"+ std::to_string(elementJoueurPourInfo->getPvMax()));
         tour_element_info->setString("Nombre Actions : "+ std::to_string(elementJoueurPourInfo->getNombreActionRestante())+"/"+ std::to_string(elementJoueurPourInfo->getNombreActionMax()));

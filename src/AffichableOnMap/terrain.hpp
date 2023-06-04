@@ -5,7 +5,10 @@
 #include "../UserInterface/affichable_on_map.hpp"
 #include <string>
 
-
+/**
+ * \class Terrain
+ * \brief terrain sur chaque case du plateau
+*/
 class Terrain : public AffichableOnMap {
     
 

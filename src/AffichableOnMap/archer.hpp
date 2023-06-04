@@ -8,7 +8,11 @@
 #include "interface_attaquer.hpp"
 
 
-
+/**
+ * \class Archer
+ * \brief Unite qui peut attaquer
+ * 
+*/
 class Archer : public Unite , public InterfaceAttaquer{
     private :
 

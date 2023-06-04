@@ -10,9 +10,14 @@
 typedef std::shared_ptr<Joueur> Joueur_ptr;
 
 
-// Classe abstraite correspondant a tous les elements pouvant appartenir a un joueur
-// S'ajoute a sa creation au joueurProprietaire
-// se retire a sa destruction du joueurProprietaire
+
+
+/**
+ * \class ElementJoueur
+ * \brief classe abstraite correspondant a tous les elements pouvant appartenir a un joueur
+ * S'ajoute a sa creation au joueurProprietaire
+ * se retire a sa destruction du joueurProprietaire
+*/
 class ElementJoueur : public AffichableOnMap{
 
 

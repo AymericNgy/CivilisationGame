@@ -6,8 +6,12 @@
 
 class ElementJoueur;
 
-// A implementer sur un ElementJoueur si il peut attaquer
-// Ajouter commande ChoixAttaquer a la liste renvoye par ElementJoueur::getActionpossible()
+
+/**
+ * \class InterfaceAttaquer
+ * \brief A implementer sur un ElementJoueur si il peut attaquer \n
+ * Ajouter commande ChoixAttaquer a la liste renvoye par ElementJoueur::getActionpossible()
+*/
 class InterfaceAttaquer {
     
 

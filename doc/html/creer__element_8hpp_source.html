@@ -103,131 +103,124 @@ $(document).ready(function(){initNavTree('creer__element_8hpp_source.html',''); 
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_element_joueur.html">ElementJoueur</a>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// [!] probleme si constructeur des classes derivees d&#39;ElementJoueur ne sont pas les memes que ceux d&#39;ElementJoueur</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// [!] alternative : utiliser une copie d&#39;un element passe en argument</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// permet de construire un certain type d&#39;ElementJoueur</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// /!\ T doit etre un ElementJoueur ou heriter de cette classe</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// /!\ S&#39;ASSURER que elementPourAction passe en argument constructeur n&#39;est pas detruit tant que</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// /!\ l&#39;instance de SelectSpecificElement existe </span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="class_creer_element.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_creer_element.html">CreerElement</a> : <span class="keyword">public</span> <a class="code" href="class_commande_square.html">CommandeSquare</a> {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    private :</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="class_creer_element.html#abd4638814e5be5528e47e5cdfc7b9f35">   29</a></span>&#160;        <a class="code" href="class_case_position.html">CasePosition</a> <a class="code" href="class_creer_element.html#abd4638814e5be5528e47e5cdfc7b9f35">position</a>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_creer_element.html#af3a92960a10f1acfdd4dd3f113a080a2">   30</a></span>&#160;        <a class="code" href="element__joueur_8hpp.html#a2c6fa586ee4d7f082785a0399bbb5daa">Joueur_ptr</a> <a class="code" href="class_creer_element.html#af3a92960a10f1acfdd4dd3f113a080a2">joueurProprietaire</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="class_creer_element.html#a59e187eee7cb17eb0b35582bc81ca22f">   31</a></span>&#160;        <a class="code" href="class_element_joueur.html">ElementJoueur</a> *<a class="code" href="class_creer_element.html#a59e187eee7cb17eb0b35582bc81ca22f">elementCreateur</a>; <span class="comment">// element qui cree l&#39;element, permet de decrease son nombre d&#39;action, mettre nullptr si aucun element ne cree l&#39;element</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_creer_element.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_creer_element.html">CreerElement</a> : <span class="keyword">public</span> <a class="code" href="class_commande_square.html">CommandeSquare</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    private :</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="class_creer_element.html#abd4638814e5be5528e47e5cdfc7b9f35">   32</a></span>&#160;        <a class="code" href="class_case_position.html">CasePosition</a> <a class="code" href="class_creer_element.html#abd4638814e5be5528e47e5cdfc7b9f35">position</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_creer_element.html#af3a92960a10f1acfdd4dd3f113a080a2">   33</a></span>&#160;        <a class="code" href="element__joueur_8hpp.html#a2c6fa586ee4d7f082785a0399bbb5daa">Joueur_ptr</a> <a class="code" href="class_creer_element.html#af3a92960a10f1acfdd4dd3f113a080a2">joueurProprietaire</a>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    public : </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="class_creer_element.html#a29a5bef8b9e3e5f1f71721db3d01720d">CreerElement</a>(<a class="code" href="class_case_position.html">CasePosition</a> <a class="code" href="class_creer_element.html#abd4638814e5be5528e47e5cdfc7b9f35">position</a>,<a class="code" href="element__joueur_8hpp.html#a2c6fa586ee4d7f082785a0399bbb5daa">Joueur_ptr</a> <a class="code" href="class_creer_element.html#af3a92960a10f1acfdd4dd3f113a080a2">joueurProprietaire</a>,<a class="code" href="class_element_joueur.html">ElementJoueur</a> *elementPourAction);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_creer_element.html#a47b6be359981e02fe6653e5b3a83f66b">execute</a>();</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// permet de creer un ElemenJoueur de type T (T doit etre un ElementJoueur ou heriter de cette classe)</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// position -&gt; position de creation</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// joueurProprietaire -&gt; joueur qui sera proprietaire de l&#39;element cree</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">// elementCreateur -&gt; element qui cree l&#39;element, permet de decrease son nombre d&#39;action, mettre nullptr si aucun element ne cree l&#39;element</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_creer_element.html#a29a5bef8b9e3e5f1f71721db3d01720d">   50</a></span>&#160;<a class="code" href="class_creer_element.html#a29a5bef8b9e3e5f1f71721db3d01720d">CreerElement&lt;T&gt;::CreerElement</a>(<a class="code" href="class_case_position.html">CasePosition</a> position,<a class="code" href="element__joueur_8hpp.html#a2c6fa586ee4d7f082785a0399bbb5daa">Joueur_ptr</a> joueurProprietaire, <a class="code" href="class_element_joueur.html">ElementJoueur</a> *elementCreateur) : position(position),  joueurProprietaire(joueurProprietaire),<a class="code" href="class_commande_square.html">CommandeSquare</a>(<a class="code" href="class_user_interface.html">UserInterface</a>::TRANSPARENCY_TEXTURE_NAME, <span class="stringliteral">&quot;&quot;</span>,0,0,0) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    this-&gt;elementCreateur=<a class="code" href="class_creer_element.html#a59e187eee7cb17eb0b35582bc81ca22f">elementCreateur</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    static_assert(std::is_convertible&lt;T*, ElementJoueur*&gt;::value, <span class="stringliteral">&quot;T doit dériver de ElementJoueur&quot;</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_creer_element.html#a59e187eee7cb17eb0b35582bc81ca22f">   39</a></span>&#160;        <a class="code" href="class_element_joueur.html">ElementJoueur</a> *<a class="code" href="class_creer_element.html#a59e187eee7cb17eb0b35582bc81ca22f">elementCreateur</a>; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    public : </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="class_creer_element.html#a29a5bef8b9e3e5f1f71721db3d01720d">CreerElement</a>(<a class="code" href="class_case_position.html">CasePosition</a> <a class="code" href="class_creer_element.html#abd4638814e5be5528e47e5cdfc7b9f35">position</a>,<a class="code" href="element__joueur_8hpp.html#a2c6fa586ee4d7f082785a0399bbb5daa">Joueur_ptr</a> <a class="code" href="class_creer_element.html#af3a92960a10f1acfdd4dd3f113a080a2">joueurProprietaire</a>,<a class="code" href="class_element_joueur.html">ElementJoueur</a> *elementPourAction);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_creer_element.html#a47b6be359981e02fe6653e5b3a83f66b">execute</a>();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">// pas tres elegant -&gt; utilise une instance de T pour des affectations</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    T elementJoueur(<a class="code" href="class_creer_element.html#af3a92960a10f1acfdd4dd3f113a080a2">joueurProprietaire</a>);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// initialise texture pour affichage de la commande</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    this-&gt;<a class="code" href="class_affichable_on_panel.html#a08b987fc95df0860398eb4b06ecd5ee9">setTextures</a>(elementJoueur.getIconTextureFileName());</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">// initialiser ressource pour l&#39;achat de la commande</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">int</span> bois_pour_achat;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">int</span> nourriture_pour_achat;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">int</span> or_pour_achat;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    elementJoueur.ressourcePourAchat(bois_pour_achat,nourriture_pour_achat,or_pour_achat);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    this-&gt;<a class="code" href="class_commande.html#a85089e04a74ab77c6a3611f1f149be32">prix_bois</a> = bois_pour_achat;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    this-&gt;<a class="code" href="class_commande.html#a5f6821abec80a5d619a7da83b1e3711b">prix_nourriture</a> =nourriture_pour_achat;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    this-&gt;<a class="code" href="class_commande.html#a44fef5b3b4feffbc5bc900d708bd0ac0">prix_or</a>=or_pour_achat;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// initilaiser info</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="class_commande.html#a93112cc654931c1f9d32f2e892c49877">info</a>=<span class="stringliteral">&quot;Creer &quot;</span>+elementJoueur.getName()+<span class="stringliteral">&quot;\n&quot;</span>+elementJoueur.getInfo();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_creer_element.html#a29a5bef8b9e3e5f1f71721db3d01720d">   68</a></span>&#160;<a class="code" href="class_creer_element.html#a29a5bef8b9e3e5f1f71721db3d01720d">CreerElement&lt;T&gt;::CreerElement</a>(<a class="code" href="class_case_position.html">CasePosition</a> position,<a class="code" href="element__joueur_8hpp.html#a2c6fa586ee4d7f082785a0399bbb5daa">Joueur_ptr</a> joueurProprietaire, <a class="code" href="class_element_joueur.html">ElementJoueur</a> *elementCreateur) : position(position),  joueurProprietaire(joueurProprietaire),<a class="code" href="class_commande_square.html">CommandeSquare</a>(<a class="code" href="class_user_interface.html">UserInterface</a>::TRANSPARENCY_TEXTURE_NAME, <span class="stringliteral">&quot;&quot;</span>,0,0,0) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    this-&gt;elementCreateur=<a class="code" href="class_creer_element.html#a59e187eee7cb17eb0b35582bc81ca22f">elementCreateur</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    static_assert(std::is_convertible&lt;T*, ElementJoueur*&gt;::value, <span class="stringliteral">&quot;T doit dériver de ElementJoueur&quot;</span>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// pas tres elegant -&gt; utilise une instance de T pour des affectations</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    T elementJoueur(<a class="code" href="class_creer_element.html#af3a92960a10f1acfdd4dd3f113a080a2">joueurProprietaire</a>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="comment">// initialise texture pour affichage de la commande</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    this-&gt;<a class="code" href="class_affichable_on_panel.html#a08b987fc95df0860398eb4b06ecd5ee9">setTextures</a>(elementJoueur.getIconTextureFileName());</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">// execute la creation si assez de resource et assez d&#39;action s&#39;il y a une instance creatrice</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">// si il n&#39;y a pas d&#39;instance creatrice recharge la case selectionne dans le hud</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_creer_element.html#a47b6be359981e02fe6653e5b3a83f66b">   83</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_creer_element.html#a47b6be359981e02fe6653e5b3a83f66b">CreerElement&lt;T&gt;::execute</a>() {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="comment">// pas tres elegant -&gt; utilise une instance de T pour des affectations</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    T instanceTypeACreer(joueurProprietaire);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> (elementCreateur) { <span class="comment">// teste s&#39;il y a un element qui cree</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">if</span> (elementCreateur-&gt;_commandeCreerElement(instanceTypeACreer)) {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="class_element_joueur.html">ElementJoueur</a> *nouveauElementJoueur = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_element_joueur.html">ElementJoueur</a>*<span class="keyword">&gt;</span>(<span class="keyword">new</span> T(joueurProprietaire));</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            nouveauElementJoueur-&gt;<a class="code" href="class_element_joueur.html#a3c08f25660627e7f6c2e3bac4a4eca8b">init</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            nouveauElementJoueur-&gt;<a class="code" href="class_affichable_on_map.html#a6eb01df41468791b5dfed0d24f44523e">moveToPosition</a>(position);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="comment">// initialiser ressource pour l&#39;achat de la commande</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">int</span> bois_pour_achat;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">int</span> nourriture_pour_achat;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">int</span> or_pour_achat;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    elementJoueur.ressourcePourAchat(bois_pour_achat,nourriture_pour_achat,or_pour_achat);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    this-&gt;<a class="code" href="class_commande.html#a85089e04a74ab77c6a3611f1f149be32">prix_bois</a> = bois_pour_achat;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    this-&gt;<a class="code" href="class_commande.html#a5f6821abec80a5d619a7da83b1e3711b">prix_nourriture</a> =nourriture_pour_achat;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    this-&gt;<a class="code" href="class_commande.html#a44fef5b3b4feffbc5bc900d708bd0ac0">prix_or</a>=or_pour_achat;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// initilaiser info</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="class_commande.html#a93112cc654931c1f9d32f2e892c49877">info</a>=<span class="stringliteral">&quot;Creer &quot;</span>+elementJoueur.getName()+<span class="stringliteral">&quot;\n&quot;</span>+elementJoueur.getInfo();</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_element_joueur.html#a5c83549a5a04ba53a4abc4aea85dc9fe">ElementJoueur::_staticCommandeCreerElement</a>(instanceTypeACreer)) {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="class_element_joueur.html">ElementJoueur</a> *nouveauElementJoueur = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_element_joueur.html">ElementJoueur</a>*<span class="keyword">&gt;</span>(<span class="keyword">new</span> T(joueurProprietaire));</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            nouveauElementJoueur-&gt;<a class="code" href="class_element_joueur.html#a3c08f25660627e7f6c2e3bac4a4eca8b">init</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            nouveauElementJoueur-&gt;<a class="code" href="class_affichable_on_map.html#a6eb01df41468791b5dfed0d24f44523e">moveToPosition</a>(position);   </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <a class="code" href="class_jeu.html#a9ccc1b588dd86fccfbe66854195ba4e3">Jeu::getInstance</a>().<a class="code" href="class_jeu.html#ad2bf9281bd963fd13bd5b50e9c28a66e">getJoueurActif</a>()-&gt;loadSelectedCase();        </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_creer_element.html#a47b6be359981e02fe6653e5b3a83f66b">  105</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_creer_element.html#a47b6be359981e02fe6653e5b3a83f66b">CreerElement&lt;T&gt;::execute</a>() {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// pas tres elegant -&gt; utilise une instance de T pour des affectations</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    T instanceTypeACreer(joueurProprietaire);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">if</span> (elementCreateur) { <span class="comment">// teste s&#39;il y a un element qui cree</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">if</span> (elementCreateur-&gt;_commandeCreerElement(instanceTypeACreer)) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <a class="code" href="class_element_joueur.html">ElementJoueur</a> *nouveauElementJoueur = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_element_joueur.html">ElementJoueur</a>*<span class="keyword">&gt;</span>(<span class="keyword">new</span> T(joueurProprietaire));</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            nouveauElementJoueur-&gt;<a class="code" href="class_element_joueur.html#a3c08f25660627e7f6c2e3bac4a4eca8b">init</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            nouveauElementJoueur-&gt;<a class="code" href="class_affichable_on_map.html#a6eb01df41468791b5dfed0d24f44523e">moveToPosition</a>(position);</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="class_element_joueur.html#a5c83549a5a04ba53a4abc4aea85dc9fe">ElementJoueur::_staticCommandeCreerElement</a>(instanceTypeACreer)) {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <a class="code" href="class_element_joueur.html">ElementJoueur</a> *nouveauElementJoueur = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="class_element_joueur.html">ElementJoueur</a>*<span class="keyword">&gt;</span>(<span class="keyword">new</span> T(joueurProprietaire));</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            nouveauElementJoueur-&gt;<a class="code" href="class_element_joueur.html#a3c08f25660627e7f6c2e3bac4a4eca8b">init</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            nouveauElementJoueur-&gt;<a class="code" href="class_affichable_on_map.html#a6eb01df41468791b5dfed0d24f44523e">moveToPosition</a>(position);   </div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;            <a class="code" href="class_jeu.html#a9ccc1b588dd86fccfbe66854195ba4e3">Jeu::getInstance</a>().<a class="code" href="class_jeu.html#ad2bf9281bd963fd13bd5b50e9c28a66e">getJoueurActif</a>()-&gt;loadSelectedCase();        </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        }</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_affichable_on_map_html_a6eb01df41468791b5dfed0d24f44523e"><div class="ttname"><a href="class_affichable_on_map.html#a6eb01df41468791b5dfed0d24f44523e">AffichableOnMap::moveToPosition</a></div><div class="ttdeci">virtual void moveToPosition(CasePosition casePosition)</div><div class="ttdef"><b>Definition:</b> affichable_on_map.cpp:28</div></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160; </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_affichable_on_map_html_a6eb01df41468791b5dfed0d24f44523e"><div class="ttname"><a href="class_affichable_on_map.html#a6eb01df41468791b5dfed0d24f44523e">AffichableOnMap::moveToPosition</a></div><div class="ttdeci">virtual void moveToPosition(CasePosition casePosition)</div><div class="ttdef"><b>Definition:</b> affichable_on_map.cpp:26</div></div>
 <div class="ttc" id="aclass_affichable_on_panel_html_a08b987fc95df0860398eb4b06ecd5ee9"><div class="ttname"><a href="class_affichable_on_panel.html#a08b987fc95df0860398eb4b06ecd5ee9">AffichableOnPanel::setTextures</a></div><div class="ttdeci">void setTextures(std::string textureName)</div><div class="ttdef"><b>Definition:</b> affichable_on_panel.cpp:33</div></div>
 <div class="ttc" id="aclass_case_position_html"><div class="ttname"><a href="class_case_position.html">CasePosition</a></div><div class="ttdoc">position d'une case sur le plateau</div><div class="ttdef"><b>Definition:</b> case.hpp:25</div></div>
-<div class="ttc" id="aclass_commande_html_a44fef5b3b4feffbc5bc900d708bd0ac0"><div class="ttname"><a href="class_commande.html#a44fef5b3b4feffbc5bc900d708bd0ac0">Commande::prix_or</a></div><div class="ttdeci">int prix_or</div><div class="ttdef"><b>Definition:</b> commande.hpp:23</div></div>
-<div class="ttc" id="aclass_commande_html_a5f6821abec80a5d619a7da83b1e3711b"><div class="ttname"><a href="class_commande.html#a5f6821abec80a5d619a7da83b1e3711b">Commande::prix_nourriture</a></div><div class="ttdeci">int prix_nourriture</div><div class="ttdef"><b>Definition:</b> commande.hpp:22</div></div>
-<div class="ttc" id="aclass_commande_html_a85089e04a74ab77c6a3611f1f149be32"><div class="ttname"><a href="class_commande.html#a85089e04a74ab77c6a3611f1f149be32">Commande::prix_bois</a></div><div class="ttdeci">int prix_bois</div><div class="ttdef"><b>Definition:</b> commande.hpp:21</div></div>
-<div class="ttc" id="aclass_commande_html_a93112cc654931c1f9d32f2e892c49877"><div class="ttname"><a href="class_commande.html#a93112cc654931c1f9d32f2e892c49877">Commande::info</a></div><div class="ttdeci">std::string info</div><div class="ttdef"><b>Definition:</b> commande.hpp:20</div></div>
-<div class="ttc" id="aclass_commande_square_html"><div class="ttname"><a href="class_commande_square.html">CommandeSquare</a></div><div class="ttdef"><b>Definition:</b> commande_square.hpp:16</div></div>
-<div class="ttc" id="aclass_creer_element_html"><div class="ttname"><a href="class_creer_element.html">CreerElement</a></div><div class="ttdef"><b>Definition:</b> creer_element.hpp:27</div></div>
-<div class="ttc" id="aclass_creer_element_html_a29a5bef8b9e3e5f1f71721db3d01720d"><div class="ttname"><a href="class_creer_element.html#a29a5bef8b9e3e5f1f71721db3d01720d">CreerElement::CreerElement</a></div><div class="ttdeci">CreerElement(CasePosition position, Joueur_ptr joueurProprietaire, ElementJoueur *elementPourAction)</div><div class="ttdef"><b>Definition:</b> creer_element.hpp:50</div></div>
-<div class="ttc" id="aclass_creer_element_html_a47b6be359981e02fe6653e5b3a83f66b"><div class="ttname"><a href="class_creer_element.html#a47b6be359981e02fe6653e5b3a83f66b">CreerElement::execute</a></div><div class="ttdeci">void execute()</div><div class="ttdef"><b>Definition:</b> creer_element.hpp:83</div></div>
-<div class="ttc" id="aclass_creer_element_html_a59e187eee7cb17eb0b35582bc81ca22f"><div class="ttname"><a href="class_creer_element.html#a59e187eee7cb17eb0b35582bc81ca22f">CreerElement::elementCreateur</a></div><div class="ttdeci">ElementJoueur * elementCreateur</div><div class="ttdef"><b>Definition:</b> creer_element.hpp:31</div></div>
-<div class="ttc" id="aclass_creer_element_html_abd4638814e5be5528e47e5cdfc7b9f35"><div class="ttname"><a href="class_creer_element.html#abd4638814e5be5528e47e5cdfc7b9f35">CreerElement::position</a></div><div class="ttdeci">CasePosition position</div><div class="ttdef"><b>Definition:</b> creer_element.hpp:29</div></div>
-<div class="ttc" id="aclass_creer_element_html_af3a92960a10f1acfdd4dd3f113a080a2"><div class="ttname"><a href="class_creer_element.html#af3a92960a10f1acfdd4dd3f113a080a2">CreerElement::joueurProprietaire</a></div><div class="ttdeci">Joueur_ptr joueurProprietaire</div><div class="ttdef"><b>Definition:</b> creer_element.hpp:30</div></div>
-<div class="ttc" id="aclass_element_joueur_html"><div class="ttname"><a href="class_element_joueur.html">ElementJoueur</a></div><div class="ttdef"><b>Definition:</b> element_joueur.hpp:16</div></div>
-<div class="ttc" id="aclass_element_joueur_html_a3c08f25660627e7f6c2e3bac4a4eca8b"><div class="ttname"><a href="class_element_joueur.html#a3c08f25660627e7f6c2e3bac4a4eca8b">ElementJoueur::init</a></div><div class="ttdeci">void init(bool initNombreAction)</div><div class="ttdef"><b>Definition:</b> element_joueur.cpp:34</div></div>
-<div class="ttc" id="aclass_element_joueur_html_a5c83549a5a04ba53a4abc4aea85dc9fe"><div class="ttname"><a href="class_element_joueur.html#a5c83549a5a04ba53a4abc4aea85dc9fe">ElementJoueur::_staticCommandeCreerElement</a></div><div class="ttdeci">static bool _staticCommandeCreerElement(ElementJoueur &amp;instanceTypeACreer)</div><div class="ttdef"><b>Definition:</b> element_joueur.cpp:78</div></div>
+<div class="ttc" id="aclass_commande_html_a44fef5b3b4feffbc5bc900d708bd0ac0"><div class="ttname"><a href="class_commande.html#a44fef5b3b4feffbc5bc900d708bd0ac0">Commande::prix_or</a></div><div class="ttdeci">int prix_or</div><div class="ttdef"><b>Definition:</b> commande.hpp:27</div></div>
+<div class="ttc" id="aclass_commande_html_a5f6821abec80a5d619a7da83b1e3711b"><div class="ttname"><a href="class_commande.html#a5f6821abec80a5d619a7da83b1e3711b">Commande::prix_nourriture</a></div><div class="ttdeci">int prix_nourriture</div><div class="ttdef"><b>Definition:</b> commande.hpp:26</div></div>
+<div class="ttc" id="aclass_commande_html_a85089e04a74ab77c6a3611f1f149be32"><div class="ttname"><a href="class_commande.html#a85089e04a74ab77c6a3611f1f149be32">Commande::prix_bois</a></div><div class="ttdeci">int prix_bois</div><div class="ttdef"><b>Definition:</b> commande.hpp:25</div></div>
+<div class="ttc" id="aclass_commande_html_a93112cc654931c1f9d32f2e892c49877"><div class="ttname"><a href="class_commande.html#a93112cc654931c1f9d32f2e892c49877">Commande::info</a></div><div class="ttdeci">std::string info</div><div class="ttdef"><b>Definition:</b> commande.hpp:24</div></div>
+<div class="ttc" id="aclass_commande_square_html"><div class="ttname"><a href="class_commande_square.html">CommandeSquare</a></div><div class="ttdoc">commande qu'on peut rajouter en bas à gauche du Dahsboard et qui sont carrees le dashBoard va se char...</div><div class="ttdef"><b>Definition:</b> commande_square.hpp:20</div></div>
+<div class="ttc" id="aclass_creer_element_html"><div class="ttname"><a href="class_creer_element.html">CreerElement</a></div><div class="ttdoc">permet de construire un certain type d'ElementJoueur /!\ T doit etre un ElementJoueur ou heriter de c...</div><div class="ttdef"><b>Definition:</b> creer_element.hpp:30</div></div>
+<div class="ttc" id="aclass_creer_element_html_a29a5bef8b9e3e5f1f71721db3d01720d"><div class="ttname"><a href="class_creer_element.html#a29a5bef8b9e3e5f1f71721db3d01720d">CreerElement::CreerElement</a></div><div class="ttdeci">CreerElement(CasePosition position, Joueur_ptr joueurProprietaire, ElementJoueur *elementPourAction)</div><div class="ttdoc">constructeur</div><div class="ttdef"><b>Definition:</b> creer_element.hpp:68</div></div>
+<div class="ttc" id="aclass_creer_element_html_a47b6be359981e02fe6653e5b3a83f66b"><div class="ttname"><a href="class_creer_element.html#a47b6be359981e02fe6653e5b3a83f66b">CreerElement::execute</a></div><div class="ttdeci">void execute()</div><div class="ttdoc">execute la creation si assez de resource et assez d'action s'il y a une instance creatrice  si il n'y...</div><div class="ttdef"><b>Definition:</b> creer_element.hpp:105</div></div>
+<div class="ttc" id="aclass_creer_element_html_a59e187eee7cb17eb0b35582bc81ca22f"><div class="ttname"><a href="class_creer_element.html#a59e187eee7cb17eb0b35582bc81ca22f">CreerElement::elementCreateur</a></div><div class="ttdeci">ElementJoueur * elementCreateur</div><div class="ttdoc">element qui cree l'element, permet de decrease son nombre d'action  Mettre nullptr si aucun element n...</div><div class="ttdef"><b>Definition:</b> creer_element.hpp:39</div></div>
+<div class="ttc" id="aclass_creer_element_html_abd4638814e5be5528e47e5cdfc7b9f35"><div class="ttname"><a href="class_creer_element.html#abd4638814e5be5528e47e5cdfc7b9f35">CreerElement::position</a></div><div class="ttdeci">CasePosition position</div><div class="ttdef"><b>Definition:</b> creer_element.hpp:32</div></div>
+<div class="ttc" id="aclass_creer_element_html_af3a92960a10f1acfdd4dd3f113a080a2"><div class="ttname"><a href="class_creer_element.html#af3a92960a10f1acfdd4dd3f113a080a2">CreerElement::joueurProprietaire</a></div><div class="ttdeci">Joueur_ptr joueurProprietaire</div><div class="ttdef"><b>Definition:</b> creer_element.hpp:33</div></div>
+<div class="ttc" id="aclass_element_joueur_html"><div class="ttname"><a href="class_element_joueur.html">ElementJoueur</a></div><div class="ttdoc">classe abstraite correspondant a tous les elements pouvant appartenir a un joueur S'ajoute a sa creat...</div><div class="ttdef"><b>Definition:</b> element_joueur.hpp:21</div></div>
+<div class="ttc" id="aclass_element_joueur_html_a3c08f25660627e7f6c2e3bac4a4eca8b"><div class="ttname"><a href="class_element_joueur.html#a3c08f25660627e7f6c2e3bac4a4eca8b">ElementJoueur::init</a></div><div class="ttdeci">void init(bool initNombreAction)</div><div class="ttdef"><b>Definition:</b> element_joueur.cpp:32</div></div>
+<div class="ttc" id="aclass_element_joueur_html_a5c83549a5a04ba53a4abc4aea85dc9fe"><div class="ttname"><a href="class_element_joueur.html#a5c83549a5a04ba53a4abc4aea85dc9fe">ElementJoueur::_staticCommandeCreerElement</a></div><div class="ttdeci">static bool _staticCommandeCreerElement(ElementJoueur &amp;instanceTypeACreer)</div><div class="ttdef"><b>Definition:</b> element_joueur.cpp:76</div></div>
 <div class="ttc" id="aclass_jeu_html_a9ccc1b588dd86fccfbe66854195ba4e3"><div class="ttname"><a href="class_jeu.html#a9ccc1b588dd86fccfbe66854195ba4e3">Jeu::getInstance</a></div><div class="ttdeci">static Jeu &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> jeu.cpp:42</div></div>
 <div class="ttc" id="aclass_jeu_html_ad2bf9281bd963fd13bd5b50e9c28a66e"><div class="ttname"><a href="class_jeu.html#ad2bf9281bd963fd13bd5b50e9c28a66e">Jeu::getJoueurActif</a></div><div class="ttdeci">Joueur_ptr &amp; getJoueurActif()</div><div class="ttdoc">Permet d'acceder au joueur actif.</div><div class="ttdef"><b>Definition:</b> jeu.cpp:73</div></div>
 <div class="ttc" id="aclass_user_interface_html"><div class="ttname"><a href="class_user_interface.html">UserInterface</a></div><div class="ttdoc">permet de gerer l'affichage des DrawblesForUI, les commandes, la selection de cases et le deplacement...</div><div class="ttdef"><b>Definition:</b> UserInterface.hpp:96</div></div>

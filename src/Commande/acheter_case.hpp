@@ -6,7 +6,10 @@
 class Case ;
 typedef std::shared_ptr<Case> Case_ptr;
 
-
+/**
+ * \class AcheterCase
+ * \brief permet d'acheter une case
+*/
 class AcheterCase : public CommandeSquare {
     private :
         static const std::string TEXTURE_NAME;
@@ -18,6 +21,10 @@ class AcheterCase : public CommandeSquare {
         static const int COUT_ACHAT_OR=50;
 
     public : 
+        /**
+         * \brief constructeur
+         * \param casePourAction case qu'on veut acheter
+        */
         AcheterCase(Case_ptr casePourAction);
         void execute();
 

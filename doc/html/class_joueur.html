@@ -84,9 +84,9 @@ $(document).ready(function(){initNavTree('class_joueur.html',''); initResizable(
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="class_joueur-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Joueur Class Reference</div>  </div>
@@ -125,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acb0d9bca2f95df44e89f539e0d004209"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#acb0d9bca2f95df44e89f539e0d004209">setForPartie</a> ()</td></tr>
 <tr class="separator:acb0d9bca2f95df44e89f539e0d004209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03fe4f48d6d490371657e0a674368eea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a03fe4f48d6d490371657e0a674368eea">_addElement</a> (<a class="el" href="class_element_joueur.html">ElementJoueur</a> *element)</td></tr>
-<tr class="memdesc:a03fe4f48d6d490371657e0a674368eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">ajoute un element au joueur, /!\ appele UNIQUEMENT pour le constructeur de <a class="el" href="class_element_joueur.html">ElementJoueur</a>  <a href="class_joueur.html#a03fe4f48d6d490371657e0a674368eea">More...</a><br /></td></tr>
+<tr class="memdesc:a03fe4f48d6d490371657e0a674368eea"><td class="mdescLeft">&#160;</td><td class="mdescRight">ajoute un element au joueur, /!\ appele UNIQUEMENT pour le constructeur de <a class="el" href="class_element_joueur.html" title="classe abstraite correspondant a tous les elements pouvant appartenir a un joueur S&#39;ajoute a sa creat...">ElementJoueur</a>  <a href="class_joueur.html#a03fe4f48d6d490371657e0a674368eea">More...</a><br /></td></tr>
 <tr class="separator:a03fe4f48d6d490371657e0a674368eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f87681cdd386f9604a04f9f23f8b0d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a2f87681cdd386f9604a04f9f23f8b0d7">_removeElement</a> (<a class="el" href="class_element_joueur.html">ElementJoueur</a> *element)</td></tr>
 <tr class="memdesc:a2f87681cdd386f9604a04f9f23f8b0d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">retire un element au joueur, /!\ appele UNIQUEMENT par le destructeur <a class="el" href="class_element_joueur.html#a4690befb766b2114b3f197bb1dab4b92">ElementJoueur::~ElementJoueur()</a>  <a href="class_joueur.html#a2f87681cdd386f9604a04f9f23f8b0d7">More...</a><br /></td></tr>
@@ -194,10 +194,19 @@ a activer lorsque le joueur a perdu ou lorsque la partie est termine <br  />
 <tr class="memdesc:a1050a24de908d0be730953dfa215fcab"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie si le joueur est en vie  <a href="class_joueur.html#a1050a24de908d0be730953dfa215fcab">More...</a><br /></td></tr>
 <tr class="separator:a1050a24de908d0be730953dfa215fcab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:a230035860ef184dccb51eb83acd83720"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a230035860ef184dccb51eb83acd83720">BOIS_DEPART</a> = 10000</td></tr>
+<tr class="separator:a230035860ef184dccb51eb83acd83720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a9d4d8905b0b2417a9b346c5cd5f98"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a25a9d4d8905b0b2417a9b346c5cd5f98">NOURRITURE_DEPART</a> = 10000</td></tr>
+<tr class="separator:a25a9d4d8905b0b2417a9b346c5cd5f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018739622819cb47fb6b141fd6065cd3"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a018739622819cb47fb6b141fd6065cd3">OR_DEPART</a> = 10000</td></tr>
+<tr class="separator:a018739622819cb47fb6b141fd6065cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a95a14b174792b61ae6a260d880353d69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="dashboard_8hpp.html#ac939dadbb29efb27591385c5f3cacade">ListPtrCommandeSquare_ptr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a95a14b174792b61ae6a260d880353d69">CommandesWhenSelectCase</a> (<a class="el" href="case_8hpp.html#a141cfb91a12b847e7d4b8d8c9c2d8673">Case_ptr</a> &amp;case_)</td></tr>
-<tr class="memdesc:a95a14b174792b61ae6a260d880353d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie les commandes quand une case est selectionne, depend de EtatSelectedCase, cree les commandes avec new, devront etre supprimees dans <a class="el" href="class_dashboard.html#a072cd358a89cc49a7f3fde9a66de1e75">Dashboard::pushCommandeSquare()</a>, renvoie nullptr si il n'y a pas de commandes a faire.  <a href="class_joueur.html#a95a14b174792b61ae6a260d880353d69">More...</a><br /></td></tr>
+<tr class="memdesc:a95a14b174792b61ae6a260d880353d69"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie les commandes quand une case est selectionne, depend de EtatSelectedCase, cree les commandes avec new, devront etre supprimees dans <a class="el" href="class_dashboard.html#a072cd358a89cc49a7f3fde9a66de1e75" title="va placer au bonne endroit et detruire les anciennes  ne supprime pas les infos sur le dashboard  /!...">Dashboard::pushCommandeSquare()</a>, renvoie nullptr si il n'y a pas de commandes a faire.  <a href="class_joueur.html#a95a14b174792b61ae6a260d880353d69">More...</a><br /></td></tr>
 <tr class="separator:a95a14b174792b61ae6a260d880353d69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -224,15 +233,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a219e5a2f505538119ec95eea8a3f47d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5984b18b814cda72638ea3c3d00784c1"><td class="memItemLeft" align="right" valign="top">sf::Color&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a5984b18b814cda72638ea3c3d00784c1">couleur</a></td></tr>
 <tr class="separator:a5984b18b814cda72638ea3c3d00784c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a230035860ef184dccb51eb83acd83720"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a230035860ef184dccb51eb83acd83720">BOIS_DEPART</a> = 10000</td></tr>
-<tr class="separator:a230035860ef184dccb51eb83acd83720"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25a9d4d8905b0b2417a9b346c5cd5f98"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a25a9d4d8905b0b2417a9b346c5cd5f98">NOURRITURE_DEPART</a> = 10000</td></tr>
-<tr class="separator:a25a9d4d8905b0b2417a9b346c5cd5f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a018739622819cb47fb6b141fd6065cd3"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_joueur.html#a018739622819cb47fb6b141fd6065cd3">OR_DEPART</a> = 10000</td></tr>
-<tr class="separator:a018739622819cb47fb6b141fd6065cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_joueur.html" title="Joueur de la partie.">Joueur</a> de la partie. </p>
@@ -336,7 +336,7 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>ajoute un element au joueur, /!\ appele UNIQUEMENT pour le constructeur de <a class="el" href="class_element_joueur.html">ElementJoueur</a> </p>
+<p>ajoute un element au joueur, /!\ appele UNIQUEMENT pour le constructeur de <a class="el" href="class_element_joueur.html" title="classe abstraite correspondant a tous les elements pouvant appartenir a un joueur S&#39;ajoute a sa creat...">ElementJoueur</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">element</td><td>: element a ajouter</td></tr>
@@ -432,7 +432,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>renvoie les commandes quand une case est selectionne, depend de EtatSelectedCase, cree les commandes avec new, devront etre supprimees dans <a class="el" href="class_dashboard.html#a072cd358a89cc49a7f3fde9a66de1e75">Dashboard::pushCommandeSquare()</a>, renvoie nullptr si il n'y a pas de commandes a faire. </p>
+<p>renvoie les commandes quand une case est selectionne, depend de EtatSelectedCase, cree les commandes avec new, devront etre supprimees dans <a class="el" href="class_dashboard.html#a072cd358a89cc49a7f3fde9a66de1e75" title="va placer au bonne endroit et detruire les anciennes  ne supprime pas les infos sur le dashboard  /!...">Dashboard::pushCommandeSquare()</a>, renvoie nullptr si il n'y a pas de commandes a faire. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">case_</td><td>: case selectionnee </td></tr>
@@ -1065,7 +1065,7 @@ a activer lorsque le joueur a perdu ou lorsque la partie est termine <br  />
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1223,7 +1223,7 @@ a activer lorsque le joueur a perdu ou lorsque la partie est termine <br  />
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1245,7 +1245,7 @@ a activer lorsque le joueur a perdu ou lorsque la partie est termine <br  />
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -5,7 +5,10 @@
 
 typedef std::shared_ptr<Joueur> Joueur_ptr;
 
-
+/**
+ * \class Marque
+ * \brief marque sur les cases du plateau qui est informative
+*/
 class Marque : public AffichableOnMap {
 
 

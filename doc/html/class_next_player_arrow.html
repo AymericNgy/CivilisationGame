@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('class_next_player_arrow.html',''); ini
 </div><!--header-->
 <div class="contents">
 
+<p>permet de passer au joueur suivant  
+ <a href="class_next_player_arrow.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="next__player__arrow_8hpp_source.html">next_player_arrow.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for NextPlayerArrow:</div>
@@ -106,14 +109,18 @@ Collaboration diagram for NextPlayerArrow:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab0eda09e29f7d1995c350c0042c16c32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_next_player_arrow.html#ab0eda09e29f7d1995c350c0042c16c32">NextPlayerArrow</a> ()</td></tr>
 <tr class="separator:ab0eda09e29f7d1995c350c0042c16c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e9019f8ade6634a7b1d094195703580"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_next_player_arrow.html#a6e9019f8ade6634a7b1d094195703580">execute</a> ()</td></tr>
-<tr class="separator:a6e9019f8ade6634a7b1d094195703580"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8109150e1d7aaba1a28c25c38d042e5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_next_player_arrow.html#a8109150e1d7aaba1a28c25c38d042e5c">execute</a> () override</td></tr>
+<tr class="separator:a8109150e1d7aaba1a28c25c38d042e5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_commande"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_commande')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_commande.html">Commande</a></td></tr>
 <tr class="memitem:a58bb34a404a783f373f4e986d1a5dbbe inherit pub_methods_class_commande"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande.html#a58bb34a404a783f373f4e986d1a5dbbe">peutAcheter</a> ()</td></tr>
+<tr class="memdesc:a58bb34a404a783f373f4e986d1a5dbbe inherit pub_methods_class_commande"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie si le joueur actif peut acheter la commande  <a href="class_commande.html#a58bb34a404a783f373f4e986d1a5dbbe">More...</a><br /></td></tr>
 <tr class="separator:a58bb34a404a783f373f4e986d1a5dbbe inherit pub_methods_class_commande"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6fbf8dcc9293376c05666208f5cfde6 inherit pub_methods_class_commande"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande.html#af6fbf8dcc9293376c05666208f5cfde6">acheter</a> ()</td></tr>
+<tr class="memdesc:af6fbf8dcc9293376c05666208f5cfde6 inherit pub_methods_class_commande"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie si le joueur actif peut acheter la commande <br  />
+si oui enleve les ressources au joueur actif  <a href="class_commande.html#af6fbf8dcc9293376c05666208f5cfde6">More...</a><br /></td></tr>
 <tr class="separator:af6fbf8dcc9293376c05666208f5cfde6 inherit pub_methods_class_commande"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9bc33801a3ac7f7938a26c00edd5b7d inherit pub_methods_class_commande"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande.html#af9bc33801a3ac7f7938a26c00edd5b7d">Commande</a> (<a class="el" href="class_pixel.html">Pixel</a> position, std::string texturePathName, std::string <a class="el" href="class_commande.html#a93112cc654931c1f9d32f2e892c49877">info</a>, int bois, int nourriture, int _or)</td></tr>
+<tr class="memdesc:af9bc33801a3ac7f7938a26c00edd5b7d inherit pub_methods_class_commande"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructeur  <a href="class_commande.html#af9bc33801a3ac7f7938a26c00edd5b7d">More...</a><br /></td></tr>
 <tr class="separator:af9bc33801a3ac7f7938a26c00edd5b7d inherit pub_methods_class_commande"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad069acb8c19b9b2e09edaebc9151e351 inherit pub_methods_class_commande"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande.html#ad069acb8c19b9b2e09edaebc9151e351">getInfo</a> () const</td></tr>
 <tr class="separator:ad069acb8c19b9b2e09edaebc9151e351 inherit pub_methods_class_commande"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -122,21 +129,26 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4d7565711abd61d42392117ec418260d inherit pub_methods_class_commande"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande.html#a4d7565711abd61d42392117ec418260d">pixelIsOn</a> (int x, int y) const</td></tr>
 <tr class="separator:a4d7565711abd61d42392117ec418260d inherit pub_methods_class_commande"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e3ec6b067ac57b05883d17218269afc inherit pub_methods_class_commande"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_commande.html#a4e3ec6b067ac57b05883d17218269afc">prix</a> (int &amp;bois, int &amp;nourriture, int &amp;_or)</td></tr>
+<tr class="memdesc:a4e3ec6b067ac57b05883d17218269afc inherit pub_methods_class_commande"><td class="mdescLeft">&#160;</td><td class="mdescRight">renvoie le prix en bois, nourriture et or de la commande  <a href="class_commande.html#a4e3ec6b067ac57b05883d17218269afc">More...</a><br /></td></tr>
 <tr class="separator:a4e3ec6b067ac57b05883d17218269afc inherit pub_methods_class_commande"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_affichable_on_panel"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_affichable_on_panel')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_affichable_on_panel.html">AffichableOnPanel</a></td></tr>
 <tr class="memitem:a3a3207c67a27f50a5b3afa2c5677f7ba inherit pub_methods_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a3a3207c67a27f50a5b3afa2c5677f7ba">getTextureFileName</a> () const</td></tr>
+<tr class="memdesc:a3a3207c67a27f50a5b3afa2c5677f7ba inherit pub_methods_class_affichable_on_panel"><td class="mdescLeft">&#160;</td><td class="mdescRight">reucperer la texture du sprite  <a href="class_affichable_on_panel.html#a3a3207c67a27f50a5b3afa2c5677f7ba">More...</a><br /></td></tr>
 <tr class="separator:a3a3207c67a27f50a5b3afa2c5677f7ba inherit pub_methods_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af89235f90b04732fc82c104c0a029a05 inherit pub_methods_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#af89235f90b04732fc82c104c0a029a05">setPosition</a> (int i, int j)</td></tr>
+<tr class="memdesc:af89235f90b04732fc82c104c0a029a05 inherit pub_methods_class_affichable_on_panel"><td class="mdescLeft">&#160;</td><td class="mdescRight">deinir la position du sprite  <a href="class_affichable_on_panel.html#af89235f90b04732fc82c104c0a029a05">More...</a><br /></td></tr>
 <tr class="separator:af89235f90b04732fc82c104c0a029a05 inherit pub_methods_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d8f44bce163833bb5cc500a306a1a2d inherit pub_methods_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_pixel.html">Pixel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a2d8f44bce163833bb5cc500a306a1a2d">getPosition</a> () const</td></tr>
 <tr class="separator:a2d8f44bce163833bb5cc500a306a1a2d inherit pub_methods_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a909a1d2a01adba8c442368a8f6c7d5f6 inherit pub_methods_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a909a1d2a01adba8c442368a8f6c7d5f6">AffichableOnPanel</a> (<a class="el" href="class_pixel.html">Pixel</a> position, int couche, std::string textureName)</td></tr>
+<tr class="memdesc:a909a1d2a01adba8c442368a8f6c7d5f6 inherit pub_methods_class_affichable_on_panel"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructeur  <a href="class_affichable_on_panel.html#a909a1d2a01adba8c442368a8f6c7d5f6">More...</a><br /></td></tr>
 <tr class="separator:a909a1d2a01adba8c442368a8f6c7d5f6 inherit pub_methods_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fb60d81f5e20aa0137c7d6fdeff4cf7 inherit pub_methods_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a4fb60d81f5e20aa0137c7d6fdeff4cf7">~AffichableOnPanel</a> ()</td></tr>
 <tr class="separator:a4fb60d81f5e20aa0137c7d6fdeff4cf7 inherit pub_methods_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08b987fc95df0860398eb4b06ecd5ee9 inherit pub_methods_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a08b987fc95df0860398eb4b06ecd5ee9">setTextures</a> (std::string textureName)</td></tr>
 <tr class="separator:a08b987fc95df0860398eb4b06ecd5ee9 inherit pub_methods_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02815892bcdb39f354ebec14d4d9c882 inherit pub_methods_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#a02815892bcdb39f354ebec14d4d9c882">pixelIsOn</a> (int x, int y) const</td></tr>
+<tr class="memdesc:a02815892bcdb39f354ebec14d4d9c882 inherit pub_methods_class_affichable_on_panel"><td class="mdescLeft">&#160;</td><td class="mdescRight">teste si le pixel de coordonnes (x,y) fait partie du sprite  <a href="class_affichable_on_panel.html#a02815892bcdb39f354ebec14d4d9c882">More...</a><br /></td></tr>
 <tr class="separator:a02815892bcdb39f354ebec14d4d9c882 inherit pub_methods_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
@@ -169,9 +181,12 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a44fef5b3b4feffbc5bc900d708bd0ac0 inherit pro_attribs_class_commande"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_affichable_on_panel"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_affichable_on_panel')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_affichable_on_panel.html">AffichableOnPanel</a></td></tr>
 <tr class="memitem:ab50ed56aaaf26e995d64ed235387169d inherit pro_attribs_class_affichable_on_panel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite_for_u_i.html">SpriteForUI</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_panel.html#ab50ed56aaaf26e995d64ed235387169d">sprite</a></td></tr>
+<tr class="memdesc:ab50ed56aaaf26e995d64ed235387169d inherit pro_attribs_class_affichable_on_panel"><td class="mdescLeft">&#160;</td><td class="mdescRight">sprite de l'objet  <a href="class_affichable_on_panel.html#ab50ed56aaaf26e995d64ed235387169d">More...</a><br /></td></tr>
 <tr class="separator:ab50ed56aaaf26e995d64ed235387169d inherit pro_attribs_class_affichable_on_panel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>permet de passer au joueur suivant </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab0eda09e29f7d1995c350c0042c16c32"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab0eda09e29f7d1995c350c0042c16c32">&#9670;&nbsp;</a></span>NextPlayerArrow()</h2>
 
@@ -190,8 +205,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6e9019f8ade6634a7b1d094195703580"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e9019f8ade6634a7b1d094195703580">&#9670;&nbsp;</a></span>execute()</h2>
+<a id="a8109150e1d7aaba1a28c25c38d042e5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8109150e1d7aaba1a28c25c38d042e5c">&#9670;&nbsp;</a></span>execute()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -208,7 +223,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

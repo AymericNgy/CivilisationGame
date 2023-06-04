@@ -5,7 +5,10 @@
 #include "batiment.hpp"
 
 
-
+/**
+ * \class Caserne
+ * \brief classe representant la caserne
+*/
 class Caserne : public Batiment{
     private :
         static const int NOMBRE_ACTION_MAX_ORIGINE=2;

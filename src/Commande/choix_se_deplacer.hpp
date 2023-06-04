@@ -8,9 +8,12 @@
 class InterfaceSeDeplacer;
 
 
-// permet de choisir de deplacer une instance de InterfaceSeDeplacer
-// /!\ S'ASSURER que elementPourAction passe en argument constructeur n'est pas detruit tant que
-// /!\ l'instance de ChoixSeDeplacer existe 
+
+/**
+ * \class ChoixSeDeplacer
+ * \brief permet de choisir de deplacer une instance de InterfaceSeDeplacer
+ * /!\ S'ASSURER que elementPourAction passe en argument constructeur n'est pas detruit tant que l'instance de ChoixSeDeplacer existe
+*/
 class ChoixSeDeplacer : public CommandeSquare {
     private :
         static const std::string TEXTURE_NAME;

@@ -93,35 +93,30 @@ $(document).ready(function(){initNavTree('interface__attaquer_8hpp_source.html',
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span><a class="code" href="class_element_joueur.html">ElementJoueur</a>;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// A implementer sur un ElementJoueur si il peut attaquer</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// Ajouter commande ChoixAttaquer a la liste renvoye par ElementJoueur::getActionpossible()</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_interface_attaquer.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_interface_attaquer.html">InterfaceAttaquer</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    public :</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="comment">// renvoie le coeffecient multiplicatif d&#39;attaque de l&#39;attaquant sur le recevant</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="comment">// renvoie 1 s&#39;il n&#39;y en a pas</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_interface_attaquer.html#aee5ca5af1c68fff6e3367a44db50a09d">coeffAttaque</a>(<a class="code" href="class_interface_attaquer.html">InterfaceAttaquer</a> *attaquant, <a class="code" href="class_element_joueur.html">ElementJoueur</a> *recevant);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="comment">// /!\ redefinir dans classe enfant avec bonus si voulu</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_interface_attaquer.html#a8d48ba8b18154f081ad0883220b74abe">   21</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="class_interface_attaquer.html#a8d48ba8b18154f081ad0883220b74abe">getNombreDegat</a>() <span class="keyword">const</span> =0;    </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="comment">// /!\ redefinir dans classe enfant avec bonus si voulu</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_interface_attaquer.html#adadc9b29d64e06db17906d6133f8acbf">   24</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="class_interface_attaquer.html#adadc9b29d64e06db17906d6133f8acbf">getDistanceAttaque</a>() <span class="keyword">const</span> =0;  </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="comment">// renvoie l&#39;instance ElementJoueur sur laquelle cette interface a ete implemente</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_element_joueur.html">ElementJoueur</a> *<a class="code" href="class_interface_attaquer.html#a13059004a814a55ef5d36ff41f0e9f79">thisElementJoueur</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_interface_attaquer.html#adac89f78c26fe707b3ebf2ed08814060">_commandeAttaquer</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_interface_attaquer.html#ac91f1d9fe8493f927aca80d7ef634142">_commandeChoixAttaquer</a>();</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_interface_attaquer.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_interface_attaquer.html">InterfaceAttaquer</a> {</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    public :</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="comment">// renvoie le coeffecient multiplicatif d&#39;attaque de l&#39;attaquant sur le recevant</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="comment">// renvoie 1 s&#39;il n&#39;y en a pas</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="class_interface_attaquer.html#aee5ca5af1c68fff6e3367a44db50a09d">coeffAttaque</a>(<a class="code" href="class_interface_attaquer.html">InterfaceAttaquer</a> *attaquant, <a class="code" href="class_element_joueur.html">ElementJoueur</a> *recevant);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="comment">// /!\ redefinir dans classe enfant avec bonus si voulu</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_interface_attaquer.html#a8d48ba8b18154f081ad0883220b74abe">   25</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="class_interface_attaquer.html#a8d48ba8b18154f081ad0883220b74abe">getNombreDegat</a>() <span class="keyword">const</span> =0;    </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="comment">// /!\ redefinir dans classe enfant avec bonus si voulu</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="class_interface_attaquer.html#adadc9b29d64e06db17906d6133f8acbf">   28</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="class_interface_attaquer.html#adadc9b29d64e06db17906d6133f8acbf">getDistanceAttaque</a>() <span class="keyword">const</span> =0;  </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="comment">// renvoie l&#39;instance ElementJoueur sur laquelle cette interface a ete implemente</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="class_element_joueur.html">ElementJoueur</a> *<a class="code" href="class_interface_attaquer.html#a13059004a814a55ef5d36ff41f0e9f79">thisElementJoueur</a>();</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_interface_attaquer.html#adac89f78c26fe707b3ebf2ed08814060">_commandeAttaquer</a>();</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_interface_attaquer.html#ac91f1d9fe8493f927aca80d7ef634142">_commandeChoixAttaquer</a>();</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
@@ -137,9 +132,13 @@ $(document).ready(function(){initNavTree('interface__attaquer_8hpp_source.html',
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclass_element_joueur_html"><div class="ttname"><a href="class_element_joueur.html">ElementJoueur</a></div><div class="ttdef"><b>Definition:</b> element_joueur.hpp:16</div></div>
-<div class="ttc" id="aclass_interface_attaquer_html"><div class="ttname"><a href="class_interface_attaquer.html">InterfaceAttaquer</a></div><div class="ttdef"><b>Definition:</b> interface_attaquer.hpp:11</div></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_element_joueur_html"><div class="ttname"><a href="class_element_joueur.html">ElementJoueur</a></div><div class="ttdoc">classe abstraite correspondant a tous les elements pouvant appartenir a un joueur S'ajoute a sa creat...</div><div class="ttdef"><b>Definition:</b> element_joueur.hpp:21</div></div>
+<div class="ttc" id="aclass_interface_attaquer_html"><div class="ttname"><a href="class_interface_attaquer.html">InterfaceAttaquer</a></div><div class="ttdoc">A implementer sur un ElementJoueur si il peut attaquer  Ajouter commande ChoixAttaquer a la liste ren...</div><div class="ttdef"><b>Definition:</b> interface_attaquer.hpp:15</div></div>
 <div class="ttc" id="aclass_interface_attaquer_html_a13059004a814a55ef5d36ff41f0e9f79"><div class="ttname"><a href="class_interface_attaquer.html#a13059004a814a55ef5d36ff41f0e9f79">InterfaceAttaquer::thisElementJoueur</a></div><div class="ttdeci">ElementJoueur * thisElementJoueur()</div><div class="ttdef"><b>Definition:</b> interface_attaquer.cpp:20</div></div>
 <div class="ttc" id="aclass_interface_attaquer_html_a8d48ba8b18154f081ad0883220b74abe"><div class="ttname"><a href="class_interface_attaquer.html#a8d48ba8b18154f081ad0883220b74abe">InterfaceAttaquer::getNombreDegat</a></div><div class="ttdeci">virtual float getNombreDegat() const =0</div></div>
 <div class="ttc" id="aclass_interface_attaquer_html_ac91f1d9fe8493f927aca80d7ef634142"><div class="ttname"><a href="class_interface_attaquer.html#ac91f1d9fe8493f927aca80d7ef634142">InterfaceAttaquer::_commandeChoixAttaquer</a></div><div class="ttdeci">void _commandeChoixAttaquer()</div><div class="ttdef"><b>Definition:</b> interface_attaquer.cpp:81</div></div>

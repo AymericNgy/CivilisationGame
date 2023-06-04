@@ -7,7 +7,11 @@
 class TextForUI;
 
 
-// afficher les ressources du joueur actif
+
+/**
+ * \class Ressource
+ * \brief permet d'afficher les ressources du joueur actif
+*/
 class Ressource : public AffichableOnPanel{
     private :
         // ---CONSTANTES---
@@ -48,7 +52,10 @@ class Ressource : public AffichableOnPanel{
         
 
 
-        // /!\ a ne faire que dans le constructeur
+
+        /**
+         * \brief /!\ a ne faire que dans le constructeur
+        */
         void initInfo();
 
 
@@ -58,7 +65,10 @@ class Ressource : public AffichableOnPanel{
         Ressource();
         ~Ressource();
 
-        // Met a jour toutes les ressouces avec celles du joueur actif
+
+        /**
+         * \brief Met a jour toutes les ressouces avec celles du joueur actif
+        */
         void update();
 
 

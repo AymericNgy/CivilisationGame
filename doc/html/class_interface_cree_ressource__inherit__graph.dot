@@ -3,13 +3,13 @@ digraph "InterfaceCreeRessource"
  // LATEX_PDF_SIZE
   edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
   node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="InterfaceCreeRessource",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 [label="InterfaceCreeRessource",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="A implementer sur un ElementJoueur si il cree des ressources a chaque tour  Ajouter dans nouveauTour(..."];
   Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node2 [label="Camp_de_bucheron",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_camp__de__bucheron.html",tooltip=" "];
+  Node2 [label="Camp_de_bucheron",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_camp__de__bucheron.html",tooltip="Camp_de_bucheron est un Batiment qui permet de produire du bois."];
   Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="HotelDeVille",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hotel_de_ville.html",tooltip=" "];
+  Node3 [label="HotelDeVille",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_hotel_de_ville.html",tooltip="premier batiment du joueur  lorsqu'il est detruit le joueur perd"];
   Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="Mine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mine.html",tooltip=" "];
+  Node4 [label="Mine",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_mine.html",tooltip="Mine est un Batiment qui permet de produire de l'or."];
   Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="Moulin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_moulin.html",tooltip=" "];
+  Node5 [label="Moulin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_moulin.html",tooltip="batiment qui permet de produire de la nourriture"];
 }

@@ -3,6 +3,11 @@
 
 #include "commande.hpp"
 
+
+/**
+ * \class LancerPartie
+ * \brief permet de lancer la partie
+*/
 class LancerPartie : public Commande {
     private:
         static const int WIDTH = 220;

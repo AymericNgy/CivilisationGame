@@ -1,2 +1,0 @@
-erreur car on envoie aucune commande -> devrait meme pas poser une erreur
-anormal que reconnaisse pas ElementJoueur avec dynamic_cast

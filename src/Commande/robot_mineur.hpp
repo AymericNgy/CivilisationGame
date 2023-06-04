@@ -5,7 +5,13 @@
 
 class Mine;
 
-// permet d'evoluer au niveau 3 de production d'or la mine
+
+
+/**
+ * \class RobotMineur
+ * \brief niveau 3 de production d'or de la Mine
+ * 
+*/
 class RobotMineur : public CommandeSquare {
     private :
         static const std::string TEXTURE_NAME;
@@ -16,6 +22,11 @@ class RobotMineur : public CommandeSquare {
         static const int PRIX_OR = 1500;
     
     public :
+
+        /**
+         * \brief constructeur
+         * 
+        */
         RobotMineur(Mine *minePourAction);
         void execute();
 

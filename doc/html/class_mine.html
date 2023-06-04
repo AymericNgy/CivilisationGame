@@ -92,6 +92,9 @@ $(document).ready(function(){initNavTree('class_mine.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="class_mine.html" title="Mine est un Batiment qui permet de produire de l&#39;or.">Mine</a> est un <a class="el" href="class_batiment.html">Batiment</a> qui permet de produire de l'or.  
+ <a href="class_mine.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="mine_8hpp_source.html">mine.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Mine:</div>
@@ -166,8 +169,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a882951ce4ac9ac1046a010e42cf922 inherit pub_methods_class_affichable_on_map"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_case_position.html">CasePosition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_map.html#a7a882951ce4ac9ac1046a010e42cf922">getCasePosition</a> () const</td></tr>
 <tr class="separator:a7a882951ce4ac9ac1046a010e42cf922 inherit pub_methods_class_affichable_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf6db934635ffd95ac659904689018fe inherit pub_methods_class_affichable_on_map"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_map.html#adf6db934635ffd95ac659904689018fe">AffichableOnMap</a> (<a class="el" href="class_case_position.html">CasePosition</a> casePosition, int couche, std::string textureName)</td></tr>
+<tr class="memdesc:adf6db934635ffd95ac659904689018fe inherit pub_methods_class_affichable_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructeur <br  />
+ /!\ ne pas utiliser lors de la creation de <a class="el" href="class_jeu.html" title="Permet de lancer une partie.  Permet d&#39;acceder au joueur actif, au plateau et au hud.">Jeu</a>, car cette fonction fait appelle à <a class="el" href="class_jeu.html#a9ccc1b588dd86fccfbe66854195ba4e3">Jeu::getInstance()</a>  <a href="class_affichable_on_map.html#adf6db934635ffd95ac659904689018fe">More...</a><br /></td></tr>
 <tr class="separator:adf6db934635ffd95ac659904689018fe inherit pub_methods_class_affichable_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cd914a195e5ed7ed8e48abce7d3f489 inherit pub_methods_class_affichable_on_map"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_map.html#a7cd914a195e5ed7ed8e48abce7d3f489">AffichableOnMap</a> (<a class="el" href="class_plateau.html">Plateau</a> &amp;<a class="el" href="class_affichable_on_map.html#a56015a110320e183c96a126eca9c5def">plateau</a>, <a class="el" href="class_case_position.html">CasePosition</a> casePosition, int couche, std::string textureName)</td></tr>
+<tr class="memdesc:a7cd914a195e5ed7ed8e48abce7d3f489 inherit pub_methods_class_affichable_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructeur <br  />
+ A utiliser lors de la creation de <a class="el" href="class_jeu.html" title="Permet de lancer une partie.  Permet d&#39;acceder au joueur actif, au plateau et au hud.">Jeu</a>  <a href="class_affichable_on_map.html#a7cd914a195e5ed7ed8e48abce7d3f489">More...</a><br /></td></tr>
 <tr class="separator:a7cd914a195e5ed7ed8e48abce7d3f489 inherit pub_methods_class_affichable_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ca0f834290d7cf3e49477bff108847f inherit pub_methods_class_affichable_on_map"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_map.html#a6ca0f834290d7cf3e49477bff108847f">~AffichableOnMap</a> ()</td></tr>
 <tr class="separator:a6ca0f834290d7cf3e49477bff108847f inherit pub_methods_class_affichable_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,8 +264,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a87b3291a69c39ba8d6421bb9b2802926 inherit pro_attribs_class_element_joueur"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_affichable_on_map"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_affichable_on_map')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_affichable_on_map.html">AffichableOnMap</a></td></tr>
 <tr class="memitem:a56015a110320e183c96a126eca9c5def inherit pro_attribs_class_affichable_on_map"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_plateau.html">Plateau</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_map.html#a56015a110320e183c96a126eca9c5def">plateau</a></td></tr>
+<tr class="memdesc:a56015a110320e183c96a126eca9c5def inherit pro_attribs_class_affichable_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">pointeur vers le plateau  <a href="class_affichable_on_map.html#a56015a110320e183c96a126eca9c5def">More...</a><br /></td></tr>
 <tr class="separator:a56015a110320e183c96a126eca9c5def inherit pro_attribs_class_affichable_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c4d16fe774a0aec49e0efbf4eb55352 inherit pro_attribs_class_affichable_on_map"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_sprite_for_u_i.html">SpriteForUI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_affichable_on_map.html#a4c4d16fe774a0aec49e0efbf4eb55352">sprite</a></td></tr>
+<tr class="memdesc:a4c4d16fe774a0aec49e0efbf4eb55352 inherit pro_attribs_class_affichable_on_map"><td class="mdescLeft">&#160;</td><td class="mdescRight">sprite de l'objet  <a href="class_affichable_on_map.html#a4c4d16fe774a0aec49e0efbf4eb55352">More...</a><br /></td></tr>
 <tr class="separator:a4c4d16fe774a0aec49e0efbf4eb55352 inherit pro_attribs_class_affichable_on_map"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_static_attribs_class_batiment"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_batiment')"><img src="closed.png" alt="-"/>&#160;Static Protected Attributes inherited from <a class="el" href="class_batiment.html">Batiment</a></td></tr>
 <tr class="memitem:a89bb9b178bf6016b403f7a387332cf5d inherit pro_static_attribs_class_batiment"><td class="memItemLeft" align="right" valign="top">static const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batiment.html#a89bb9b178bf6016b403f7a387332cf5d">COUCHE</a> = 15</td></tr>
@@ -266,7 +275,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a7ccaed21b705ca96ddb4d0aa512d6271 inherit pro_static_attribs_class_batiment"><td class="memItemLeft" align="right" valign="top">static const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_batiment.html#a7ccaed21b705ca96ddb4d0aa512d6271">SOUND_NAME_DESTRUCTION</a> =&quot;destruction_batiment.wav&quot;</td></tr>
 <tr class="separator:a7ccaed21b705ca96ddb4d0aa512d6271 inherit pro_static_attribs_class_batiment"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_mine.html" title="Mine est un Batiment qui permet de produire de l&#39;or.">Mine</a> est un <a class="el" href="class_batiment.html">Batiment</a> qui permet de produire de l'or. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9240a96236f08dbe66a31ea126b399cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9240a96236f08dbe66a31ea126b399cf">&#9670;&nbsp;</a></span>Mine()</h2>
 

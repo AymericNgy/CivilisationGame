@@ -5,6 +5,10 @@
 #include "batiment.hpp"
 #include "interface_cree_ressource.hpp"
 
+/**
+ * \class Mine
+ * \brief Mine est un Batiment qui permet de produire de l'or
+*/
 class Mine : public Batiment , public InterfaceCreeRessource {
     private :
         static const int NOMBRE_ACTION_MAX_ORIGINE=1;
